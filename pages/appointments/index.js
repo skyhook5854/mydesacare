@@ -169,6 +169,7 @@ export default function Appointments() {
 }
 
 Appointments.layout = Admin2;
+
 // export async function getServerSideProps({ locale }) {
 //   return {
 //     props: {
