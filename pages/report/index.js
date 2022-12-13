@@ -2,7 +2,7 @@
 import Admin2 from 'src/layouts/Admin2';
 import React, { useState } from 'react';
 import { useTranslation } from 'next-i18next';
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+// import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { createPopper } from '@popperjs/core';
 import Link from 'next/link';
 
@@ -439,24 +439,24 @@ export default function Reports() {
 }
 
 Reports.layout = Admin2;
-export async function getServerSideProps({ locale }) {
-  return {
-    props: {
-      ...(await serverSideTranslations(locale, [
-        'onboarding',
-        'addressbookpage',
-        'billingpage',
-        'components',
-        'homepage',
-        'importBulkOrder',
-        'integrationPage',
-        'multiPointOrder',
-        'orderDetailsPage',
-        'orderpage',
-        'pageWrapper',
-        'settings',
-        'topuppage',
-      ])),
-    },
-  };
-}
+// export async function getServerSideProps({ locale }) {
+//   return {
+//     props: {
+//       ...(await serverSideTranslations(locale, [
+//         'onboarding',
+//         'addressbookpage',
+//         'billingpage',
+//         'components',
+//         'homepage',
+//         'importBulkOrder',
+//         'integrationPage',
+//         'multiPointOrder',
+//         'orderDetailsPage',
+//         'orderpage',
+//         'pageWrapper',
+//         'settings',
+//         'topuppage',
+//       ])),
+//     },
+//   };
+// }
