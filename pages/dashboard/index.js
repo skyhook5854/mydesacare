@@ -1,11 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Admin2 from "src/layouts/Admin2";
-import { useTranslation } from "next-i18next";
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import CardLineChart from "src/components/Cards/CardLineChart";
-import CardBarChart from "src/components/Cards/CardBarChart";
-import { useProfile } from "src/actions/settings";
-import { QueryClient } from "react-query";
 import { useRecoilValue } from "recoil";
 import { authAtom } from "src/recoil/auth";
 import { useCountAppointment } from "src/actions/appointment";
@@ -597,24 +592,25 @@ export default function Dashboard() {
   );
 }
 Dashboard.layout = Admin2;
-export async function getServerSideProps({ locale }) {
-  return {
-    props: {
-      ...(await serverSideTranslations(locale, [
-        "onboarding",
-        "addressbookpage",
-        "billingpage",
-        "components",
-        "homepage",
-        "importBulkOrder",
-        "integrationPage",
-        "multiPointOrder",
-        "orderDetailsPage",
-        "orderpage",
-        "pageWrapper",
-        "settings",
-        "topuppage",
-      ])),
-    },
-  };
-}
+
+// export async function getServerSideProps({ locale }) {
+//   return {
+//     props: {
+//       ...(await serverSideTranslations(locale, [
+//         "onboarding",
+//         "addressbookpage",
+//         "billingpage",
+//         "components",
+//         "homepage",
+//         "importBulkOrder",
+//         "integrationPage",
+//         "multiPointOrder",
+//         "orderDetailsPage",
+//         "orderpage",
+//         "pageWrapper",
+//         "settings",
+//         "topuppage",
+//       ])),
+//     },
+//   };
+// }
