@@ -1,8 +1,8 @@
 /* eslint-disable react/jsx-no-target-blank */
 import Admin2 from "src/layouts/Admin2";
 import React, { useState } from "react";
-import { useTranslation } from "next-i18next";
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+// import { useTranslation } from "next-i18next";
+// import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 import Link from "next/link";
 
