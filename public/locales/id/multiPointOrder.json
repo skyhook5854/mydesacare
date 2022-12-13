@@ -1,0 +1,42 @@
+{
+  "orderDetails": {
+    "backLink": "Memesan",
+    "pageTitle": "Urutan multipoin baru",
+    "serviceUnavailable": "Layanan tidak tersedia",
+    "chooseVehicle": "Pilih kendaraan",
+    "manageRoutes": "Kelola rute (MAX 30 STOPS)",
+    "editAddress": "Edit alamat",
+    "delete": "Menghapus",
+    "addDestination": "Tambahkan tujuan",
+    "deliveryInfo": {
+      "title": "Info pengiriman",
+      "name": "Nama",
+      "phone": "Nomor telepon",
+      "unitNo": "Blok / Lantai / Unit"
+    },
+    "addServices": "Layanan tambahan",
+    "addOns": "Pengaya",
+    "totalPrice": "Total harga",
+    "next": "Lanjut",
+    "errors": {
+      "nameIsRequired": "Nama harus diisi",
+      "phoneIsRequired": "Telepon diperlukan"
+    }
+  },
+  "confirmOrder": {
+    "backLink": "Detail pesanan",
+    "pageTitle": "Konfirmasi pemesanan",
+    "contactDetails": "Pengiriman & detail kontak",
+    "date": "Tanggal",
+    "time": "Waktu",
+    "deliveryNotes": "Catatan pengiriman",
+    "notes": "Catatan",
+    "paymentOption": "Pilihan pembayaran",
+    "selectPaymentMethod": "Pilih metode pembayaran",
+    "discountCode": "Kode diskon",
+    "apply": "Menerapkan",
+    "totalPrice": "Total harga",
+    "back": "Kembali",
+    "confirmOrder": "Konfirmasi pemesanan"
+  }
+}

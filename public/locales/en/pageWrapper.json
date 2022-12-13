@@ -1,0 +1,28 @@
+{
+  "sidebarMenus": {
+    "home": "Home",
+    "new": "Drafts",
+    "orders": "Orders",
+    "address-book": "Address book",
+    "billing": "Billing",
+    "payment": "Top-up",
+    "settings": "Settings",
+    "analytics": "Analytics",
+    "earn": "Refer & earn",
+    "ecommerce": "Integrations",
+    "refer-friend": "Refer a friends"
+  },
+  "sidebarOrderMenus": {
+    "singleOrder": "Single order",
+    "bulkOrders": "Bulk orders",
+    "processBulkOrders": "Process bulk orders",
+    "multipoint": "Instant delivery"
+  },
+  "rightMenus": {
+    "settings": "Settings",
+    "logout": "Log out",
+    "your-profile": "Your Profile"
+  },
+  "credit": "Credit",
+  "newOrder": "New Order"
+}

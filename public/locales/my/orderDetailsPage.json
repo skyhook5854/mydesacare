@@ -1,0 +1,45 @@
+{
+  "serviceInformation": {
+    "title": "Maklumat Perkhidmatan",
+    "content": {
+      "service": "Perkhidmatan",
+      "totalWeight": "Berat keseluruhan",
+      "totalPrice": "Berat keseluruhan",
+      "paymentStatus": "Status bayaran",
+      "totalCollectCash": "Jumlah mengumpul wang tunai",
+      "reconciliationStatus": "Status pendamaian"
+    }
+  },
+  "contactInformation": {
+    "title": "Maklumat perhubungan",
+    "tableColumn": {
+      "category": "Kategori",
+      "name": "Nama",
+      "phoneNumber": "Nombor telefon",
+      "email": "E-mel",
+      "address": "Alamat",
+      "postalCode": "Poskod",
+      "country": "Negara",
+      "totalCashCollected": "Jumlah wang tunai yang dikumpulkan",
+      "status": "Status",
+      "note": "Nota",
+      "location": "Lokasi"
+    }
+  },
+  "addons": {
+    "title": "Tambahan",
+    "tableColumn": {
+      "name": "Nama",
+      "quantity": "Kuantiti",
+      "value": "Nilai"
+    }
+  },
+  "activities": {
+    "title": "Aktiviti",
+    "tableColumn": {
+      "status": "Status",
+      "location": "Lokasi",
+      "dateAndTime": "Masa & tarikh"
+    }
+  }
+}

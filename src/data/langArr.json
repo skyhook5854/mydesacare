@@ -1,0 +1,18 @@
+[
+  {
+    "label": "English (US)",
+    "locale": "en"
+  },
+  {
+    "label": "Chinese (simplified)",
+    "locale": "cn"
+  },
+  {
+    "label": "Indonesian",
+    "locale": "id"
+  },
+  {
+    "label": "Malay",
+    "locale": "my"
+  }
+]

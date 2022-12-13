@@ -1,0 +1,194 @@
+{
+  "content": {
+    "pageTitle": "Pengaturan",
+    "logout": "Keluar",
+    "accountInfo": {
+      "title": "Informasi akun",
+      "personalAccount": "Personal Account",
+      "businessAccount": "Business Account",
+      "profilePhoto": "Foto profil",
+      "profilePhoto1": "Ukuran yang disarankan:",
+      "profilePhoto2": "200x200px Format file yang didukung: JPG, PNG, atau GIF",
+      "upload": "Unggah",
+      "name": "Nama",
+      "email": "Email",
+      "mobile": "Nomor telepon",
+      "update": "Profil diperbarui.",
+      "form": {
+        "businessName": "Nama bisnis",
+        "businessRegistration": "Nombor pendaftaran bisnis",
+        "businessType": "Jenis bisnis",
+        "businessIndustry": "Industri bisnis",
+        "dob": "Tanggal dimasukkan",
+        "websiteUrl": "Situs Web",
+        "unitNumber": "Nomor satuan"
+      }
+    },
+    "customBranding": {
+      "title": "Kustom Branding",
+      "companyLogo": "Foto atau logo Perusahaan",
+      "uploadfile": "Unggah file",
+      "dnd": "atau seret dan lepas ",
+      "brandingColor": "Logo utama/warna branding"
+    },
+    "security": {
+      "title": "Keselamatan"
+    },
+    "profileInfo": {
+      "title": "Informasi profil",
+      "type": "Jenis",
+      "businessName": "Nama lengkap / Nama bisnis",
+      "identificationNo": "No. Identifikasi / No. Registrasi Bisnis",
+      "email": "Email",
+      "mobile": "Nomor telepon",
+      "dateOfIncorporation": "D.O.B. / Tanggal Pendirian",
+      "industry": "Industri",
+      "websiteUrl": "Alamat situs web URL",
+      "defaultLabelType": "Jenis label default",
+      "language": "Bahasa",
+      "update": "Profil diperbarui."
+    },
+    "addressInfo": {
+      "title": "Informasi alamat",
+      "address": "Alamat",
+      "postcode": "Kode Pos",
+      "city": "Bandar",
+      "state": "Negarabagian",
+      "country": "Negara"
+    },
+    "billingInfo": {
+      "title": "Informasi tagihan",
+      "billingName": "Nama tagihan",
+      "address": "Alamat",
+      "postcode": "Kode Pos",
+      "city": "Bandar",
+      "state": "Negarabagian",
+      "country": "Negara",
+      "billingEmail": "Email penagihan"
+    },
+    "bankInfo": {
+      "title": "Informasi bank",
+      "bankName": "Nama bank",
+      "bankSwiftCode": "Kode SWIFT bank",
+      "bankAccountNo": "No Rekening Bank",
+      "bankAccountName": "Nama akun bank",
+      "update": "Informasi penagihan & bank diperbarui."
+    },
+    "services": {
+      "title": "Jasa",
+      "updated": "Penyedia jasa diperbarui.",
+      "totalSuccessfulRefrrals": "Total Berhasil dijemput",
+      "totalPendingRefrrals": "Total jemputan tertunda",
+      "totalEarnings": "Penghasilan total"
+    },
+    "notification": {
+      "title": "Notifikasi",
+      "receiveNewsletter": "Terima Buletin (pengumuman penting, promosi, dll)",
+      "pushNotification": "Pemberitahuan push",
+      "emailNotification": "Notifikasi email",
+      "smsNotification": "Notifikasi SMS",
+      "smsRecipient": "Notifikasi SMS penerima",
+      "notifyOrderStatus": "Beri tahu saya setiap status pesanan",
+      "notifyReceiverOrderStatus": "Beri tahu penerima setiap status pesanan",
+      "update": "Pengaturan notifikasi diperbarui.",
+      "instabookNotifySender": "Beritahu saya untuk pemesanan Instabook",
+      "instabookNotifyReceiver": "Beritahu penerima untuk pesanan Instabook",
+      "newInvoice": "Beritahu saya untuk faktur baru yang belum dibayar",
+      "paidInvoice": "Beritahu saya untuk faktur yang dibayar",
+      "email": "emel",
+      "sms": "SMS",
+      "notification": "notifikasi",
+      "notice": "Biaya pemberitahuan akan termasuk dalam harga pengiriman"
+    },
+    "integration": {
+      "title": "Integrasi API",
+      "apiDocumentation": "API dokumentasi",
+      "addNewKey": "Tambah kunci baru",
+      "companyCode": "kod syarikat",
+      "companyID": "ID perusahaan",
+      "userID": "ID pengguna",
+      "customerID": "ID pelanggan",
+      "apiKey": "Kunci API ",
+      "addNewEndpoint": "Tambah endpoint baru",
+      "createKey": "Buat kunci API",
+      "apiKeyName": "Nama kunci API",
+      "createView": "Buat & lihat",
+      "createAPI": "Kunci API berjaya dibuat",
+      "createMessage": "Sila salin dan simpan di tempat lain.",
+      "createWarn": "Atas sebab keselamatan, kami tidak dapat menunjukkannya lagi kepada anda.",
+      "edit": "Ubah",
+      "delete": "Hapus",
+      "done": "Selesai",
+      "copy": "Salin",
+      "copied": "Disalin!",
+      "tableColumn": {
+        "name": "Nama",
+        "key": {
+          "name": "Kunci API",
+          "endpoint": "Endpoint",
+          "eventType": "Jenis Program",
+          "content": "Demi keamanan, kami tidak mengizinkan nilai kunci ditampilkan."
+        },
+        "status": "Status",
+        "action": "Tindakan"
+      },
+      "dialog": {
+        "revoke": {
+          "name": "Mencabut",
+          "title": "Cabut kunci API",
+          "text1": "Apakah Anda yakin ingin mencabut ",
+          "text2": " kunci API?"
+        }
+      }
+    },
+    "changeEmailAddress": {
+      "title": "Mengganti alamat email",
+      "currentEmail": "Alamat email anda saat ini adalah",
+      "limitEmailChange": "Anda telah mencapai batas untuk mengganti email!",
+      "update": "",
+      "form": {
+        "newEmailAddress": "Alamat email baru",
+        "change": "Perubahan"
+      }
+    },
+    "changePhoneNo": {
+      "title": "Ganti nomor telepon",
+      "currentPhoneNo": "Nomor telepon anda saat ini adalah",
+      "update": "",
+      "form": {
+        "newPhoneNumber": "Nomor telepon baru",
+        "change": "Perubahan"
+      }
+    },
+    "changePassword": {
+      "title": "Ganti kata sandi",
+      "currentPassword": "Kata sandi saat ini",
+      "newPassword": "Kata sandi baru",
+      "change": "Ubah"
+    },
+    "status": {
+      "good": "Baik",
+      "warning": "Amaran"
+    },
+    "save": "Simpan",
+    "cancel": "Batal",
+    "select": "Pilih",
+    "change": "Ganti",
+    "sideBar": {
+      "credit": "Kredit",
+      "newOrder": "Pesanan Baru"
+    },
+    "mainMenu": {
+      "account": "Informasi Akun",
+      "customBranding": "Opsi Merek",
+      "profile": "Informasi Profil",
+      "billing": "Informasi penagihan & bank",
+      "services": "Jasa",
+      "notifications": "Notifikasi",
+      "apiIntegration": "Integrasi API",
+      "changeEmailAddress": "Mengganti alamat email",
+      "changePhoneNo": "Ubah nomor telepon",
+      "changePassword": "Ganti kata sandi"
+    }
+  }
+}

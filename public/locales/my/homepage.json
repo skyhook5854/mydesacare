@@ -1,0 +1,39 @@
+{
+  "content": {
+    "banner-fresh-look": "Kami telah melancarkan penampilan baharu untuk portal web kami!",
+    "what-new": "Lihat perkara baharu",
+    "welcome": "Hai, {{username}}!",
+    "instantQuote": {
+      "title": "Sebut harga segera",
+      "submitBtn": "Sebut harga",
+      "book": "Tempah"
+    },
+    "newOrder": {
+      "title": "Pesanan baru",
+      "menu1": "Pesanan tunggal",
+      "menu2": "Pesanan pukal",
+      "menu3": "Proses pesanan pukal"
+    },
+    "sideBar": {
+      "credit": "Kredit",
+      "newOrder": "Pesanan Baru"
+    },
+    "locationTypeDropdown": {
+      "address": "Alamat",
+      "zipcode": "Poskod",
+      "country": "Negara",
+      "city": "Bandar"
+    },
+    "feeds": {
+      "title": "Berita terkini",
+      "more": "Baca lebih lanjut"
+    },
+    "stats": {
+      "pending": "Pending",
+      "current": "Current",
+      "completed": "Completed",
+      "creditBalance": "Credit Balance",
+      "orders": "orders"
+    }
+  }
+}

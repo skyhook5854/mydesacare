@@ -1,0 +1,17 @@
+{
+  "en_US": {
+    "label": "English (US)",
+    "antd_config_label": "en_US"
+  },
+  "zh_CN": {
+    "label": "Chinese (simplified)",
+    "antd_config_label": "zh_CN"
+  },
+  "id_ID": {
+    "label": "Indonesian",
+    "antd_config_label": "id_ID"
+  },
+  "my": {
+    "label": "Malay"
+  }
+}

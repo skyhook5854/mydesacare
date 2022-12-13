@@ -1,0 +1,223 @@
+{
+  "content": {
+    "header": {
+      "title": "Pesanan",
+      "export": "Eksport",
+      "newOrder": "Pesanan Baru"
+    },
+    "tableContent": {
+      "tab0": "Baru",
+      "tab1": "Belum selesai",
+      "tab2": "Semasa",
+      "tab3": "Selesai",
+      "tab4": "Dibatalkan",
+      "tab5": "Semua",
+      "search": "Cari",
+      "orderNo": "Nombor pesanan",
+      "filters": "Saring",
+      "selected": "Dipilih",
+      "selectAll": "Pilih semua",
+      "orders": "Pesanan",
+      "services": "Servis",
+      "action": "Tindakan",
+      "printLabel": "Cetak label",
+      "track": "Menjejak",
+      "cancel": "Batal",
+      "refresh": "Refresh quote",
+      "items": "Barang"
+    },
+    "newOrder": {
+      "title": "Pesanan Baru",
+      "senderDetail": "1. Maklumat pengirim",
+      "receiverDetail": "2. Maklumat penerima",
+      "form": {
+        "form": "Borang",
+        "copyPaste": "Salin & Tampal",
+        "fullName": "Nama",
+        "email": "E-mel",
+        "mobile": "Nombor Telefon",
+        "address": "Alamat",
+        "address1": "Alamat 1",
+        "address2": "Alamat 2",
+        "postcode": "Poskod",
+        "city": "Bandar",
+        "state": "Negeri",
+        "country": "Negara",
+        "companyName": "Nama Syarikat"
+      },
+      "itemDetail": "3. Butiran barang",
+      "item": {
+        "itemType": "Jenis Barang",
+        "itemWeight": "Berat barang (Kg)",
+        "itemQuantity": "Kuantiti barang",
+        "itemValue": "Nilai barang",
+        "itemDetail": "Butiran barang",
+        "itemWeightNotice": "Elakkan surcaj kerana berat yang salah diisytiharkan. Caj kurier pada berat sebenar (kg) atau berat isipadu (kg), yang mana lebih tinggi. Berat isipadu (kg) = panjang (cm) x lebar (cm) x tinggi (cm) / 5000.",
+        "note": "Notes"
+      },
+      "readyDateTime": "4. Tarikh dan masa siap pembungkusan",
+      "ready": {
+        "date": "Tarikh",
+        "time": "Masa"
+      },
+      "chooseService": "5. Pilih perkhidmatan",
+      "service": {
+        "service": "Servis",
+        "selectService": "Pilih servis",
+        "serviceInfo": "Maklumat Servis",
+        "addOns": "Tambahan",
+        "paymentMethod": "Pilih cara pembayaran",
+        "totalPrice": "Jumlah keseluruhan"
+      },
+      "searchAddressBook": "Cari buku alamat",
+      "next": "Seterusnya",
+      "footer": {
+        "saveAndAdd": "Simpan & tambah yang lain",
+        "savedraft": "Menyimpan draf",
+        "confirmOrder": "Mengesahkan pesanan"
+      }
+    },
+    "bulkOrder": {
+      "title": "Draf",
+      "title1": "Import pesanan pukal",
+      "confirmOrder": "Pesan",
+      "confirmOrders": "Pesan",
+      "senderInfo": "Maklumat pengirim",
+      "dateAndTime": "Tarikh dan masa siap pembungkusan",
+      "date": "Tarikh",
+      "time": "Masa",
+      "thankYou": "Terima kasih. Pesanan anda telah dihantar."
+    },
+    "orderDetail": {
+      "title": "Pesanan",
+      "dropdown": {
+        "action": "Tindakan",
+        "trackOrder": "Jejak pesanan",
+        "printLabel": "Cetak label",
+        "printLabelA4": "Cetak label A4-3",
+        "printLabelA42": "Cetak label A4-Q3",
+        "printLabelA5": "Cetak label A5-2",
+        "printLabelA6": "Cetak label A6-1",
+        "cancel": "Batalkan",
+        "clone": "Clone",
+        "printInvoice": "Cetak invois"
+      },
+      "date": "Tarikh",
+      "service": "Perkhidmatan",
+      "price": "Harga",
+      "status": "Status",
+      "overview": "Rumusan",
+      "customerInfo": {
+        "title": "Maklumat pelanggan",
+        "name": "Nama",
+        "phone": "Nombor telefon",
+        "email": "E-mel"
+      },
+      "serviceInfo": {
+        "title": "Maklumat Perkhidmatan",
+        "service": "Servis",
+        "totalWeight": "Berat keseluruhan",
+        "totalPrice": "Harga keseluruhan",
+        "paymentStatus": "Status pembayaran",
+        "totalCollectCash": "Jumlah wang terkumpul",
+        "reconciliationStatus": "Status penyesuaian"
+      },
+      "iventory": {
+        "title": "Inventori",
+        "type": "Jenis",
+        "weight": "Berat",
+        "quantity": "Kuantiti",
+        "value": "Nilai",
+        "taxShipping": "Cukai + Penghantaran",
+        "total": "Jumlah keseluruhan"
+      }
+    },
+    "confirmOrderDialog": {
+      "error": "Ralat!",
+      "error1": "Tiada perkhidmatan yang tersedia untuk lokasi penerima ini.",
+      "error2": "Ralat lain.",
+      "error3": "Terdapat ralat dalam pesanan anda.",
+      "overrideSender": "Menimpa butiran pengirim."
+    },
+    "sideBar": {
+      "credit": "Kredit",
+      "newOrder": "Pesanan Baru"
+    },
+    "orderTableColumn": {
+      "orderNo": "Nombor pesanan",
+      "status": "Status",
+      "date": "Tarikh",
+      "scheduleDate": "Tarikh dijadualkan",
+      "sender": "Penghantar",
+      "recipient": "Penerima",
+      "address": "Alamat",
+      "service": "Servis",
+      "weight": "Berat",
+      "price": "Harga",
+      "action": "Tindakan"
+    },
+    "dialog": {
+      "cancelOrder": {
+        "title": "Batalkan order",
+        "text": {
+          "single": "Batalkan order ini?",
+          "multiple": "Batalkan semua order ini?"
+        }
+      },
+      "cloneOrder": {
+        "title": "Clone order",
+        "text": {
+          "single": "Clone this order?",
+          "multiple": "Clone these orders?"
+        }
+      },
+      "confirmCancel": {
+        "message": {
+          "single": "Pesanan dibatalkan",
+          "multiple": "Pesanan dibatalkan"
+        }
+      },
+      "orderSuccess": {
+        "title": "Pesanan anda telah berjaya diproses"
+      },
+      "confirmOrder": {
+        "title": {
+          "single": "Pesan",
+          "multiple": "Pesan"
+        }
+      },
+      "searchAddressBook": {
+        "title": "Cari buku alamat",
+        "search": "Cari",
+        "tableColumn": {
+          "name": "Nama",
+          "status": "Status",
+          "phoneNo": "Nombor telefon",
+          "address": "Alamat"
+        },
+        "contact": "Hubungi",
+        "select": "Pilih"
+      }
+    }
+  },
+  "orderForm": {
+    "checkout": {
+      "discountCode": "Kod diskaun",
+      "apply": "Tetapkan"
+    }
+  },
+  "newOrderForm": {
+    "copyPaste": {
+      "fullName": "Nama penuh",
+      "phone": "Telefon",
+      "email": "E-mel",
+      "company": "Syarikat",
+      "address1": "Alamat 1",
+      "address2": "Alamat 2",
+      "postcode": "Poskod",
+      "city": "Bandar",
+      "state": "Nyatakan",
+      "country": "Negara"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "content": {
+    "welcome": "Hai, {{username}}!",
+    "instantQuote": {
+      "title": "Kutipan instan",
+      "submitBtn": "Kutipan",
+      "book": "Memesan"
+    },
+    "newOrder": {
+      "title": "Pesanan baru",
+      "menu1": "Pesanan tunggal",
+      "menu2": "Pesanan massal",
+      "menu3": "Proses pesanan massal"
+    },
+    "sideBar":{
+      "credit": "Kredit",
+      "newOrder":"Pesanan Baru"
+    },
+    "locationTypeDropdown": {
+      "address": "Alamat",
+      "zipcode": "Kode Pos",
+      "country": "Negara",
+      "city": "Kota"
+    },
+    "feeds": {
+       "title": "Berita terbaru",
+       "more": "Lanjut"
+     },
+     "stats": {
+       "pending": "Pending",
+       "current": "Current",
+       "completed": "Completed",
+       "creditBalance": "Credit Balance",
+       "orders": "orders"
+     }
+  }
+}

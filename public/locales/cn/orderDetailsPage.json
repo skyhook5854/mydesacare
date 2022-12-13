@@ -1,0 +1,45 @@
+{
+  "serviceInformation": {
+    "title": "服务资讯",
+    "content": {
+      "service": "服务",
+      "totalWeight": "总重量",
+      "totalPrice": "总价",
+      "paymentStatus": "支付状态",
+      "totalCollectCash": "代收现金总额",
+      "reconciliationStatus": "对帐状态"
+    }
+  },
+  "contactInformation": {
+    "title": "联系信息",
+    "tableColumn": {
+      "category": "类别",
+      "name": "名称",
+      "phoneNumber": "电话号码",
+      "email": "电子邮件",
+      "address": "地址",
+      "postalCode": "邮政编码",
+      "country": "国家",
+      "totalCashCollected": "收现金总额",
+      "status": "状态",
+      "note": "Note",
+      "location": "位置"
+    }
+  },
+  "addons": {
+    "title": "添加附件",
+    "tableColumn": {
+      "name": "名称",
+      "quantity": "数量",
+      "value": "价值"
+    }
+  },
+  "activities": {
+    "title": "活动",
+    "tableColumn": {
+      "status": "状态",
+      "location": "位置",
+      "dateAndTime": "约会时间"
+    }
+  }
+}

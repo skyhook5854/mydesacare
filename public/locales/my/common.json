@@ -1,0 +1,73 @@
+{
+    "tableColumn": {
+      "": ""
+    },
+
+    "companyCode": "Kod Syarikat",
+    "companyID": "ID Syarikat",
+
+    "status": {
+      "success": "Berjaya",
+      "pending": "Dalam Proses",
+      "good": "Baik",
+      "warning": "Amaran"
+    },
+
+    "filter": {
+      "sort": "Sort",
+      "active": "Aktif",
+      "nactive": "Tidak Aktif"
+    },
+
+    "changeEmailAddress": {
+      "title": "Tukar alamat e-mel",
+      "currentEmail": "Alamat e-mel semasa anda adalah",
+      "limitEmailChange": "Anda telah mencapai had menukar alamat e-mel anda setiap hari.",
+      "update": "Alamat e-mel telah ditukar",
+      "form": {
+        "newEmailAddress": "Alamat email baru",
+        "change": "Tukar"
+      }
+    },
+    "changePhoneNo": {
+      "title": "Tukar nombor telefon",
+      "currentPhoneNo": "Nombor telefon semasa anda adalah",
+      "update": "Nombor telefon telah dikemaskini",
+      "form": {
+        "newPhoneNumber": "Nombor telefon baru",
+        "change": "Tukar"
+      }
+    },
+    "changePassword": {
+      "title": "Tukar kata laluan",
+      "currentPassword": "Kata laluan sekarang",
+      "newPassword": "Kata laluan baru",
+      "change": "Tukar"
+    },
+    "amount": "Jumlah",
+    "closingBalance": "Baki Terakhir",
+    "description": "Penerangan",
+    "refrenceNumber": "Nombor Rujukan",
+    "mobile": "No Telefon",
+    "newOrder": "Tambah Tempahan",
+    "number": "Nombor",
+    "upload": "Muat Naik",
+    "email": "E-mel",
+    "action": "Tindakan",
+    "search": "Cari",
+    "password": "Kata Laluan",
+    "edit": "Ubah",
+    "delete": "Hapus",
+    "done": "Siap",
+    "copy": "Salin",
+    "copied": "Disalin!",
+    "type": "Jenis",
+    "save": "Simpan",
+    "date": "Tarikh",
+    "change": "Tukar",
+    "update": "Update",
+    "updated": "Updated",
+    "cancel": "Batal",
+    "select": "Pilihan",
+    "selected": "Dipilih"
+  }

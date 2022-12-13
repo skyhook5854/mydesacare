@@ -1,0 +1,224 @@
+{
+  "content": {
+    "header": {
+      "title": "Pesanan",
+      "export": "Ekspor",
+      "newOrder": "Pesanan baru"
+    },
+    "tableContent": {
+      "tab0": "Baru",
+      "tab1": "Tertunda",
+      "tab2": "Sekarang",
+      "tab3": "Lengkap",
+      "tab4": "Batal",
+      "tab5": "Semua",
+      "search": "Cari",
+      "orderNo": "No Pesanan",
+      "filters": "Saring",
+      "selected": "dipilih",
+      "selectAll": "Pilih semua",
+      "orders": "Pesanan",
+      "services": "Jasa",
+      "action": "Tindakan",
+      "printLabel": "Cetak label",
+      "track": "Jejak",
+      "cancel": "Batal",
+      "refresh": "Refresh quote",
+      "items": "Barang"
+    },
+    "newOrder": {
+      "title": "Pesanan Baru",
+      "senderDetail": "1. Detail pengirim",
+      "receiverDetail": "2. Detail penerima",
+      "form": {
+        "form": "Bentuk",
+        "copyPaste": "Salin & Tampal",
+        "fullName": "Nama",
+        "email": "Email",
+        "mobile": "Nomor Telepon",
+        "address": "Alamat",
+        "address1": "Alamat 1",
+        "address2": "Alamat 2",
+        "postcode": "Kode Pos",
+        "city": "Bandar",
+        "state": "Negerabagian",
+        "country": "Negara",
+        "companyName": "Nama Syarikat"
+      },
+      "itemDetail": "3. Detail item",
+      "item": {
+        "itemType": "Jenis item",
+        "itemWeight": "Berat (kg)",
+        "itemQuantity": "Kuantitas item",
+        "itemValue": "Nilai item",
+        "itemDetail": "Detail item",
+        "itemWeightNotice": "Cegah biaya tambahan karena salah menyatakan berat badan. Biaya kurir berdasarkan berat aktual (kg) atau berat volumetrik (kg), mana saja yang lebih tinggi. Berat volumetrik (kg) = panjang (cm) x lebar (cm) x tinggi (cm) / 5000.",
+        "note": "Notes"
+
+      },
+      "readyDateTime": "4. Tanggal dan waktu penyelesaian pengemasan",
+      "ready": {
+        "date": "Tanggal",
+        "time": "Masa"
+      },
+      "chooseService": "5. Pilih jasa",
+      "service": {
+        "service": "Jasa",
+        "selectService": "Pilih jasa",
+        "serviceInfo": "Informasi jasa",
+        "addOns": "Pengaya,",
+        "paymentMethod": "Pilih cara pembayaran",
+        "totalPrice": "Total harga"
+      },
+      "searchAddressBook": "Cari buku alamat",
+      "next": "Lanjut",
+      "footer": {
+        "saveAndAdd": "Simpan & tambahkan yang lain",
+        "savedraft": "Simpan draf",
+        "confirmOrder": "Konfirmasi pesanan"
+      }
+    },
+    "bulkOrder": {
+      "title": "Draf",
+      "title1": "Impor pesanan massal",
+      "confirmOrder": "Pesan",
+      "confirmOrders": "Pesan",
+      "senderInfo": "Info pengirim",
+      "dateAndTime": "Tanggal dan waktu penyelesaian pengemasan",
+      "date": "Tanggal",
+      "time": "Waktu",
+      "thankYou": "Terima kasih. Pesanan nda telah dikirim."
+    },
+    "orderDetail": {
+      "title": "Pesanan",
+      "dropdown": {
+        "action": "Tindakan",
+        "trackOrder": "Lacak pesanan",
+        "printLabel": "Cetak label",
+        "printLabelA4": "Cetak label A4-3",
+        "printLabelA42": "Cetak label A4-Q3",
+        "printLabelA5": "Cetak label A5-2",
+        "printLabelA6": "Cetak label A6-1",
+        "cancel": "Batal",
+        "clone": "Clone",
+        "printInvoice": "Cetak invoice"
+      },
+      "date": "Tanggal",
+      "service": "Layanan",
+      "price": "Harga",
+      "status": "Status",
+      "overview": "Gambaran",
+      "customerInfo": {
+        "title": "Informasi pengguna",
+        "name": "Nama",
+        "phone": "Nomor telepon",
+        "email": "Surel"
+      },
+      "serviceInfo": {
+        "title": "Informasi layanan",
+        "service": "Layanan",
+        "totalWeight": "Berat keseluruhan",
+        "totalPrice": "Total harga",
+        "paymentStatus": "Status pembayaran",
+        "totalCollectCash": "Total mengumpulkan uang tunai",
+        "reconciliationStatus": "Status rekonsiliasi"
+      },
+      "iventory": {
+        "title": "Persediaan",
+        "type": "Tipe",
+        "weight": "Bobot",
+        "quantity": "Kuantitas",
+        "value": "Nilai",
+        "taxShipping": "Pajak + pengiriman",
+        "total": "Total"
+      }
+    },
+    "confirmOrderDialog": {
+      "error": "Ralaat!",
+      "error1": "Lokasi anda tidak ada di area layanan",
+      "error2": "Ralat lain",
+      "error3": "Pesanan anda salah",
+      "overrideSender": "Timpa detail pengirim"
+    },
+    "sideBar": {
+      "credit": "Kredit",
+      "newOrder": "Pesanan Baru"
+    },
+    "orderTableColumn": {
+      "orderNo": "Jumlah order",
+      "status": "Status",
+      "date": "Tanggal",
+      "scheduleDate": "Tanggal jadwal",
+      "sender": "Penghantar",
+      "recipient": "Penerima",
+      "address": "Alamat",
+      "service": "Layanan",
+      "weight": "Bobot",
+      "price": "Harga",
+      "action": "Tindakan"
+    },
+    "dialog": {
+      "cancelOrder": {
+        "title": "Batalkan pesanan",
+        "text": {
+          "single": "Batalkan pesanan ini?",
+          "multiple": "Batalkan semua pesanan ini?"
+        }
+      },
+      "cloneOrder": {
+        "title": "Clone order",
+        "text": {
+          "single": "Clone this order?",
+          "multiple": "Clone these orders?"
+        }
+      },
+      "confirmCancel": {
+        "message": {
+          "single": "Pesanan dibatalkan",
+          "multiple": "Pesanan dibatalkan"
+        }
+      },
+      "orderSuccess": {
+        "title": "Pesanan anda telah diproses"
+      },
+      "confirmOrder": {
+        "title": {
+          "single": "Pesan",
+          "multiple": "Pesan"
+        }
+      },
+      "searchAddressBook": {
+        "title": "Cari buku alamat",
+        "search": "Cari",
+        "tableColumn": {
+          "name": "Nama",
+          "status": "Status",
+          "phoneNo": "Nomor telepon",
+          "address": "Alamat"
+        },
+        "contact": "Kontak",
+        "select": "Pilih"
+      }
+    }
+  },
+  "orderForm": {
+    "checkout": {
+      "discountCode": "Kod diskaun",
+      "apply": "Tetapkan"
+    }
+  },
+  "newOrderForm": {
+    "copyPaste": {
+      "fullName": "Nama lengkap",
+      "phone": "Telepon",
+      "email": "Surel",
+      "company": "Perusahaan",
+      "address1": "Alamat 1",
+      "address2": "Alamat 2",
+      "postcode": "Kode Pos",
+      "city": "Kota",
+      "state": "Negeri",
+      "country": "Negara"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "customizedModal": {
+    "confirm": "Confirm",
+    "cancel": "Cancel"
+  },
+  "dateFilter": {
+    "filterValue": {
+      "allTime": "All time",
+      "today": "Today",
+      "yesterday": "Yesterday",
+      "tomorrow": "Tomorrow",
+      "lastWeek": "Last week",
+      "lastMonth": "Last month",
+      "lastYear": "Last year",
+      "thisWeek": "This week",
+      "thisMonth": "This month",
+      "thisYear": "This year"
+    }
+  }
+}

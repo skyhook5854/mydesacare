@@ -1,0 +1,44 @@
+{
+  "content": {
+    "title": "Mengundang rakan dan terima penghasilan",
+    "subTitle": "Hantar undangan dan terima penghasilan apabila rakan anda menggunakan platform Delyva",
+    "earnings": {
+      "lastMonth": "30 Hari Terakhir",
+      "month": {
+        "name": "Bulanan",
+        "january": "Januari",
+        "february": "februari"
+      },
+      "totalSuccess": "Jumlah berjaya dijemput",
+      "totalEarnings": "Jumlah Pendapatan",
+      "totalPending": "Jumlah Belum Selesai"
+    },
+    "form": {
+      "email": "E-mel",
+      "sendInvites": "Hantar undangan",
+      "via": "Atau hantar undangan melalui",
+      "search": "Cari barang"
+    },
+    "tabs": {
+      "referrals": "Undangan",
+      "earnings": "Penghasilan"
+    },
+    "tableColumn": {
+      "name": "Nama",
+      "regEmail": "E-mel Berdaftar",
+      "status": "Status",
+      "earnings": "Penghasilan"
+    },
+    "filter": {
+      "name": "Filter",
+      "sort": "Jenis",
+      "active": "Aktif",
+      "inactive": "Tidak aktif",
+      "status": {
+        "name": "Status",
+        "success": "Sukses",
+        "pending": "Belum selesai"
+      }
+    }
+  }
+}

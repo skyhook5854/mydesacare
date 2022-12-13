@@ -1,0 +1,45 @@
+{
+  "serviceInformation": {
+    "title": "Informasi Layanan",
+    "content": {
+      "service": "Layanan",
+      "totalWeight": "Berat keseluruhan",
+      "totalPrice": "Total harga",
+      "paymentStatus": "Status pembayaran",
+      "totalCollectCash": "Total mengumpulkan uang tunai",
+      "reconciliationStatus": "Status rekonsiliasi"
+    }
+  },
+  "contactInformation": {
+    "title": "Kontak informasi",
+    "tableColumn": {
+      "category": "Kategori",
+      "name": "Nama",
+      "phoneNumber": "Nomor telepon",
+      "email": "Surel",
+      "address": "Alamat",
+      "postalCode": "Kode Pos",
+      "country": "Negara",
+      "totalCashCollected": "Total uang tunai yang terkumpul",
+      "status": "Status",
+      "note": "Nota",
+      "location": "Lokasi"
+    }
+  },
+  "addons": {
+    "title": "Pengaya",
+    "tableColumn": {
+      "name": "Nama",
+      "quantity": "Kuantitas",
+      "value": "Nilai"
+    }
+  },
+  "activities": {
+    "title": "Kegiatan",
+    "tableColumn": {
+      "status": "Status",
+      "location": "Lokasi",
+      "dateAndTime": "Tanggal Waktu"
+    }
+  }
+}

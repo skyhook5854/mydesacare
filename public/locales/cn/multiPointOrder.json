@@ -1,0 +1,42 @@
+{
+  "orderDetails": {
+    "backLink": "订购",
+    "pageTitle": "新的多点订单",
+    "serviceUnavailable": "暂停服务",
+    "chooseVehicle": "选择车辆",
+    "manageRoutes": "管理路线（最多30停）",
+    "editAddress": "修改地址",
+    "delete": "删除",
+    "addDestination": "添加目的地",
+    "deliveryInfo": {
+      "title": "送货信息",
+      "name": "名称",
+      "phone": "电话号码",
+      "unitNo": "地块/楼层/单位"
+    },
+    "addServices": "额外服务",
+    "addOns": "附加组件",
+    "totalPrice": "总价",
+    "next": "下一个",
+    "errors": {
+      "nameIsRequired": "名称为必填项",
+      "phoneIsRequired": "需要电话"
+    }
+  },
+  "confirmOrder": {
+    "backLink": "订单详细信息",
+    "pageTitle": "确认订单",
+    "contactDetails": "交货和联系方式",
+    "date": "日期",
+    "time": "时间",
+    "deliveryNotes": "交货单",
+    "notes": "笔记",
+    "paymentOption": "付款方式",
+    "selectPaymentMethod": "选择付款方式",
+    "discountCode": "优惠码",
+    "apply": "应用",
+    "totalPrice": "总价",
+    "back": "背部",
+    "confirmOrder": "确认订单"
+  }
+}

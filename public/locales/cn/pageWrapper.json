@@ -1,0 +1,25 @@
+{
+  "sidebarMenus": {
+    "home": "家",
+    "new": "草案",
+    "orders": "命令",
+    "address-book": "地址簿",
+    "billing": "开票",
+    "payment": "充值",
+    "settings": "设定",
+    "analytics": "分析工具",
+    "earn": "推荐并赚钱",
+    "ecommerce": "整合"
+  },
+  "sidebarOrderMenus": {
+    "singleOrder": "单笔订单",
+    "bulkOrders": "批量订单",
+    "processBulkOrders": "处理批量订单"
+  },
+  "rightMenus": {
+    "settings": "设定",
+    "logout": "登出"
+  },
+  "credit": "信用",
+  "newOrder":"新命令"
+}

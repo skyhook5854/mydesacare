@@ -1,0 +1,45 @@
+{
+  "header": {
+    "pageTitleTopup": "Baki yang ada",
+    "export": "Ekspor",
+    "refresh": "Muat semula",
+    "makePayment": "Buat bayaran",
+    "change": "Ganti"
+  },
+  "content": {
+    "header": {
+      "newOrder": "Pesanan Baru"
+    },
+    "topupTabs": {
+      "topupAmount": "Jumlah top up",
+      "paymentMethod": "Cara Pembayaran",
+      "confirmation": "Konfirmasi",
+      "paymentStatus": "Status pembayaran",
+      "total": "Total"
+    },
+    "topupForm": {
+      "enterAmount": "Masukan jumlah",
+      "select": "Pilih",
+      "topupNow": "Isi sekarang"
+    },
+    "topupConfirmation": {
+      "topupSummary": "Ringkasan topup",
+      "credit": "kredit",
+      "confirmPayment": "Konfirmasi pembayaran"
+    },
+    "topupSuccess": {
+      "paymentPending": "Pembayaran tertunda",
+      "topupPage": "Halaman Top Up"
+    },
+    "sideBar": {
+      "credit": "Kredit",
+      "newOrder": "Pesanan Baru"
+    },
+    "topupTab": {
+      "topupAmount": "Jumlah topup",
+      "paymentMethod": "Cara Pembayaran",
+      "confirmation": "Konfirmasi",
+      "paymentStatus": "Status pembayaran"
+    }
+  }
+}

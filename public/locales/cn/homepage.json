@@ -1,0 +1,39 @@
+{
+  "content": {
+    "banner-fresh-look": "Kami telah melancarkan penampilan baharu untuk portal web kami!",
+    "what-new": "Lihat perkara baharu",
+    "welcome": "你好, {{username}}!",
+    "instantQuote": {
+      "title": "即时报价",
+      "submitBtn": "引用",
+      "book": "下订单"
+    },
+    "newOrder": {
+      "title": "新命令",
+      "menu1": "单笔订单",
+      "menu2": "Bulk orders",
+      "menu3": "批量订单"
+    },
+    "sideBar": {
+      "credit": "信用",
+      "newOrder": "新命令"
+    },
+    "locationTypeDropdown": {
+      "address": "地址",
+      "zipcode": "邮政编码",
+      "country": "国家",
+      "city": "市"
+    },
+    "feeds": {
+      "title": "最新消息",
+      "more": "阅读更多"
+    },
+    "stats": {
+      "pending": "Pending",
+      "current": "Current",
+      "completed": "Completed",
+      "creditBalance": "Credit Balance",
+      "orders": "orders"
+    }
+  }
+}

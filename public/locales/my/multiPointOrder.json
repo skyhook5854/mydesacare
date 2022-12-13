@@ -1,0 +1,42 @@
+{
+  "orderDetails": {
+    "backLink": "Pesanan",
+    "pageTitle": "Pesanan berbilang titik baru",
+    "serviceUnavailable": "Perkhidmatan tidak tersedia",
+    "chooseVehicle": "Pilih kenderaan",
+    "manageRoutes": "Urus laluan (MAX 30 HENTIAN)",
+    "editAddress": "Edit alamat",
+    "delete": "Padam",
+    "addDestination": "Tambahkan destinasi",
+    "deliveryInfo": {
+      "title": "Maklumat penghantaran",
+      "name": "Nama",
+      "phone": "Nombor telefon",
+      "unitNo": "Blok / Unit"
+    },
+    "addServices": "Perkhidmatan tambahan",
+    "addOns": "Tambah",
+    "totalPrice": "Harga keseluruhan",
+    "next": "Seterusnya",
+    "errors": {
+      "nameIsRequired": "Nama diperlukan",
+      "phoneIsRequired": "Telefon diperlukan"
+    }
+  },
+  "confirmOrder": {
+    "backLink": "Maklumat pesanan",
+    "pageTitle": "Mengesahkan pesanan",
+    "contactDetails": "Maklumat penghantaran & perhubungan",
+    "date": "Tarikh",
+    "time": "Masa",
+    "deliveryNotes": "Nota penghantaran",
+    "notes": "Catatan",
+    "paymentOption": "Pilihan pembayaran",
+    "selectPaymentMethod": "Pilih kaedah pembayaran",
+    "discountCode": "Kod diskaun",
+    "apply": "Memohon",
+    "totalPrice": "Harga keseluruhan",
+    "back": "Belakang",
+    "confirmOrder": "Mengesahkan pesanan"
+  }
+}

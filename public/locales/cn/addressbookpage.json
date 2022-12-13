@@ -1,0 +1,46 @@
+{
+  "content": {
+    "pageTitleAddress": "通讯录",
+    "header": {
+      "export": "导出",
+      "addNewContact": "添加新联系人",
+      "save": "保存",
+      "newOrder": "新订单",
+      "tab1": "所有"
+    },
+    "form": {
+      "title": "新联系人",
+      "contactInformation": "联系信息",
+      "fullName": "全名",
+      "email": "电子邮件",
+      "mobile": "电话号码",
+      "unitNo": "Unit no",
+      "address": "地址",
+      "address1": "地址 1",
+      "address2": "地址 2",
+      "postcode": "邮政编码",
+      "city": "城市",
+      "state": "州",
+      "country": "国家"
+    },
+    "sideBar": {
+      "credit": "余额",
+      "newOrder": "新订单"
+    },
+    "deleteContact": {
+      "delete": "删除联系人",
+      "delete1": "是否删除此联系人？",
+      "confirm": "确认",
+      "success": "联系人已删除"
+    },
+    "addressBookTableColumn": {
+      "name": "名称",
+      "status": "状态",
+      "email": "电子邮件",
+      "phoneNum": "电话号码",
+      "address": "地址",
+      "action": "行动"
+    },
+    "contact": "联系"
+  }
+}

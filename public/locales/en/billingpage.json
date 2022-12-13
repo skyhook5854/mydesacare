@@ -1,0 +1,54 @@
+{
+  "content": {
+    "header": {
+      "export": "Export",
+      "status": "Status",
+      "dateTime": "Date & time",
+      "category": "Category",
+      "description": "Description",
+      "amount": "Amount",
+      "tax": "Tax",
+      "action": "Action",
+      "tab1": "All"
+    },
+    "tabs": {
+      "transaction": "Transactions",
+      "receipts": "Receipts",
+      "invoice": "Invoice",
+      "creditNotes": "Credit notes"
+    },
+    "pageTransaction": {
+      "Transaction": "Transaction",
+      "transactionNo": "Transaction No",
+      "status1": "Pending",
+      "status2": "Success",
+      "status3": "Fail"
+    },
+    "pageInvoice": {
+      "Invoice": "Invoice",
+      "invoiceNo": "Invoice No",
+      "status1": "Unpaid",
+      "status2": "Paid",
+      "view": "View",
+      "invoice": "invoice(s)"
+    },
+    "sideBar": {
+      "credit": "Credit",
+      "newOrder": "New Order"
+    },
+    "transactionTable": {
+      "Amount": "Amount",
+      "type": "Type",
+      "refrenceNumber": "Refrence Number",
+      "closingBalance": "Closing Balance",
+      "transactionNum": "Transaction no",
+      "status": "Status",
+      "dateAndTime": "Date & time",
+      "category": "Category",
+      "description": "Description",
+      "amount": "Amount",
+      "tax": "Tax",
+      "transaction": "Transaction"
+    }
+  }
+}

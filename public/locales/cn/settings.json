@@ -1,0 +1,189 @@
+{
+  "content": {
+    "pageTitle": "设置",
+    "logout": "登出",
+    "header": {
+      "newOrder": "新订单"
+    },
+    "accountInfo": {
+      "title": "帳戶信息",
+      "personalAccount": "Personal Account",
+      "businessAccount": "Business Account",
+      "profilePhoto": "个人头像",
+      "profilePhoto1": "推荐尺寸:",
+      "profilePhoto2": ">200x200px 支持的文件格式：JPG、PNG 或 GIF",
+      "upload": "上传",
+      "name": "名字",
+      "email": "电子邮件",
+      "mobile": "电话号码",
+      "update": "已更新",
+      "form": {
+        "businessName": "企业名称",
+        "businessRegistration": "商业登记号",
+        "businessType": "业务类型",
+        "businessIndustry": "商业行业",
+        "dob": " 成立日期",
+        "websiteUrl": "网站网址",
+        "unitNumber": "单位编号"
+      }
+    },
+    "customBranding": {
+      "title": "自定义品牌",
+      "companyLogo": "照片或公司标志",
+      "uploadfile": "上传文件",
+      "dnd": "或拖放",
+      "brandingColor": "主要标志/品牌颜色"
+    },
+    "security": {
+      "title": "安全"
+    },
+    "profileInfo": {
+      "title": "檔案信息",
+      "type": "類型",
+      "businessName": "全名 / 公司名称",
+      "identificationNo": "身份证号码 / 商业登记号码",
+      "email": "电子邮件",
+      "mobile": "电话号码",
+      "dateOfIncorporation": "D.O.B / 成立日期",
+      "industry": "行业",
+      "websiteUrl": "网址",
+      "defaultLabelType": "默认标签类型",
+      "language": "语言",
+      "update": "已更新"
+    },
+    "addressInfo": {
+      "title": "地址信息",
+      "address": "地址",
+      "postcode": "邮政编码",
+      "city": "城市",
+      "state": "州",
+      "country": "国家"
+    },
+    "billingInfo": {
+      "title": "账单信息",
+      "billingName": "开票名称",
+      "address": "地址",
+      "postcode": "邮政编码",
+      "city": "城市",
+      "state": "州",
+      "country": "国家",
+      "billingEmail": "开票电子邮件",
+      "update": "已更新账单和银行信息"
+    },
+    "bankInfo": {
+      "title": "银行信息",
+      "bankName": "银行名称",
+      "bankSwiftCode": "银行代码",
+      "bankAccountNo": "银行帐号",
+      "bankAccountName": "银行帐号名称"
+    },
+    "services": {
+      "title": "服务供应商",
+      "updated": "已更新服务供应商"
+    },
+    "notification": {
+      "title": "通知事項",
+      "receiveNewsletter": "接收时事通讯（重要公告、促销等",
+      "pushNotification": "推送通知",
+      "emailNotification": "电子邮件通知",
+      "smsNotification": "短信通知",
+      "smsRecipient": "短信通知收件人",
+      "notifyOrderStatus": "通知我每笔订单状态",
+      "notifyReceiverOrderStatus": "通知收货人每个订单状态",
+      "update": "已更新通知事項设置",
+      "instabookNotifySender": "通知我 Instabook 订单",
+      "instabookNotifyReceiver": "通知接收者 Instabook 订单",
+      "newInvoice": "通知我新的未付发票",
+      "paidInvoice": "通知我已付发票",
+      "email": "电子邮件",
+      "sms": "短信",
+      "notification": "通知",
+      "notice": "通知费用将包含在运费中"
+    },
+    "integration": {
+      "title": "API整合",
+      "apiDocumentation": "API 文件",
+      "addNewKey": "添加新密钥",
+      "companyID": "公司编号",
+      "userID": "用戶身份",
+      "customerID": "顾客ID",
+      "addNewEndpoint": "添加新端点",
+      "createKey": "创建API密钥",
+      "apiKeyName": "API密钥名称",
+      "createView": "创建和查看",
+      "createAPI": "API密钥已创建",
+      "createMessage": "请复制并保存在其他地方。",
+      "createWarn": "出于安全原因，我们无法再次向您显示。",
+      "delete": "删除",
+      "done": "完成了",
+      "copy": "复制",
+      "copied": "复制的!",
+      "tableColumn": {
+        "name": "名称",
+        "key": {
+          "name": "API密钥",
+          "content": "为了安全起见，我们不允许显示键值"
+        },
+        "status": "状态",
+        "action": "行动"
+      },
+      "dialog": {
+        "revoke": {
+          "name": "撤消",
+          "title": "撤销API密钥",
+          "text1": "确定要撤消吗 ",
+          "text2": " api键"
+        }
+      }
+    },
+    "changeEmailAddress": {
+      "title": "更改电子邮件地址",
+      "currentEmail": "您当前的电子邮件地址是",
+      "limitEmailChange": "您已达到每日更改电子邮件地址的限制次数。",
+      "update": "电子邮件地址已更改",
+      "form": {
+        "newEmailAddress": "新的电子邮件地址",
+        "change": "更改"
+      }
+    },
+    "changePhoneNo": {
+      "title": "更改电话号码",
+      "currentPhoneNo": "您当前的电话号码是",
+      "update": "手机号码已更新",
+      "form": {
+        "newPhoneNumber": "新电话号码",
+        "change": "更改"
+      }
+    },
+    "changePassword": {
+      "title": "更改密码",
+      "currentPassword": "当前密码",
+      "newPassword": "新密码",
+      "change": "更改"
+    },
+    "status": {
+      "good": "好的",
+      "warning": "警告"
+    },
+    "save": "保存",
+    "cancel": "取消",
+    "select": "已选",
+    "change": "更改",
+    "sideBar": {
+      "credit": "余额",
+      "newOrder": "新订单"
+    },
+    "mainMenu": {
+      "account": "帐户信息",
+      "customBranding": "品牌选项",
+      "profile": "档案信息",
+      "billing": "帐单和银行信息",
+      "services": "服务",
+      "notifications": "通知事项",
+      "apiIntegration": "API整合",
+      "changeEmailAddress": "更改电子邮件地址",
+      "changePhoneNo": "更改电话号码",
+      "changePassword": "更改密码"
+    }
+  }
+}

@@ -1,0 +1,200 @@
+{
+  "content": {
+    "pageTitle": "Pengaturan",
+    "logout": "Log Keluar",
+    "accountInfo": {
+      "title": "Maklumat Akaun",
+      "personalAccount": "Akaun Peribadi",
+      "businessAccount": "Akaun Perniagaan",
+      "profilePhoto": "Gambar profil",
+      "profilePhoto1": "Saiz yang disyorkan:",
+      "profilePhoto2": "200x200px Format fail yang disokong: JPG,PNG atau GIF",
+      "upload": "Muat naik",
+      "name": "Nama",
+      "email": "E-mel",
+      "mobile": "Nombor Telefon",
+      "update": "Kemaskini",
+      "form": {
+        "businessName": "Nama perniagaan",
+        "businessRegistration": "Nombor pendaftaran perniagaan",
+        "businessType": "Jenis perniagaan",
+        "businessIndustry": "Industri perniagaan",
+        "dob": "Tarikh diperbadankan",
+        "websiteUrl": "Laman web",
+        "unitNumber": "Nombor unit"
+      }
+    },
+    "customBranding": {
+      "title": "Pilihan jenama",
+      "companyLogo": "Gambar atau lambang",
+      "uploadfile": "Upload a file",
+      "dnd": "atau seret dan lepas ",
+      "brandingColor": "Warna jenama"
+    },
+    "security": {
+      "title": "Keselamatan"
+    },
+    "profileInfo": {
+      "title": "Maklumat Profil",
+      "type": "Jenis",
+      "businessName": "Nama Penuh / Nama Perniagaan",
+      "identificationNo": "No. Pengenalan / No. Pendaftaran Perniagaan",
+      "email": "E-mel",
+      "mobile": "Nombor Telefon",
+      "dateOfIncorporation": "D.O.B / Tarikh diperbadankan",
+      "industry": "Industri",
+      "websiteUrl": "URL laman web",
+      "defaultLabelType": "Jenis label standard",
+      "language": "Bahasa",
+      "update": "Kemaskini"
+    },
+
+    "addressInfo": {
+      "title": "Maklumat Alamat",
+      "address": "Alamat",
+      "postcode": "Poskod",
+      "city": "Bandar",
+      "state": "Negeri",
+      "country": "Negara"
+    },
+    "billingInfo": {
+      "title": "Maklumat Bil",
+      "billingName": "Nama Pengebilan",
+      "address": "Alamat",
+      "postcode": "Poskod",
+      "city": "Bandar",
+      "state": "Negeri",
+      "country": "Negara",
+      "billingEmail": "E-mel Pengebilan",
+      "update": "Maklumat pengebilan dan bank dikemaskini"
+    },
+    "bankInfo": {
+      "title": "Maklumat Bank",
+      "bankName": "Nama Bank",
+      "bankSwiftCode": "Kod SWIFT bank",
+      "bankAccountNo": "No akaun bank",
+      "bankAccountName": "Nama akaun bank"
+    },
+    "services": {
+      "title": "Penyedia Perkhidmatan",
+      "updated": "Penyedia perkhidmatan dikemas kini.",
+      "totalSuccessfulRefrrals": "Jumlah berjaya dijemput",
+      "totalPendingRefrrals": "Jumlah belum selesai ",
+      "totalEarnings": "Jumlah pendapatan"
+    },
+    "notification": {
+      "title": "Pemberitahuan",
+      "receiveNewsletter": "Terima Newsletter (pengumuman penting, promosi, dll)",
+      "pushNotification": "Pemberitahuan",
+      "emailNotification": "Pemberitahuan e-mel",
+      "smsNotification": "Notifikasi SMS",
+      "smsRecipient": "Notifikasi SMS penerima",
+      "notifyOrderStatus": "Beritahu saya setiap status pesanan",
+      "notifyReceiverOrderStatus": "Beritahu penerima setiap status pesanan",
+      "update": "Tetapan pemberitahuan dikemaskini",
+      "instabookNotifySender": "Beritahu saya untuk pesanan Instabook",
+      "instabookNotifyReceiver": "Beritahu penerima untuk pesanan Instabook",
+      "newInvoice": "Beritahu saya untuk invois baru yang belum dibayar",
+      "paidInvoice": "Beritahu saya untuk invois yang dibayar",
+      "email": "emel",
+      "sms": "SMS",
+      "notification": "notifikasi",
+      "notice": "Caj notifikasi akan dimasukkan dalam harga penghantaran"
+    },
+    "integration": {
+      "title": "Integrasi API",
+      "apiDocumentation": "API dokumentasi",
+      "addNewKey": "Tambah kunci baru",
+      "companyCode": "Kod syarikat",
+      "companyID": "ID Syarikat",
+      "userID": "ID Pengguna",
+      "customerID": "ID Pelanggan",
+      "createKey": "Buat kunci API",
+      "addNewEndpoint": "Tambah endpoint baru",
+      "apiKeyName": "Nama kunci API",
+      "createView": "Buat & lihat",
+      "createAPI": "Kunci API berjaya dibuat",
+      "createMessage": "Sila salin dan simpan di tempat lain.",
+      "createWarn": "Atas sebab keselamatan, kami tidak dapat menunjukkannya lagi kepada anda.",
+      "edit": "Ubah",
+      "delete": "Hapus",
+      "done": "Selesai",
+      "copy": "Salin",
+      "copied": "Disalin!",
+      "tableColumn": {
+        "name": "Nama",
+        "endpoint": "Endpoint",
+        "eventType": "Jenis Program",
+        "key": {
+          "name": "Kunci API",
+          "content": "Untuk tujuan keselamatan, kami tidak membenarkan nilai kunci dipaparkan."
+        },
+        "status": "Status",
+        "action": "Tindakan"
+      },
+      "dialog": {
+        "revoke": {
+          "name": "Membatalkan",
+          "title": "Cabut kunci API",
+          "text1": "Adakah anda pasti mahu mencabut",
+          "text2": " kunci api?"
+        }
+      }
+    },
+    "changeEmailAddress": {
+      "title": "Tukar alamat e-mel",
+      "currentEmail": "Alamat e-mel semasa anda adalah",
+      "limitEmailChange": "Anda telah mencapai had menukar alamat e-mel anda setiap hari.",
+      "update": "Alamat e-mel telah ditukar",
+      "form": {
+        "newEmailAddress": "Alamat email baru",
+        "change": "Tukar"
+      }
+    },
+    "changePhoneNo": {
+      "title": "Tukar nombor telefon",
+      "currentPhoneNo": "Nombor telefon semasa anda adalah",
+      "update": "Nombor telefon telah dikemaskini",
+      "form": {
+        "newPhoneNumber": "Nombor telefon baru",
+        "change": "Tukar"
+      }
+    },
+    "changePassword": {
+      "title": "Tukar kata laluan",
+      "currentPassword": "Kata laluan sekarang",
+      "newPassword": "Kata laluan baru",
+      "change": "Tukar"
+    },
+    "status": {
+      "good": "Baik",
+      "warning": "Amaran"
+    },
+    "phoneNumber": "No Telefon",
+    "newPhoneNumber": "No Telefon baru",
+    "email": "E-mel",
+    "newEmail": "E-mel baru",
+    "password": "Kata laluan",
+    "cancel": "Batal",
+    "save": "Simpan",
+    "saveChanges": "Ubah & Simpan ",
+    "select": "Pilih",
+    "change": "Tukar",
+    "sideBar": {
+      "credit": "Kredit",
+      "newOrder": "Pesanan Baru"
+    },
+    "mainMenu": {
+      "account": "Maklumat Akaun",
+      "customBranding": "Pilihan Jenama",
+      "profile": "Maklumat Profil",
+      "billing": "Maklumat bil & bank",
+      "services": "Perkhidmatan",
+      "notifications": "Pemberitahuan",
+      "apiIntegration": "Integrasi API",
+      "changeEmailAddress": "Tukar alamat emel",
+      "changePhoneNo": "Tukar nombor telefon",
+      "changePassword": "Tukar kata laluan"
+    }
+  }
+}

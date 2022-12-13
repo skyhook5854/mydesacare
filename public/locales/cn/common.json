@@ -1,0 +1,71 @@
+{
+  "content": {
+    "tableColumn": {
+      "": ""
+    },
+
+    "companyCode": "Company Code",
+    "companyID": "Company ID",
+
+    "status": {
+      "success": "Success",
+      "pending": "Pending",
+      "good": "Good",
+      "warning": "Warning"
+    },
+
+    "filter": {
+      "sort": "Sort",
+      "active": "Active",
+      "nactive": "Inactive"
+    },
+
+    "changeEmailAddress": {
+      "title": "Change email address",
+      "currentEmail": "Your current email address is",
+      "limitEmailChange": "You have reach your limit to change email!",
+      "update": "Email address has been changed",
+      "form": {
+        "newEmailAddress": "New email address",
+        "change": "Change"
+      }
+    },
+
+    "changePhoneNo": {
+      "title": "Change phone number",
+      "currentPhoneNo": "Your current phone number is",
+      "update": "Phone number has been updated",
+      "form": {
+        "newPhoneNumber": "New phone number",
+        "change": "Change"
+      }
+    },
+
+    "changePassword": {
+      "title": "Change password",
+      "currentPassword": "Current password",
+      "newPassword": "New password",
+      "change": "Change"
+    },
+    "mobile": "Phone number",
+    "newOrder": "New order",
+    "number": "Number",
+    "upload": "Upload",
+    "email": "Email",
+    "action": "Action",
+    "search": "Search",
+    "password": "Password",
+    "edit": "edit",
+    "delete": "Delete",
+    "done": "Done",
+    "copy": "Copy",
+    "copied": "Copied!",
+    "type": "Type",
+    "save": "Save",
+    "date": "Date",
+    "change": "Change",
+    "updated": "Updated",
+    "cancel": "Cancel",
+    "selected": "Selected"
+  }
+}

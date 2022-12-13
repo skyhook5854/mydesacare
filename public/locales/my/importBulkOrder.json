@@ -1,0 +1,17 @@
+{
+  "title": "Import pesanan pukal",
+  "importedBulkOrders": "Pesanan pukal yang diimport",
+  "instruction": {
+    "label": "Arahan",
+    "1": {
+      "download": "Muat turun",
+      "template": "Templat Pesanan Pukal."
+    },
+    "2": "Isi pengirim, maklumat penerima dan penghantaran dalam Templat Penghantaran Pukal yang dimuat turun.",
+    "3": "3. Pilih <b>Template Pesanan Pukal</b> yang telah diedit",
+    "4": "Klik pada butang import. Halaman Ringkasan dengan harga untuk setiap pesanan akan dipaparkan.",
+    "5": "5. <b> Sahkan Pesanan </b> di halaman <b> Pesanan pukal yang diimport </b>."
+  },
+  "itemWeightNotice": "Elakkan surcaj kerana berat yang salah diisytiharkan. Caj kurier pada berat sebenar (kg) atau berat isipadu (kg), yang mana lebih tinggi. Berat isipadu (kg) = panjang (cm) x lebar (cm) x tinggi (cm) / 5000.",
+  "import": "Import"
+}

@@ -1,0 +1,202 @@
+{
+  "content": {
+    "pageTitle": "Settings",
+    "logout": "Logout",
+    "header": {
+      "newOrder": "New Order"
+    },
+    "accountInfo": {
+      "title": "Account information",
+      "personalAccount": "Personal Account",
+      "businessAccount": "Business Account",
+      "profilePhoto": "Profile photo",
+      "profilePhoto1": "Recommended size:",
+      "profilePhoto2": "200x200px Supported file format: JPG,PNG or GIF",
+      "upload": "Upload",
+      "name": "Name",
+      "email": "Email",
+      "mobile": "Phone number",
+      "update": "Updated",
+      "form": {
+        "businessName": "Business name",
+        "businessRegistration": "Business registration no",
+        "businessType": "Business Type",
+        "businessIndustry": "Business Industry",
+        "dob": "D.O.B / Date of incorporation",
+        "websiteUrl": "Website URL",
+        "unitNumber": "Unit number"
+      }
+    },
+    "customBranding": {
+      "title": "Custom Branding",
+      "companyLogo": "Photo or Company logo",
+      "uploadfile": "Upload a file",
+      "dnd": "or drag and drop",
+      "brandingColor": "Primary logo/branding color"
+    },
+    "security": {
+      "title": "Security"
+    },
+    "profileInfo": {
+      "title": "Profile information",
+      "type": "Type",
+      "businessName": "Full name / Business name",
+      "identificationNo": "Identification No. / Business Registration No",
+      "email": "Email",
+      "mobile": "Phone number",
+      "dateOfIncorporation": "D.O.B. / Date of Incorporation",
+      "industry": "Industry",
+      "websiteUrl": "Website URL",
+      "defaultLabelType": "Default label type",
+      "language": "Language",
+      "update": "Updated"
+    },
+    "addressInfo": {
+      "title": "Address information",
+      "address": "Address",
+      "postcode": "Postcode",
+      "city": "City",
+      "state": "State",
+      "country": "Country"
+    },
+    "billingInfo": {
+      "title": "Billing information",
+      "billingName": "Billing name",
+      "address": "Address",
+      "postcode": "Postcode",
+      "city": "City",
+      "state": "State",
+      "country": "Country",
+      "billingEmail": "Billing email",
+      "update": "Billing & bank information updated"
+    },
+    "bankInfo": {
+      "title": "Bank information",
+      "bankName": "Bank name",
+      "bankSwiftCode": "Bank SWIFT code",
+      "bankAccountNo": "Bank Account No",
+      "bankAccountName": "Bank Account Name"
+    },
+    "services": {
+      "title": "Service Providers",
+      "updated": "Service provider updated",
+      "totalSuccessfulRefrrals": "Total Succesful Referrals",
+      "totalPendingRefrrals": "Total Pending Referrals",
+      "totalEarnings": "Total Earnings"
+    },
+    "notification": {
+      "title": "Notifications",
+      "receiveNewsletter": "Receive Newsletters (important announcements, promotions, etc)",
+      "pushNotification": "Push notification",
+      "emailNotification": "E-mail notification",
+      "smsNotification": "SMS notification",
+      "smsRecipient": "SMS notification to the recipient",
+      "notifyOrderStatus": "Notify me every order status",
+      "notifyReceiverOrderStatus": "Notify receiver every order status",
+      "update": "Notifications settings updated",
+      "instabookNotifySender": "Notify me for Instabook order",
+      "instabookNotifyReceiver": "Notify receiver for Instabook order",
+      "newInvoice": "Notify me for new unpaid invoice",
+      "paidInvoice": "Notify me for paid invoices",
+      "email": "email",
+      "sms": "SMS",
+      "notification": "notification",
+      "notice": "Notifications charges will be included in the delivery price"
+    },
+    "integration": {
+      "title": "API Integration",
+      "apiDocumentation": "API documentation",
+      "addNewKey": "Add new key",
+      "addNewEndpoint": "Add new endpoint",
+      "companyCode": "Company Code",
+      "companyID": "Company ID",
+      "userID": "User ID",
+      "customerID": "Customer ID",
+      "createKey": "Create API key",
+      "apiKeyName": "API key name",
+      "createView": "Create & View",
+      "createAPI": "API key created",
+      "createMessage": "Please copy it and save somewhere else",
+      "createWarn": "For security reason, we cannot show it to you again",
+      "edit": "edit",
+      "delete": "Delete",
+      "done": "Done",
+      "copy": "Copy",
+      "copied": "Copied!",
+      "tableColumn": {
+        "name": "Name",
+        "endpoint": "Endpoint",
+        "eventType": "Event Type",
+        "key": {
+          "name": "API key",
+          "content": "For security purpose, we do not allow key value to be displayed"
+        },
+        "action": "Action",
+        "status": "Status"
+      },
+      "dialog": {
+        "revoke": {
+          "name": "Revoke",
+          "title": "Revoke API key",
+          "text1": "Are you sure you want to revoke ",
+          "text2": " api key?"
+        }
+      }
+    },
+    "changeEmailAddress": {
+      "title": "Change email address",
+      "currentEmail": "Your current email address is",
+      "limitEmailChange": "You have reach your limit to change email!",
+      "update": "Email address has been changed",
+      "form": {
+        "newEmailAddress": "New email address",
+        "change": "Change"
+      }
+    },
+    "changePhoneNo": {
+      "title": "Change phone number",
+      "currentPhoneNo": "Your current phone number is",
+      "update": "Phone number has been updated",
+      "form": {
+        "newPhoneNumber": "New phone number",
+        "change": "Change"
+      }
+    },
+    "changePassword": {
+      "title": "Change password",
+      "currentPassword": "Current password",
+      "newPassword": "New password",
+      "change": "Change"
+    },
+    "status": {
+      "good": "Good",
+      "warning": "Warning"
+    },
+    "phoneNumber": "Phone number",
+    "newPhoneNumber": "New phone number",
+    "email": "Email Address",
+    "newEmail": "New email address",
+    "password": "Password",
+    "save": "Save",
+    "saveChanges": "Save changes",
+    "cancel": "Cancel",
+    "select": "Selected",
+    "change": "Change",
+    "sideBar": {
+      "credit": "Credit",
+      "newOrder": "New Order"
+    },
+    "mainMenu": {
+      "account": "Account information",
+      "customBranding": "Custom Branding",
+      "profile": "Profile information",
+      "billing": "Billing & bank information",
+      "services": "Service Providers",
+      "notifications": "Notifications",
+      "apiIntegration": "API Integrations",
+      "changeEmailAddress": "Change email address",
+      "changePhoneNo": "Change phone number",
+      "changePassword": "Change password"
+    }
+  }
+}

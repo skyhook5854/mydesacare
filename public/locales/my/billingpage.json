@@ -1,0 +1,53 @@
+{
+  "content": {
+    "header": {
+      "export": "Eksport",
+      "status": "Status",
+      "dateTime": "Tarikh & masa",
+      "category": "Kategori",
+      "description": "Penerangan",
+      "amount": "Jumlah",
+      "tax": "Cukai",
+      "action": "Tindakan",
+      "tab1": "Semua"
+    },
+    "tabs": {
+      "transaction": "Transaksi",
+      "receipts": "Resit",
+      "invoice": "Invois",
+      "creditNotes": "Nota kredit"
+    },
+    "pageTransaction": {
+      "Transaction": "Transaksi",
+      "transactionNo": "No. Transaksi",
+      "status1": "Dalam proses",
+      "status2": "Berjaya",
+      "status3": "Gagal"
+    },
+    "pageInvoice": {
+      "Invoice": "Invois",
+      "invoiceNo": "No. Invois",
+      "status1": "Belum dibayar",
+      "status2": "Dibayar",
+      "view": "Lihat",
+      "invoice": "invois"
+    },
+    "sideBar": {
+      "credit": "Kredit",
+      "newOrder": "Pesanan Baru"
+    },
+    "transactionTable": {
+      "amount": "Jumlah",
+      "type": "Jenis",
+      "refrenceNumber": "Nombor Rujukan",
+      "closingBalance": "Baki Terakhir",
+      "transactionNum": "Nombor transaksi",
+      "status": "Status",
+      "dateAndTime": "Tarikh & masa",
+      "category": "Kategori",
+      "description": "Deskripsi",
+      "tax": "Cukai",
+      "transaction": "Transaksi"
+    }
+  }
+}

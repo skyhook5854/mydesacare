@@ -1,0 +1,17 @@
+{
+  "title": "Impor pesanan massal",
+  "importedBulkOrders": "Pesanan massal yang diimpor",
+  "instruction": {
+    "label": "Instruksi",
+    "1": {
+      "download": "Unduh",
+      "template": "Template Pesanan Massal."
+    },
+    "2": "Isi informasi pengirim, penerima, dan pengiriman di Template Pengiriman Massal yang diunduh.",
+    "3": "3. Pilih <b> Template Pesanan Massal </b> yang telah diedit",
+    "4": "Klik tombol impor. Halaman ringkasan dengan harga untuk setiap pesanan akan ditampilkan.",
+    "5": "5. <b> Konfirmasi Pesanan </b> di halaman <b> Pesanan massal yang diimpor </b>."
+  },
+  "itemWeightNotice": "Cegah biaya tambahan karena salah menyatakan berat badan. Biaya kurir berdasarkan berat aktual (kg) atau berat volumetrik (kg), mana saja yang lebih tinggi. Berat volumetrik (kg) = panjang (cm) x lebar (cm) x tinggi (cm) / 5000.",
+  "import": "Impor"
+}

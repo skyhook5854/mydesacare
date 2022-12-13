@@ -1,0 +1,44 @@
+{
+  "content": {
+    "title": "Refer a friends and receive earnings",
+    "subTitle": "Send referal link and recieve earning when your friends use Delyva platform",
+    "earnings": {
+      "lastMonth": "Last 30 Days",
+      "month": {
+        "name": "Monthly",
+        "january": "January",
+        "february": "February"
+      },
+      "totalSuccess": "Total Succesful Referrals",
+      "totalEarnings": "Total Earnings",
+      "totalPending": "Total Pending Referrals"
+    },
+    "form": {
+      "email": "Email",
+      "sendInvites": "Send invites",
+      "via": "Or send invite via",
+      "search": "Search for items"
+    },
+    "tabs": {
+      "referrals": "Referrals",
+      "earnings": "Earnings"
+    },
+    "tableColumn": {
+      "name": "Name",
+      "regEmail": "Registered Email",
+      "status": "Status",
+      "earnings": "Earnings"
+    },
+    "filter": {
+      "name": "Filter",
+      "sort": "Sort",
+      "active": "Active",
+      "inactive": "Inactive",
+      "status": {
+        "name": "Status",
+        "success": "Success",
+        "pending": "Pending"
+      }
+    }
+  }
+}

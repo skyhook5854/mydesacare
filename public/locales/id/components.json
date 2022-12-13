@@ -1,0 +1,20 @@
+{
+  "customizedModal": {
+    "confirm": "Konfirmasi",
+    "cancel": "Batal"
+  },
+  "dateFilter": {
+    "filterValue": {
+      "allTime": "Sepanjang waktu",
+      "today": "Hari ini",
+      "yesterday": "Besok",
+      "tomorrow": "Esok",
+      "lastWeek": "Minggu lalu",
+      "lastMonth": "Bulan lalu",
+      "lastYear": "Tahun lalu",
+      "thisWeek": "Minggu ini",
+      "thisMonth": "Bulan ini",
+      "thisYear": "Tahun ini"
+    }
+  }
+}

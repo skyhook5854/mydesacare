@@ -1,0 +1,45 @@
+{
+  "header": {
+    "pageTitleTopup": "可用餘額",
+    "export": "导出",
+    "refresh": "刷新",
+    "makePayment": "付款",
+    "change": "更改"
+  },
+  "content": {
+    "header": {
+      "newOrder": "新订单"
+    },
+    "topupTabs": {
+      "topupAmount": "充值金額",
+      "paymentMethod": "付款方式",
+      "confirmation": "确认",
+      "paymentStatus": "支付狀態",
+      "total": "总额"
+    },
+    "topupForm": {
+      "enterAmount": "输入金额",
+      "select": "选择",
+      "topupNow": "立即充值"
+    },
+    "topupConfirmation": {
+      "topupSummary": "充值摘要",
+      "credit": "余额",
+      "confirmPayment": "确认付款"
+    },
+    "topupSuccess": {
+      "paymentPending": "付款审核中",
+      "topupPage": "充值页面"
+    },
+    "sideBar": {
+      "credit": "余额",
+      "newOrder": "新订单"
+    },
+    "topupTab": {
+      "topupAmount": "充值金额",
+      "paymentMethod": "付款方法",
+      "confirmation": "确认书",
+      "paymentStatus": "支付状态"
+    }
+  }
+}

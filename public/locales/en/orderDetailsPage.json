@@ -1,0 +1,45 @@
+{
+  "serviceInformation": {
+    "title": "Service Information",
+    "content": {
+      "service": "Service",
+      "totalWeight": "Total weight",
+      "totalPrice": "Total price",
+      "paymentStatus": "Payment status",
+      "totalCollectCash": "Total collect cash",
+      "reconciliationStatus": "Reconciliation status"
+    }
+  },
+  "contactInformation": {
+    "title": "Contact information",
+    "tableColumn": {
+      "category": "Category",
+      "name": "Name",
+      "phoneNumber": "Phone number",
+      "email": "Email",
+      "address": "Address",
+      "postalCode": "Postal code",
+      "country": "Country",
+      "totalCashCollected": "Total cash collected",
+      "status": "Status",
+      "note": "Note",
+      "location": "Location"
+    }
+  },
+  "addons": {
+    "title": "Add-ons",
+    "tableColumn": {
+      "name": "Name",
+      "quantity": "Quantity",
+      "value": "Value"
+    }
+  },
+  "activities": {
+    "title": "Activities",
+    "tableColumn": {
+      "status": "Status",
+      "location": "Location",
+      "dateAndTime": "Date & time"
+    }
+  }
+}

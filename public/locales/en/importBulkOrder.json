@@ -1,0 +1,16 @@
+{
+  "title": "Import bulk order",
+  "importedBulkOrders": "Imported bulk orders",
+  "instruction": {
+    "label": "Instructions",
+    "1": {
+      "download": "Download",
+      "template": "Bulk Order Template."
+    },
+    "2": "Fill up sender, recipent and delivery information in the downloaded Bulk Shipments Template.",
+    "3": "3. Click on import button and select the edited <b>Bulk Order Template</b>",
+    "4": "You will be redirected to Process bulk orders page after your file successfully uploaded."
+  },
+  "itemWeightNotice": "Prevent surcharges due to mis-declared weight. Courier charge on actual weight (kg) or volumetric weight (kg), whichever is higher. Volumetric weight (kg) = length (cm) x width (cm) x height (cm) / 5000.",
+  "import": "Import"
+}

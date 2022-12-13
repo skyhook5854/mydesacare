@@ -1,0 +1,39 @@
+{
+  "content": {
+    "banner-fresh-look": "We’ve launched a fresh look for our web portal!",
+    "what-new": "See what’s new",
+    "welcome": "Hi, {{username}}!",
+    "instantQuote": {
+      "title": "Instant quote",
+      "submitBtn": "Quote",
+      "book": "Book"
+    },
+    "newOrder": {
+      "title": "New order",
+      "menu1": "Single order",
+      "menu2": "Bulk orders",
+      "menu3": "Process bulk orders"
+    },
+    "sideBar": {
+      "credit": "Credit",
+      "newOrder": "New Order"
+    },
+    "locationTypeDropdown": {
+      "address": "Address",
+      "zipcode": "Postcode",
+      "country": "Country",
+      "city": "City"
+    },
+    "feeds": {
+      "title": "Latest news",
+      "more": "Read more"
+    },
+    "stats": {
+      "pending": "Pending",
+      "current": "Current",
+      "completed": "Completed",
+      "creditBalance": "Credit Balance",
+      "orders": "orders"
+    }
+  }
+}

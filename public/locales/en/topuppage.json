@@ -1,0 +1,55 @@
+{
+  "header": {
+    "pageTitleTopup": "Available balance",
+    "unbilledAmount": "Unbilled amount",
+    "export": "Eksport",
+    "refresh": "Refresh",
+    "makePayment": "Make payment",
+    "change": "Change"
+  },
+  "content": {
+    "header": {
+      "newOrder": "New Order"
+    },
+    "topupTabs": {
+      "topupAmount": "Topup amount",
+      "paymentMethod": "Payment method",
+      "confirmation": "Confirm",
+      "paymentStatus": "Payment status",
+      "total": "Total"
+    },
+    "topupForm": {
+      "enterAmount": "Enter amount",
+      "select": "Select",
+      "topupNow": "Topup now",
+      "Terms": "I agree with the",
+      "Terms2": "Terms and condition",
+      "msg": "We will auto select a plan for you based on the amount inserted",
+      "save": "save"
+    },
+    "topupConfirmation": {
+      "title": "Top-up Confirmation",
+      "totalTopup": "Total Top-up amount",
+      "discoundCode": "Have a discount code?",
+      "promoCode": "Promo/discount code",
+      "changePayment": "Change payment method",
+      "topupSummary": "Topup summary",
+      "credit": "credit",
+      "confirmPayment": "Confirm Payment"
+    },
+    "topupSuccess": {
+      "paymentPending": "Payment pending",
+      "topupPage": "Topup page"
+    },
+    "sideBar": {
+      "credit": "Credit"
+    },
+    "topupTab": {
+      "topupAmount": "Topup amount",
+      "paymentMethod": "Payment method",
+      "confirmation": "Confirmation",
+      "paymentStatus": "Payment Status"
+    },
+    "minimum": "minimum"
+  }
+}

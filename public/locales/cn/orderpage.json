@@ -1,0 +1,220 @@
+{
+  "content": {
+    "header": {
+      "title": "订单",
+      "export": "导出",
+      "newOrder": "新订单"
+    },
+    "tableContent": {
+      "tab0": "新订单",
+      "tab1": "待定",
+      "tab2": "當前",
+      "tab3": "已完成",
+      "tab4": "取消",
+      "tab5": "所有",
+      "search": "搜索",
+      "orderNo": "订单号",
+      "filters": "筛选",
+      "selected": "已选",
+      "selectAll": "选择所有",
+      "orders": "个 订单",
+      "services": "服务",
+      "action": "行动/动作",
+      "printLabel": "打印",
+      "track": "跟踪",
+      "cancel": "取消",
+      "refresh": "Refresh quote",
+      "items": "项目"
+    },
+    "newOrder": {
+      "title": "新订单",
+      "senderDetail": "1. 寄件人详情",
+      "receiverDetail": "2. 收件人详细信息",
+      "form": {
+        "form": "表格",
+        "copyPaste": "复制和粘贴",
+        "fullName": "名字",
+        "email": "电子邮件",
+        "mobile": "电话号码",
+        "address": "地址",
+        "address1": "地址 1",
+        "address2": "地址 2",
+        "postcode": "邮政编码",
+        "city": "城市",
+        "state": "州",
+        "country": "国家",
+        "companyName": "公司名"
+      },
+      "itemDetail": "3. 物品详情",
+      "item": {
+        "itemType": "物品种类",
+        "itemWeight": "重量（公斤)",
+        "itemQuantity": "数量",
+        "itemValue": "商品价值",
+        "itemDetail": "物品详情",
+        "itemWeightNotice": "防止因误报重量而产生附加费。 快递费按实际重量（公斤）或体积重量（公斤）计算，以较高者为准。 体积重量（kg）=长（cm）x宽（cm）x高（cm）/5000.",
+        "note": "Notes"
+      },
+      "readyDateTime": "4. 完成包装的日期和时间",
+      "ready": {
+        "date": "日期",
+        "time": "时间"
+      },
+      "chooseService": "5. 选择服务",
+      "service": {
+        "service": "服务",
+        "selectService": "选择服务",
+        "serviceInfo": "服务信息",
+        "addOns": "附加组件",
+        "paymentMethod": "选择付款方式",
+        "totalPrice": "总价格"
+      },
+      "searchAddressBook": "搜索通讯录",
+      "next": "下一个",
+      "footer": {
+        "saveAndAdd": "保存并添加另一个",
+        "savedraft": "保存草稿",
+        "confirmOrder": "确认订单"
+      }
+    },
+    "bulkOrder": {
+      "title": "草稿",
+      "title1": "导入批量订单",
+      "confirmOrder": "信息",
+      "confirmOrders": "信息",
+      "senderInfo": "寄件人详情",
+      "dateAndTime": "完成包装的日期和时间",
+      "date": "日期",
+      "time": "时间",
+      "thankYou": "谢谢。您的订单已提交"
+    },
+    "orderDetail": {
+      "title": "订单",
+      "dropdown": {
+        "action": "动作",
+        "trackOrder": "跟踪顺序",
+        "printLabel": "打印标签",
+        "printLabelA4": "打印标签A4-3",
+        "printLabelA42": "打印标签A4-Q3",
+        "printLabelA5": "打印标签A5-2",
+        "printLabelA6": "打印标签A6-1",
+        "cancel": "取消",
+        "clone": "Clone",
+        "printInvoice": "列印发票"
+      },
+      "date": "日期",
+      "service": "服务",
+      "price": "价格",
+      "status": "状态",
+      "overview": "概述",
+      "customerInfo": {
+        "title": "顾客信息",
+        "name": "名字",
+        "phone": "电话号码",
+        "email": "电子邮件"
+      },
+      "serviceInfo": {
+        "title": "服务信息",
+        "service": "服务",
+        "totalWeight": "总重量",
+        "totalPrice": "总价",
+        "paymentStatus": "支付狀態",
+        "totalCollectCash": "现金总额",
+        "reconciliationStatus": "对帐状态"
+      },
+      "iventory": {
+        "title": "库存",
+        "type": "類型",
+        "weight": "重量",
+        "quantity": "数量",
+        "value": "价值",
+        "taxShipping": "税金+运费",
+        "total": "总额"
+      }
+    },
+    "confirmOrderDialog": {
+      "error": "错误!",
+      "error1": "您的所在位置不在服务区域",
+      "error2": "其他错误",
+      "error3": "您的订单有误",
+      "overrideSender": "覆盖发件人详细信息",
+      "": ""
+    },
+    "orderTableColumn": {
+      "orderNo": "订单号",
+      "status": "状态",
+      "date": "日期",
+      "scheduleDate": "计划日期",
+      "sender": "发件人",
+      "recipient": "接受者",
+      "address": "地址",
+      "service": "服务",
+      "weight": "重量",
+      "price": "价钱",
+      "action": "行动"
+    },
+    "dialog": {
+      "cancelOrder": {
+        "title": "取消订单",
+        "text": {
+          "single": "您要取消此订单吗？",
+          "multiple": "您要取消这些订单吗?"
+        }
+      },
+      "cloneOrder": {
+        "title": "Clone order",
+        "text": {
+          "single": "Clone this order?",
+          "multiple": "Clone these orders?"
+        }
+      },
+      "confirmCancel": {
+        "message": {
+          "single": "订单已取消",
+          "multiple": "订单已取消"
+        }
+      },
+      "orderSuccess": {
+        "title": "您的以下订单已处理"
+      },
+      "confirmOrder": {
+        "title": {
+          "single": "信息",
+          "multiple": "信息"
+        }
+      },
+      "searchAddressBook": {
+        "title": "搜索地址簿",
+        "search": "搜索",
+        "tableColumn": {
+          "name": "名称",
+          "status": "状态",
+          "phoneNo": "电话号码",
+          "address": "地址"
+        },
+        "contact": "联系",
+        "select": "选择"
+      }
+    }
+  },
+  "orderForm": {
+    "checkout": {
+      "discountCode": "优惠码",
+      "apply": "应用"
+    }
+  },
+  "newOrderForm": {
+    "copyPaste": {
+      "fullName": "全名",
+      "phone": "电话",
+      "email": "电子邮件",
+      "company": "公司",
+      "address1": "地址1",
+      "address2": "地址2",
+      "postcode": "邮编",
+      "city": "市",
+      "state": "州",
+      "country": "国家"
+    }
+  }
+}

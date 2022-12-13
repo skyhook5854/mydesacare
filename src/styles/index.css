@@ -1,0 +1,16 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+/* custom sidebar css */
+.sidenav---navicon---3gCRo {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+.sidenav---sidenav---_2tBP {
+  background: #0000ff !important;
+}
+

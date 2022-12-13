@@ -1,0 +1,56 @@
+{
+  "header": {
+    "pageTitleTopup": "Baki",
+    "unbilledAmount": "Jumlah yang tidak dibilkan",
+    "export": "Eksport",
+    "refresh": "Memuatkan semula",
+    "makePayment": "Pembayaran",
+    "change": "Tukar"
+  },
+  "content": {
+    "header": {
+      "newOrder": "Pesanan baru"
+    },
+    "topupTabs": {
+      "topupAmount": "Jumlah tambah nilai",
+      "paymentMethod": "Cara pembayaran",
+      "confirmation": "Pengesahan",
+      "paymentStatus": "Status pembayaran",
+      "total": "Jumlah"
+    },
+    "topupForm": {
+      "select": "Pilih",
+      "enterAmount": "Masukkan nilai",
+      "topupNow": "Tambah nilai sekarang",
+      "Terms": "Saya bersetuju ",
+      "Terms2": "dengan Terma dan syarat",
+      "msg": "Kami akan memilih pelan secara automatik untuk anda berdasarkan jumlah yang dimasukkan",
+      "save": "save"
+    },
+    "topupConfirmation": {
+      "title": "Pengesahan Tambah Nilai",
+      "totalTopup": "Jumlah Tambah Nilai",
+      "discoundCode": "Kod diskaun?",
+      "promoCode": "Kod promosi/diskaun",
+      "changePayment": "Tukar kaedah pembayaran",
+      "topupSummary": "Ringkasan tambah nilai",
+      "credit": "Kredit",
+      "confirmPayment": "Mengesahkan pembayaran"
+    },
+    "topupSuccess": {
+      "paymentPending": "Status pembayaran masih belum selesai",
+      "topupPage": "Halaman tambah nilai"
+    },
+    "sideBar": {
+      "credit": "Kredit",
+      "newOrder": "Pesanan Baru"
+    },
+    "topupTab": {
+      "topupAmount": "Jumlah topup",
+      "paymentMethod": "Kaedah pembayaran",
+      "confirmation": "Pengesahan",
+      "paymentStatus": "Status bayaran"
+    },
+    "minimum": "Maksimum"
+  }
+}

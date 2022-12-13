@@ -1,0 +1,45 @@
+{
+  "content": {
+    "header": {
+      "export": "导出",
+      "status": "状态",
+      "dateTime": "日期和时间",
+      "category": "类别",
+      "description": "详情",
+      "amount": "金额",
+      "tax": "稅",
+      "action": "行动",
+      "newOrder": "新订单",
+      "tab1": "所有"
+    },
+    "pageTransaction": {
+      "Transaction": "交易详情",
+      "transactionNo": "交易編號",
+      "status1": "Dalam proses",
+      "status2": "Berjaya",
+      "status3": "Gagal"
+    },
+    "pageInvoice": {
+      "Invoice": "发票",
+      "invoiceNo": "發票編號",
+      "status1": "尚未付款",
+      "status2": "已付",
+      "view": "视图",
+      "invoice": "发票"
+    },
+    "sideBar": {
+      "credit": "余额",
+      "newOrder": "新订单"
+    },
+    "transactionTable": {
+      "transactionNum": "交易号",
+      "status": "状态",
+      "dateAndTime": "约会时间",
+      "category": "类别",
+      "description": "描述",
+      "amount": "量",
+      "tax": "税",
+      "transaction": "交易"
+    }
+  }
+}

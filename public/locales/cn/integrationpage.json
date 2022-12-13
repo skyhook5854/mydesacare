@@ -1,0 +1,203 @@
+{
+  "content": {
+    "header": {
+      "title": "Integrasi",
+      "setup": "Setup",
+      "newOrder": "New Order"
+    },
+    "tableContent": {
+      "tab0": "Active",
+      "tab1": "Pending",
+      "tab2": "All",
+      "search": "Search",
+      "orderNo": "Order No",
+      "filters": "Filters",
+      "selected": "selected",
+      "selectAll": "Select all",
+      "orders": "Order",
+      "services": "Services",
+      "action": "Action",
+      "printLabel": "Print label",
+      "track": "Track",
+      "cancel": "Cancel",
+      "items": "Items"
+    },
+    "newOrder": {
+      "title": "New Order",
+      "senderDetail": "1. Sender detail",
+      "receiverDetail": "2. Receiver detail",
+      "form": {
+        "form": "Form",
+        "copyPaste": "Copy & Paste",
+        "fullName": "Name",
+        "email": "Email",
+        "mobile": "Phone number",
+        "address": "Address",
+        "address1": "Address 1",
+        "address2": "Address 2",
+        "postcode": "Postcode",
+        "city": "City",
+        "state": "State",
+        "country": "Country",
+        "companyName": "Company name"
+      },
+      "itemDetail": "3. Item details",
+      "item": {
+        "itemType": "Item Type",
+        "itemWeight": "Item Weight (Kg)",
+        "itemQuantity": "Item Quantity",
+        "itemValue": "Item Value",
+        "itemDetail": "Item Description",
+        "note": "Notes"
+      },
+      "readyDateTime": "4. Date and time of completion of packaging",
+      "ready": {
+        "date": "Date",
+        "time": "Time"
+      },
+      "chooseService": "5. Choose service",
+      "service": {
+        "service": "Service",
+        "selectService": "Select service",
+        "serviceInfo": "Service information",
+        "addOns": "Add ons",
+        "paymentMethod": "Select payment method",
+        "totalPrice": "Total price"
+      },
+      "searchAddressBook": "Search address book",
+      "next": "Next",
+      "footer": {
+        "saveAndAdd": "Save & add another",
+        "savedraft": "Save draft",
+        "confirmOrder": "Confirm payment"
+      }
+    },
+    "bulkOrder": {
+      "title": "Drafts",
+      "title1": "Import bulk orders",
+      "confirmOrder": "Book",
+      "confirmOrders": "Book",
+      "senderInfo": "Sender info",
+      "dateAndTime": "Date and time of completion of packaging",
+      "date": "Date",
+      "time": "Time",
+      "thankYou": "Thank you. Your order have been submitted."
+    },
+    "orderDetail": {
+      "title": "Order",
+      "dropdown": {
+        "action": "Action",
+        "trackOrder": "Track order",
+        "printLabel": "Print label",
+        "printLabelA4": "Print label A4-3",
+        "printLabelA42": "Print label A4-Q3",
+        "printLabelA5": "Print label A5-2",
+        "printLabelA6": "Print label A6-1",
+        "cancel": "Cancel",
+        "printInvoice": "Print invoice"
+      },
+      "date": "Date",
+      "service": "Service",
+      "price": "Price",
+      "status": "Status",
+      "overview": "Overview",
+      "customerInfo": {
+        "title": "Customer information",
+        "name": "Name",
+        "phone": "Phone number",
+        "email": "Email"
+      },
+      "serviceInfo": {
+        "title": "Service information",
+        "service": "Service",
+        "totalWeight": "Total weight",
+        "totalPrice": "Total price",
+        "paymentStatus": "Payment status",
+        "totalCollectCash": "Total collect cash",
+        "reconciliationStatus": "Reconciliation status"
+      },
+      "iventory": {
+        "title": "Inventories",
+        "type": "Type",
+        "weight": "Weight",
+        "quantity": "Quantity",
+        "value": "Value",
+        "taxShipping": "Tax + Shipping",
+        "total": "Total"
+      }
+    },
+    "confirmOrderDialog": {
+      "error": "Error!",
+      "error1": "Your location is not in the service area",
+      "error2": "Other errors",
+      "error3": "Your order is wrong",
+      "overrideSender": "Override sender details"
+    },
+    "sideBar": {
+      "credit": "Credit",
+      "newOrder": "Drafts"
+    },
+    "orderTableColumn": {
+      "name": "姓名",
+      "type": "类型",
+      "status": "地位",
+      "action": "行动"
+    },
+    "dialog": {
+      "cancelOrder": {
+        "title": "Cancel order",
+        "text": {
+          "single": "Cancel this order?",
+          "multiple": "Cancel these orders?"
+        }
+      },
+      "confirmCancel": {
+        "message": {
+          "single": "Order cancelled",
+          "multiple": "Orders cancelled"
+        }
+      },
+      "orderSuccess": {
+        "title": "Your order has been processed"
+      },
+      "confirmOrder": {
+        "title": {
+          "single": "Book",
+          "multiple": "Book"
+        }
+      },
+      "searchAddressBook": {
+        "title": "Search address book",
+        "search": "Search",
+        "tableColumn": {
+          "name": "Name",
+          "status": "Status",
+          "phoneNo": "Phone number",
+          "address": "Address"
+        },
+        "contact": "Contact",
+        "select": "Select"
+      }
+    }
+  },
+  "orderForm": {
+    "checkout": {
+      "discountCode": "Discount code",
+      "apply": "Apply"
+    }
+  },
+  "newOrderForm": {
+    "copyPaste": {
+      "fullName": "Full name",
+      "phone": "Phone",
+      "email": "Email",
+      "company": "Company",
+      "address1": "Address 1",
+      "address2": "Address 2",
+      "postcode": "Postcode",
+      "city": "City",
+      "state": "State",
+      "country": "Country"
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "content": {
+    "pageTitleAddress": "Buku Alamat",
+    "header": {
+      "export": "Ekspor",
+      "addNewContact": "Tambah kontak baru",
+      "save": "Simpan",
+      "tab1": "Semua"
+    },
+    "form": {
+      "title": "Kontak Baru",
+      "contactInformation": "Informasi kontak",
+      "fullName": "Nama",
+      "email": "Email",
+      "mobile": "Nomor telepon",
+      "unitNo": "Unit no",
+      "address": "Alamat",
+      "address1": "Alamat 1",
+      "address2": "Alamat 2",
+      "postcode": "Poskode",
+      "city": "Bandar",
+      "state": "Negarabagian",
+      "country": "Negara"
+    },
+    "sideBar": {
+      "credit": "Kredit",
+      "newOrder": "Pesanan Baru"
+    },
+    "deleteContact": {
+      "delete": "Hapus kontak",
+      "delete1": "Apakah anda ingin menghapus kontak ini?",
+      "confirm": "Konfirmasi",
+      "success": "Kontak dihapus"
+    },
+    "addressBookTableColumn": {
+      "name": "Nama",
+      "status": "Status",
+      "email": "Email",
+      "phoneNum": "Nomor telepon",
+      "address": "Alamat",
+      "action": "Tindakan"
+    },
+    "contact": "Kontak"
+  }
+}

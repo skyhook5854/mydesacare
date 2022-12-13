@@ -1,0 +1,42 @@
+{
+  "orderDetails": {
+    "backLink": "Order",
+    "pageTitle": "New multipoint order",
+    "serviceUnavailable": "Service unavailable",
+    "chooseVehicle": "CHOOSE MODE",
+    "manageRoutes": "MANAGE ROUTE (MAX {{stops}} STOPS)",
+    "editAddress": "Edit address",
+    "delete": "Delete",
+    "addDestination": "Add destination",
+    "deliveryInfo": {
+      "title": "Delivery info",
+      "name": "Name",
+      "phone": "Phone number",
+      "unitNo": "Block / Floor / Unit"
+    },
+    "addServices": "ADDITIONAL SERVICES",
+    "addOns": "Add ons",
+    "totalPrice": "TOTAL PRICE",
+    "next": "Next",
+    "errors": {
+      "nameIsRequired": "Name is required",
+      "phoneIsRequired": "Phone is required"
+    }
+  },
+  "confirmOrder": {
+    "backLink": "Order details",
+    "pageTitle": "Confirm order",
+    "contactDetails": "DELIVERY & CONTACT DETAILS",
+    "date": "Date",
+    "time": "Time",
+    "deliveryNotes": "DELIVERY NOTES",
+    "notes": "Notes",
+    "paymentOption": "PAYMENT OPTION",
+    "selectPaymentMethod": "Select payment method",
+    "discountCode": "Discount code",
+    "apply": "Apply",
+    "totalPrice": "TOTAL PRICE",
+    "back": "Back",
+    "confirmOrder": "Confirm order"
+  }
+}

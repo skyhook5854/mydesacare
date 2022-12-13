@@ -1,0 +1,25 @@
+{
+  "sidebarMenus": {
+    "home": "Utama",
+    "new": "Draf",
+    "orders": "Pesanan",
+    "address-book": "Buku alamat",
+    "billing": "Bil",
+    "payment": "Top-up",
+    "settings": "Pengaturan",
+    "analytics": "Analisis",
+    "earn": "Referensi",
+    "ecommerce": "Integrasi"
+  },
+  "sidebarOrderMenus": {
+    "singleOrder": "Pesanan tunggal",
+    "bulkOrders": "Pesanan pukal",
+    "processBulkOrders": "Proses pesanan pukal"
+  },
+  "rightMenus": {
+    "settings": "Pengaturan",
+    "logout": "Log keluar"
+  },
+  "credit": "Kredit",
+  "newOrder": "Pesanan baru"
+}

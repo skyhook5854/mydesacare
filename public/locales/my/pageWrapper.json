@@ -1,0 +1,27 @@
+{
+  "sidebarMenus": {
+    "home": "Utama",
+    "new": "Draf",
+    "orders": "Pesanan",
+    "address-book": "Buku alamat",
+    "billing": "Bil",
+    "payment": "Top-up",
+    "settings": "Pengaturan",
+    "analytics": "Analisis",
+    "earn": "Jemput & peroleh",
+    "ecommerce": "Integrasi",
+    "refer-friend": "Jemput rakan"
+  },
+  "sidebarOrderMenus": {
+    "singleOrder": "Pesanan tunggal",
+    "bulkOrders": "Pesanan pukal",
+    "processBulkOrders": "Proses pesanan pukal"
+  },
+  "rightMenus": {
+    "settings": "Pengaturan",
+    "logout": "Log keluar",
+    "your-profile": "Profil Anda"
+  },
+  "credit": "Kredit",
+  "newOrder": "Pesanan baru"
+}
