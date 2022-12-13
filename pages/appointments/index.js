@@ -169,24 +169,24 @@ export default function Appointments() {
 }
 
 Appointments.layout = Admin2;
-export async function getServerSideProps({ locale }) {
-  return {
-    props: {
-      ...(await serverSideTranslations(locale, [
-        "onboarding",
-        "addressbookpage",
-        "billingpage",
-        "components",
-        "homepage",
-        "importBulkOrder",
-        "integrationPage",
-        "multiPointOrder",
-        "orderDetailsPage",
-        "orderpage",
-        "pageWrapper",
-        "settings",
-        "topuppage",
-      ])),
-    },
-  };
-}
+// export async function getServerSideProps({ locale }) {
+//   return {
+//     props: {
+//       ...(await serverSideTranslations(locale, [
+//         "onboarding",
+//         "addressbookpage",
+//         "billingpage",
+//         "components",
+//         "homepage",
+//         "importBulkOrder",
+//         "integrationPage",
+//         "multiPointOrder",
+//         "orderDetailsPage",
+//         "orderpage",
+//         "pageWrapper",
+//         "settings",
+//         "topuppage",
+//       ])),
+//     },
+//   };
+// }
