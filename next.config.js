@@ -14,7 +14,7 @@ module.exports = {
     return [
       {
         // matching all API routes
-        source: "https://www.mydesa.my/v2/mydesacare/counsellor/api/:path*",
+        source: "/api/:path*",
         headers: [
           { key: "Access-Control-Allow-Credentials", value: "true" },
           { key: "Access-Control-Allow-Origin", value: "*" },
