@@ -15,10 +15,7 @@ const useLogin = () => {
   return useMutation(loginRequest, {
     onSuccess: (data) => {
       setAuth(data.data);
-      localStorage.setItem(
-        "accessToken",
-        JSON.stringify(data.data.data.token)
-      );
+      localStorage.setItem("accessToken",JSON.stringify(data.data.data.token));
       window.location.href = '/dashboard';
       // router.push("/dashboard");
     },

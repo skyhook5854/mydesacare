@@ -30,7 +30,7 @@ export default function Inprogress() {
         },
         {
             name: <div className='w-full text-center font-bold'>BOOKING TIME</div>,
-            cell: row => <div className='w-full text-center'><div>{moment(row.date).format("DD/MM/YYYY")}</div><div><time className='text-xs'>{moment(row.date+' '+row.time).format("hh:mm A")}</time></div></div>,
+            cell: row => <div className='w-full text-center'><div>{moment(row.date).format("DD/MM/YYYY")}</div><div><time className='text-xs'>{row.time}</time></div></div>,
             width: '10rem'
         },
         {

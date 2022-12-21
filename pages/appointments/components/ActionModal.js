@@ -18,12 +18,10 @@ export default function ActionModal(props) {
         }
     }
 
-    console.log('profilea',allProfile);
-
-
   const onSubmit = async (values) => {
     // console.log('data', values);
     // return false;
+
     await mutate(values);
     props.onHandlerModal(false, []);
   };
@@ -162,7 +160,7 @@ export default function ActionModal(props) {
                                                 name="time"
                                                 className='ml-2 rounded-lg border border-gray-300'
                                                 value={form.values.time} 
-                                                onChange={(value) => form.setFieldValue("time", value)} 
+                                                onChange={(value) => form.setFieldValue("time", moment(value).format("hh:mm A"))} 
                                                 onBlur={form.handleBlur}
                                                 dateFormat={false}
                                                 timeConstraints={timeConstraints} 

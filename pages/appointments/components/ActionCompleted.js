@@ -67,12 +67,17 @@ export default function ActionCompleted(props) {
     }
 
     async function setAddress(id){
-        handleNext();
-        const new_data = {};
-        new_data['id'] = id;
-        new_data['note'] = message
+      
+        if(message){
+            handleNext();
+            const new_data = {};
+            new_data['id'] = id;
+            new_data['note'] = message
+            await setSessionUpdate(new_data);
+        }else{
+            console.log('nodata','notda');
+        }
         // console.log('data baru', new_data);
-        await setSessionUpdate(new_data);
     }
 
     const handleMessageChange = event => {
