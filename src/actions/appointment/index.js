@@ -54,7 +54,7 @@ const countAppointment = async () => {
     method: "get",
     headers: headers
   });
-console.log('res data', res);
+
   return res.data.data;
 };
 

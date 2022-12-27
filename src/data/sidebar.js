@@ -238,7 +238,7 @@ export const sidebar_admin = [
         />
       </svg>
     ),
-    links: '/superadmin/dashboard',
+    links: '/superadmin',
     badge: 0,
   },
   {
@@ -288,7 +288,7 @@ export const sidebar_admin = [
         />
       </svg>
     ),
-    links: '/superadmin/clients',
+    links: '/superadmin/client',
     badge: 0,
   },
   {

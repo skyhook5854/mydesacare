@@ -16,7 +16,12 @@ const useLogin = () => {
     onSuccess: (data) => {
       setAuth(data.data);
       localStorage.setItem("accessToken",JSON.stringify(data.data.data.token));
-      window.location.href = '/dashboard';
+      if(data.data.data.level_access){
+        sessionStorage.setItem("lvl",data.data.data.level_access);
+        window.location.href = '/superadmin';
+      }else{
+        window.location.href = '/dashboard';
+      }
       // router.push("/dashboard");
     },
   });

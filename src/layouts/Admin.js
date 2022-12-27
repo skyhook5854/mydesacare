@@ -21,6 +21,7 @@ import Chip from '@mui/material/Chip';
 import {
   others_pages,
   sidebar_action,
+  sidebar_admin,
   sidebar_pages,
 } from 'src/data/sidebar.js';
 import Link from 'next/link';
@@ -161,7 +162,7 @@ export default function Admin({ children }) {
       {/* New Order */}
 
       <List dense={true}>
-        {sidebar_action.map((key, index) => (
+        {sidebar_admin.map((key, index) => (
           <Tooltip
               title={open ? key.name : ''}
               placement={'right'}

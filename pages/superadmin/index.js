@@ -1,14 +1,34 @@
 import React, { useState } from 'react';
 import Admin from 'src/layouts/Admin';
 import { useTranslation } from 'next-i18next';
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import CardLineChart from 'src/components/Cards/CardLineChart';
 import CardBarChart from 'src/components/Cards/CardBarChart';
+import { useRecoilValue } from 'recoil';
+import { authAtom } from 'src/recoil/auth';
+import { useCountAppointment } from "src/actions/appointment";
+import { useCounselorAdd, useCountCounselor } from "src/actions/counselor";
+import { Formik } from 'formik';
+import { ToastContainer } from "react-toastify";
 
 export default function Dashboard() {
+  const data = useRecoilValue(authAtom);
+  const { data:appoint, isFetching } = useCountAppointment();
+  const { data:coun } = useCountCounselor();
+  const { mutate, error, isError, isLoading: isButtonLoading  } = useCounselorAdd();
+
   const [showModal, setShowModal] = useState(false);
 
+  const onSubmit = async (values) => {
+    console.log('data', values);
+    setShowModal(false);
+    // return false;
+    await mutate(values);
+    // props.onHandlerModal(false, []);
+  };
+
   return (
+    <>
+    <ToastContainer />
     <div className='px-4 md:px-10 mx-auto w-full min-h-screen'>
       <div className='w-full flex justify-between'>
         <div className='flex flex-warp items-center gap-2'>
@@ -20,7 +40,7 @@ export default function Dashboard() {
             />
           </span>
           <div className='flex flex-col'>
-            <h4 className='welcomemsg'>Hi, Superadmin</h4>
+            <h4 className='welcomemsg'>Hi, {data?.data.name}!</h4>
             <p className='text-xs'>Welcome to your MyDesa Care Dashboard</p>
           </div>
         </div>
@@ -45,7 +65,7 @@ export default function Dashboard() {
               </span>
             </div>
             <div className='flex flex-col items-center justify-center text-sm'>
-              <div className='font-bold'>3</div>
+              <div className='font-bold'>{appoint?.count.all_appointment}</div>
               <div> All Appointments</div>
             </div>
           </div>
@@ -59,7 +79,7 @@ export default function Dashboard() {
               </span>
             </div>
             <div className='flex flex-col items-center justify-center text-sm'>
-              <div className='font-bold'>23</div>
+              <div className='font-bold'>{coun?.count.all_counsellors}</div>
               <div> Counselor</div>
             </div>
           </div>
@@ -73,7 +93,7 @@ export default function Dashboard() {
               </span>
             </div>
             <div className='flex flex-col items-center justify-center text-sm'>
-              <div className='font-bold'>182</div>
+              <div className='font-bold'>{appoint?.count.in_progress}</div>
               <div> In-progress</div>
             </div>
           </div>
@@ -87,7 +107,7 @@ export default function Dashboard() {
               </span>
             </div>
             <div className='flex flex-col items-center justify-center text-sm'>
-              <div className='font-bold'>182</div>
+              <div className='font-bold'>{appoint?.count.cancel}</div>
               <div> Cancelled</div>
             </div>
           </div>
@@ -101,7 +121,7 @@ export default function Dashboard() {
               </span>
             </div>
             <div className='flex flex-col items-center justify-center text-sm'>
-              <div className='font-bold'>27</div>
+              <div className='font-bold'>{appoint?.count.completed}</div>
               <div> Completed</div>
             </div>
           </div>
@@ -109,12 +129,12 @@ export default function Dashboard() {
       </div>
 
       <div className='flex flex-wrap'>
-        <div className='w-full xl:w-8/12 mb-12 xl:mb-0 '>
-          <CardLineChart />
+        <div className="w-full xl:w-12/12 mb-12 xl:mb-0 ">
+          {appoint?.line.line_appointment ? <CardLineChart dataLine = {appoint?.line.line_appointment}/> : ''}
         </div>
-        <div className='w-full xl:w-4/12 '>
+        {/* <div className='w-full xl:w-4/12 '>
           <CardBarChart />
-        </div>
+        </div> */}
       </div>
 
       <div className='my-2 mx-0 bg-white rounded-md hidden'>
@@ -386,87 +406,103 @@ export default function Dashboard() {
                   <h3 className="mb-4 text-xl font-medium text-gray-900">
                     Add New Counselor
                   </h3>
-                  <form className="space-y-6">
-                    {/* <div>
-                      <label
-                        htmlFor="datetime"
-                        class="block mb-2 text-sm font-medium text-gray-900">
-                        DATETIME
-                      </label>
-                      <input
-                        type="datetime-local"
-                        name="datetime"
-                        id="datetime"
-                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-                        required
-                      />
-                    </div> */}
-                    <div>
-                      <label
-                        htmlFor="contact_no"
-                        class="block mb-2 text-sm font-medium text-gray-900">
-                        Email
-                      </label>
-                      <input
-                        type="text"
-                        name="counseloremail"
-                        id="counseloremail"
-                        value="counselor@gmail.com"
-                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-                        required
-                      />
-                    </div>
-                    <div>
-                      <label
-                        htmlFor="contact_no"
-                        class="block mb-2 text-sm font-medium text-gray-900">
-                        CONTACT NO
-                      </label>
-                      <input
-                        type="text"
-                        name="contact_no"
-                        id="contact_no"
-                        value="0189723650"
-                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-                        required
-                      />
-                    </div>
-                    <div>
-                      <label
-                        htmlFor="temp-pass"
-                        class="block mb-2 text-sm font-medium text-gray-900">
-                        Temporary Password
-                      </label>
-                      <input
-                        type="password"
-                        name="temp-pass"
-                        id="temp-pass"
-                        value="0189723650"
-                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-                        required
-                      />
-                    </div>
-                    {/* <div>
-                      <label
-                        htmlFor="services"
-                        class="block mb-2 text-sm font-medium text-gray-900">
-                        SERVICES
-                      </label>
-                      <input
-                        type="text"
-                        name="services"
-                        id="services"
-                        value="Family"
-                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-                        required
-                      />
-                    </div> */}
-                    <button
-                      type="submit"
-                      className="w-full text-white bg-purple-600 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
-                      Invite team 
-                    </button>
-                  </form>
+                  <Formik
+                        enableReinitialize
+                        validateOnChange={false}
+                        validateOnBlur={false}
+                        initialValues={{
+                          counseloremail : ``,
+                          contact_no : ``,
+                          temp_pass : ''
+                        }}
+                    onSubmit={onSubmit}>
+                        {(form) => (
+                          <form className="space-y-6" onSubmit={form.handleSubmit}>
+                          {/* <div>
+                            <label
+                              htmlFor="datetime"
+                              class="block mb-2 text-sm font-medium text-gray-900">
+                              DATETIME
+                            </label>
+                            <input
+                              type="datetime-local"
+                              name="datetime"
+                              id="datetime"
+                              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                              required
+                            />
+                          </div> */}
+                          <div>
+                            <label
+                              htmlFor="contact_no"
+                              class="block mb-2 text-sm font-medium text-gray-900">
+                              Email
+                            </label>
+                            <input
+                              type="text"
+                              name="counseloremail"
+                              id="counseloremail"
+                              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                              onChange={form.handleChange} 
+                              onBlur={form.handleBlur}
+                              required
+                            />
+                          </div>
+                          <div>
+                            <label
+                              htmlFor="contact_no"
+                              class="block mb-2 text-sm font-medium text-gray-900">
+                              CONTACT NO
+                            </label>
+                            <input
+                              type="text"
+                              name="contact_no"
+                              id="contact_no"
+                              onChange={form.handleChange} 
+                              onBlur={form.handleBlur}
+                              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                              required
+                            />
+                          </div>
+                          <div>
+                            <label
+                              htmlFor="temp-pass"
+                              class="block mb-2 text-sm font-medium text-gray-900">
+                              Temporary Password
+                            </label>
+                            <input
+                              type="password"
+                              name="temp_pass"
+                              id="temp-pass"
+                              onChange={form.handleChange} 
+                              onBlur={form.handleBlur}
+                              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                              required
+                            />
+                          </div>
+                          {/* <div>
+                            <label
+                              htmlFor="services"
+                              class="block mb-2 text-sm font-medium text-gray-900">
+                              SERVICES
+                            </label>
+                            <input
+                              type="text"
+                              name="services"
+                              id="services"
+                              value="Family"
+                              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                              required
+                            />
+                          </div> */}
+                          <button
+                            type="submit"
+                            className="w-full text-white bg-purple-600 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
+                            Invite team 
+                          </button>
+                        </form>
+                        )}
+                    </Formik>
                 </div>
               </div>
             </div>
@@ -477,27 +513,28 @@ export default function Dashboard() {
         ""
       )}
     </div>
+    </>
   );
 }
 Dashboard.layout = Admin;
-export async function getServerSideProps({ locale }) {
-  return {
-    props: {
-      ...(await serverSideTranslations(locale, [
-        'onboarding',
-        'addressbookpage',
-        'billingpage',
-        'components',
-        'homepage',
-        'importBulkOrder',
-        'integrationPage',
-        'multiPointOrder',
-        'orderDetailsPage',
-        'orderpage',
-        'pageWrapper',
-        'settings',
-        'topuppage',
-      ])),
-    },
-  };
-}
+// export async function getServerSideProps({ locale }) {
+//   return {
+//     props: {
+//       ...(await serverSideTranslations(locale, [
+//         'onboarding',
+//         'addressbookpage',
+//         'billingpage',
+//         'components',
+//         'homepage',
+//         'importBulkOrder',
+//         'integrationPage',
+//         'multiPointOrder',
+//         'orderDetailsPage',
+//         'orderpage',
+//         'pageWrapper',
+//         'settings',
+//         'topuppage',
+//       ])),
+//     },
+//   };
+// }
