@@ -39,6 +39,27 @@ const appointmenByStatus = async (data,page) => {
   return res.data.data;
 };
 
+const useAppointmentAdmin = (status,data) => {
+  return useQuery(
+    ["appointment",data],
+    () => appointmenByAdmin(status,data),
+    { cacheTime: 0 }
+  );
+};
+
+const appointmenByAdmin = async (data,page) => {
+  let status = data ? `&status=${data}` : '';
+  let db_page = page ? `?_page=${page}` : '?_page=1';
+  
+  let res = await request({
+    url: `${host}/booking_all_admin${db_page}${status}`,
+    method: "get",
+    headers: headers
+  });
+
+  return res.data.data;
+};
+
 const useCountAppointment = () => {
   return useQuery(
     "dashboard_count",
@@ -210,4 +231,4 @@ const updateSession = async (data_value) => {
   }
 };
 
-export { useAppointment, useBookingUpdate, useBookingInvitation, useCountAppointment, useAllProfile, useSessionAll, useSessionAdd, useSessionUpdate};
+export { useAppointmentAdmin, useAppointment, useBookingUpdate, useBookingInvitation, useCountAppointment, useAllProfile, useSessionAll, useSessionAdd, useSessionUpdate};

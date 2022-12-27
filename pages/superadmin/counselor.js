@@ -2,10 +2,73 @@ import React, { useState } from 'react';
 import Admin from 'src/layouts/Admin';
 import Link from 'next/link';
 import { createPopper } from '@popperjs/core';
+import { useAllProfile } from 'src/actions/appointment';
+import { useCounselorAdd } from "src/actions/counselor";
+import DataTable from 'react-data-table-component';
+import moment from 'moment';
+import { ToastContainer } from "react-toastify";
+import { Formik } from 'formik';
 
 export default function AdminCounselor() {
   const [showModal, setShowModal] = useState(false);
   const [viewCounselor, setViewCounselor] = useState(false);
+
+  const { mutate, error, isError, isLoading: isButtonLoading  } = useCounselorAdd();
+  
+  const onSubmit = async (values) => {
+    console.log('data', values);
+    setShowModal(false);
+    // return false;
+    await mutate(values);
+    // props.onHandlerModal(false, []);
+  };
+
+  const { data, isLoading } = useAllProfile();
+  const countPerPage = 10; 
+
+  const columns = [
+    {
+        name: <div className='font-bold'>COUNSELOR</div>,
+        selector: row => row.name ? row.name : 'Counsellor',
+    },
+    {
+        name: <div className='font-bold'>JOIN DATE</div>,
+        cell: row => <div className='w-full text-center'><div>{moment(row.created_at).format("DD/MM/YYYY")}</div><div><time className='text-xs'>{moment(row.created_at).format("hh:mm A")}</time></div></div>,
+    },
+    {
+        name: <div className='w-full text-center font-bold'>CONTACT NO</div>,
+        cell: row => <div className='w-full text-center'>{row.phone_no ? row.phone_no : 'N/A'}</div>,
+    },
+    {
+        name: <div className='w-full text-center font-bold'>EXPERTISE</div>,
+        cell: row => <div className='w-full text-center'>{row.expertise ? row.expertise : 'N/A'}</div>,
+    },
+    // {
+    //     name: <div className='w-full text-center font-bold'>STATUS</div>,
+    //     cell: row => <div className='w-full text-center font-bold'>
+    //                       {row.status== 1 ? <span className='bg-yellow-100 text-yellow-auto0 text-xs font-medium px-2.5 py-0.5 rounded'>New</span> : '' }
+    //                       {row.status== 2 ? <span className='bg-blue-300 text-yellow-auto0 text-xs font-medium px-2.5 py-0.5 rounded'>Accept</span> : '' }
+    //                       {row.status== 3 ? <span className='bg-yellow-300 text-yellow-auto0 text-xs font-medium px-2.5 py-0.5 rounded'>In-Progress</span> : '' }
+    //                       {row.status== 4 ? <span className='bg-green-300 text-yellow-auto0 text-xs font-medium px-2.5 py-0.5 rounded'>Completed</span> : '' }
+    //                       {row.status== 5 ? <span className='bg-red-100 text-yellow-auto0 text-xs font-medium px-2.5 py-0.5 rounded'>Cancelled</span> : '' }
+    //                       {row.status== 6 ? <span className='bg-red-300 text-yellow-auto0 text-xs font-medium px-2.5 py-0.5 rounded'>Rejected</span> : '' }
+    //                   </div>,
+    // },
+    {
+      name : <div className='w-full text-center font-bold'>ACTION</div>,
+      cell : row => <div className='w-full text-center font-bold'>
+                      <button
+                        onClick={() => setViewCounselor(true)}
+                        type='button'
+                        className='relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300'>
+                        <span className='text-xs px-4 py-1 transition-all ease-in duration-75 bg-white rounded-md group-hover:bg-opacity-0'>
+                          View
+                        </span>
+                      </button>
+                    </div>
+    }
+  ];
+
 
   // dropdown props
   const [dropdownPopoverShow, setDropdownPopoverShow] = React.useState(false);
@@ -22,6 +85,8 @@ export default function AdminCounselor() {
   };
 
   return (
+    <>
+    <ToastContainer />
     <div className='px-4 md:px-10 mx-auto w-full min-h-screen'>
       <div className='w-full flex justify-between mb-4'>
         <div className='flex flex-warp items-center gap-2'>
@@ -50,7 +115,7 @@ export default function AdminCounselor() {
       <div className='relative overflow-x-auto shadow-md sm:rounded-lg '>
         {/* Filter & search table */}
         <div className='p-4 flex items-center '>
-          <div
+          {/* <div
             className='relative m-1'
             style={{ width: '-webkit-fill-available' }}>
             <div className='absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none'>
@@ -72,8 +137,8 @@ export default function AdminCounselor() {
               placeholder='Search'
               style={{ width: '-webkit-fill-available' }}
             />
-          </div>
-          <div
+          </div> */}
+          {/* <div
             className='relative my-1 mr-0'
             style={{ width: '-webkit-fill-available' }}>
             <input
@@ -82,7 +147,7 @@ export default function AdminCounselor() {
               className='bg-gray-50 border border-r-0.5 border-gray-300 text-gray-900 text-sm rounded-lg rounded-r-none focus:ring-blue-500 focus:border-blue-500 block p-2.5'
               style={{ width: '-webkit-fill-available' }}
             />
-          </div>
+          </div> */}
           {/* <div
             className='relative my-1'
             style={{ width: '-webkit-fill-available' }}>
@@ -139,7 +204,7 @@ export default function AdminCounselor() {
               Export CSV
             </button>
           </div> */}
-          <div className='flex items-center justify-center '>
+          {/* <div className='flex items-center justify-center '>
                 <a
                   className='text-blueGray-500 block '
                   href='#pablo'
@@ -188,9 +253,30 @@ export default function AdminCounselor() {
                     </a>
                   </Link>
                 </div>
-              </div>
+              </div> */}
         </div>
-        <table className='w-full text-sm text-left text-gray-500'>
+        <DataTable
+            // title=" "
+            className='w-full'
+            columns={columns} 
+            data={data?.profile}
+            progressPending={isLoading} 
+            highlightOnHover
+            pagination
+            paginationServer
+            paginationTotalRows={data?.count}
+            paginationPerPage={countPerPage}
+            paginationComponentOptions={{
+              noRowsPerPage: true
+            }}
+            onChangePage={page => {setPage(page)}}
+            // selectableRows={isAdmin}
+            // selectableRowDisabled={rowDisabledCriteria}
+            // contextActions={contextActions}
+            // onSelectedRowsChange={handleRowSelected}
+            // clearSelectedRows={toggleCleared}
+        />
+        <table className='w-full text-sm text-left text-gray-500 hidden'>
           <thead className='text-xs text-gray-700 uppercase bg-gray-50 text-center'>
             <tr>
               <th scope='col' class='p-4'>
@@ -415,116 +501,132 @@ export default function AdminCounselor() {
       </div>
       {showModal != false ? (
         <>
-          <div
-            aria-hidden='true'
-            className='overflow-y-auto overflow-x-hidden fixed top-40 right-0 left-20 z-40 w-full h-modal md:h-full'>
-            <div className='mx-auto relative p-4 w-full max-w-md h-full md:h-auto'>
-              <div className='relative bg-white rounded-lg shadow'>
+            <div
+            aria-hidden="true"
+            className="overflow-y-auto overflow-x-hidden fixed top-40 right-0 left-20 z-40 w-full h-modal md:h-full">
+            <div className="mx-auto relative p-4 w-full max-w-md h-full md:h-auto">
+              <div className="relative bg-white rounded-lg shadow">
                 <button
                   onClick={() => setShowModal(false)}
-                  type='button'
-                  className='absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center'>
+                  type="button"
+                  className="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center">
                   <svg
-                    className='w-5 h-5'
-                    fill='currentColor'
-                    viewBox='0 0 20 20'
-                    xmlns='http://www.w3.org/2000/svg'>
+                    className="w-5 h-5"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
                     <path
-                      fillRule='evenodd'
-                      d='M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z'
-                      clipRule='evenodd'></path>
+                      fillRule="evenodd"
+                      d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                      clipRule="evenodd"></path>
                   </svg>
                 </button>
-                <div className='py-6 px-6 lg:px-8'>
-                  <h3 className='mb-4 text-xl font-medium text-gray-900'>
+                <div className="py-6 px-6 lg:px-8">
+                  <h3 className="mb-4 text-xl font-medium text-gray-900">
                     Add New Counselor
                   </h3>
-                  <form className='space-y-6'>
-                    {/* <div>
-                      <label
-                        htmlFor="datetime"
-                        class="block mb-2 text-sm font-medium text-gray-900">
-                        DATETIME
-                      </label>
-                      <input
-                        type="datetime-local"
-                        name="datetime"
-                        id="datetime"
-                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-                        required
-                      />
-                    </div> */}
-                    <div>
-                      <label
-                        htmlFor='contact_no'
-                        class='block mb-2 text-sm font-medium text-gray-900'>
-                        Email
-                      </label>
-                      <input
-                        type='text'
-                        name='counseloremail'
-                        id='counseloremail'
-                        value='counselor@gmail.com'
-                        class='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5'
-                        required
-                      />
-                    </div>
-                    <div>
-                      <label
-                        htmlFor='contact_no'
-                        class='block mb-2 text-sm font-medium text-gray-900'>
-                        CONTACT NO
-                      </label>
-                      <input
-                        type='text'
-                        name='contact_no'
-                        id='contact_no'
-                        value='0189723650'
-                        class='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5'
-                        required
-                      />
-                    </div>
-                    <div>
-                      <label
-                        htmlFor='temp-pass'
-                        class='block mb-2 text-sm font-medium text-gray-900'>
-                        Temporary Password
-                      </label>
-                      <input
-                        type='password'
-                        name='temp-pass'
-                        id='temp-pass'
-                        value='0189723650'
-                        class='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5'
-                        required
-                      />
-                    </div>
-                    {/* <div>
-                      <label
-                        htmlFor="services"
-                        class="block mb-2 text-sm font-medium text-gray-900">
-                        SERVICES
-                      </label>
-                      <input
-                        type="text"
-                        name="services"
-                        id="services"
-                        value="Family"
-                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-                        required
-                      />
-                    </div> */}
-                    <button
-                      type='submit'
-                      className='w-full text-white bg-purple-600 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center'>
-                      Invite team
-                    </button>
-                  </form>
+                  <Formik
+                        enableReinitialize
+                        validateOnChange={false}
+                        validateOnBlur={false}
+                        initialValues={{
+                          counseloremail : ``,
+                          contact_no : ``,
+                          temp_pass : ''
+                        }}
+                    onSubmit={onSubmit}>
+                        {(form) => (
+                          <form className="space-y-6" onSubmit={form.handleSubmit}>
+                          {/* <div>
+                            <label
+                              htmlFor="datetime"
+                              class="block mb-2 text-sm font-medium text-gray-900">
+                              DATETIME
+                            </label>
+                            <input
+                              type="datetime-local"
+                              name="datetime"
+                              id="datetime"
+                              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                              required
+                            />
+                          </div> */}
+                          <div>
+                            <label
+                              htmlFor="contact_no"
+                              class="block mb-2 text-sm font-medium text-gray-900">
+                              Email
+                            </label>
+                            <input
+                              type="text"
+                              name="counseloremail"
+                              id="counseloremail"
+                              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                              onChange={form.handleChange} 
+                              onBlur={form.handleBlur}
+                              required
+                            />
+                          </div>
+                          <div>
+                            <label
+                              htmlFor="contact_no"
+                              class="block mb-2 text-sm font-medium text-gray-900">
+                              CONTACT NO
+                            </label>
+                            <input
+                              type="text"
+                              name="contact_no"
+                              id="contact_no"
+                              onChange={form.handleChange} 
+                              onBlur={form.handleBlur}
+                              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                              required
+                            />
+                          </div>
+                          <div>
+                            <label
+                              htmlFor="temp-pass"
+                              class="block mb-2 text-sm font-medium text-gray-900">
+                              Temporary Password
+                            </label>
+                            <input
+                              type="password"
+                              name="temp_pass"
+                              id="temp-pass"
+                              onChange={form.handleChange} 
+                              onBlur={form.handleBlur}
+                              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                              required
+                            />
+                          </div>
+                          {/* <div>
+                            <label
+                              htmlFor="services"
+                              class="block mb-2 text-sm font-medium text-gray-900">
+                              SERVICES
+                            </label>
+                            <input
+                              type="text"
+                              name="services"
+                              id="services"
+                              value="Family"
+                              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                              required
+                            />
+                          </div> */}
+                          <button
+                            type="submit"
+                            className="w-full text-white bg-purple-600 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
+                            Invite team 
+                          </button>
+                        </form>
+                        )}
+                    </Formik>
                 </div>
               </div>
             </div>
           </div>
-          <div className='bg-black bg-opacity-50 fixed inset-0 z-20'></div>
+          <div className="bg-black bg-opacity-50 fixed inset-0 z-20"></div>
         </>
       ) : (
         ''
@@ -689,6 +791,7 @@ export default function AdminCounselor() {
         ''
       )}
     </div>
+    </>
   );
 }
 AdminCounselor.layout = Admin;

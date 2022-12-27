@@ -1,10 +1,50 @@
 import React, { useState } from 'react';
 import Admin from 'src/layouts/Admin';
+import { useClient } from 'src/actions/client';
 
 import { createPopper } from '@popperjs/core';
 import Link from 'next/link';
+import DataTable from 'react-data-table-component';
 
 export default function AdminClient() {
+  const [page, setPage] = useState(0);
+  const { data, isLoading, isSuccess, isFetching, isError, error } = useClient('',page);
+  const countPerPage = 10; 
+
+  const columns = [
+    {
+        name: <div className='font-bold'>CLIENT</div>,
+        selector: row => row.name,
+    },
+    {
+        name: <div className='font-bold'>GENDER</div>,
+        selector: row => row.gender,
+    },
+    {
+        name: <div className='w-full text-center font-bold'>EMAIL</div>,
+        cell: row => <div className='w-full text-center'><div>{row.email}</div></div>,
+        width: '10rem'
+                        
+    },
+    {
+        name: <div className='w-full text-center font-bold'>CONTACT NO</div>,
+        cell: row => <div className='w-full text-center'>{row.country_code+row.mobileno}</div>,
+    },
+    // {
+    //   name : <div className='w-full text-center font-bold'>ACTION</div>,
+    //   cell : row => <div className='w-full text-center font-bold'>
+    //                   <button
+    //                     onClick={() => setShowModal(true)}
+    //                     type='button'
+    //                     className='relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300'>
+    //                     <span className='text-xs px-4 py-1 transition-all ease-in duration-75 bg-white rounded-md group-hover:bg-opacity-0'>
+    //                       View
+    //                     </span>
+    //                   </button>
+    //                 </div>
+    // }
+  ];
+
   const [showModal, setShowModal] = useState(false);
 
   // dropdown props
@@ -49,7 +89,7 @@ export default function AdminClient() {
       <div className='relative overflow-x-auto shadow-md sm:rounded-lg '>
         {/* Filter & search table */}
         <div className='p-4 flex items-center '>
-          <div
+          {/* <div
             className='relative m-1'
             style={{ width: '-webkit-fill-available' }}>
             <div className='absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none'>
@@ -71,8 +111,8 @@ export default function AdminClient() {
               placeholder='Search'
               style={{ width: '-webkit-fill-available' }}
             />
-          </div>
-          <div
+          </div> */}
+          {/* <div
             className='relative my-1 mr-0'
             style={{ width: '-webkit-fill-available' }}>
             <input
@@ -81,7 +121,7 @@ export default function AdminClient() {
               className='bg-gray-50 border border-r-0.5 border-gray-300 text-gray-900 text-sm rounded-lg rounded-r-none focus:ring-blue-500 focus:border-blue-500 block p-2.5'
               style={{ width: '-webkit-fill-available' }}
             />
-          </div>
+          </div> */}
           {/* <div
             className='relative my-1'
             style={{ width: '-webkit-fill-available' }}>
@@ -138,7 +178,7 @@ export default function AdminClient() {
               Export CSV
             </button>
           </div> */}
-          <div className='flex items-center justify-center '>
+          {/* <div className='flex items-center justify-center '>
                 <a
                   className='text-blueGray-500 block '
                   href='#pablo'
@@ -187,9 +227,31 @@ export default function AdminClient() {
                     </a>
                   </Link>
                 </div>
-              </div>
+          </div> */}
         </div>
-        <table className='w-full text-sm text-left text-gray-500'>
+
+        <DataTable
+          // title=" "
+          className='w-full'
+          columns={columns} 
+          data={data?.data}
+          progressPending={isLoading} 
+          highlightOnHover
+          pagination
+          paginationServer
+          paginationTotalRows={data?.count}
+          paginationPerPage={countPerPage}
+          paginationComponentOptions={{
+            noRowsPerPage: true
+          }}
+          onChangePage={page => {setPage(page)}}
+          // selectableRows={isAdmin}
+          // selectableRowDisabled={rowDisabledCriteria}
+          // contextActions={contextActions}
+          // onSelectedRowsChange={handleRowSelected}
+          // clearSelectedRows={toggleCleared}
+        />
+        <table className='w-full text-sm text-left text-gray-500 hidden'>
           <thead className='text-xs text-gray-700 uppercase bg-gray-50 text-center'>
             <tr>
               <th scope='col' class='p-4'>

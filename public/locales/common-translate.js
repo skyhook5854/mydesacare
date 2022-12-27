@@ -42,6 +42,7 @@ export const CommonTranslate = {
       // home: "Home",
       dashboard: "Dashboard",
       // new: "Drafts",
+      counselor: "Counselor",
       appointments: "Appointments",
       orders: "Orders",
       "address-book": "Address book",
