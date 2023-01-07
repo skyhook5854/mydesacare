@@ -53,12 +53,13 @@ const UserDropdown = () => {
           dropdownPopoverShow ? closeDropdownPopover() : openDropdownPopover();
         }}>
         <div className="items-center flex">
-          <span className="w-8 h-8 text-sm text-white bg-blueGray-200 inline-flex items-center justify-center rounded-full">
-            <img
+          <span className="w-8 h-8 text-xs text-black inline-flex items-center justify-center rounded-full">
+            {/* <img
               alt="..."
               className="w-full rounded-full align-middle border-none shadow-lg"            
               src={data?.data?.profile?.profile_img ? 'https://staging.mydesa.my/v2/'+data?.data.profile.profile_img : '/img/team-1-800x800.jpg'}
-            />
+            /> */}
+            <i class="text-purple-600  fas fa-user-cog" />
           </span>
         </div>
       </a>
