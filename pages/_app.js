@@ -33,21 +33,21 @@ import { mobiletabs } from 'src/data/mobileTabs';
 const queryClient = new QueryClient();
 
 //transiition handler
-Router.events.on('routeChangeStart', (url) => {
-  document.body.classList.add('body-page-transition');
-  ReactDOM.render(
-    <PageChange path={url} />,
-    document.getElementById('page-transition')
-  );
-});
-Router.events.on('routeChangeComplete', () => {
-  ReactDOM.unmountComponentAtNode(document.getElementById('page-transition'));
-  document.body.classList.remove('body-page-transition');
-});
-Router.events.on('routeChangeError', () => {
-  ReactDOM.unmountComponentAtNode(document.getElementById('page-transition'));
-  document.body.classList.remove('body-page-transition');
-});
+// Router.events.on('routeChangeStart', (url) => {
+//   document.body.classList.add('body-page-transition');
+//   ReactDOM.render(
+//     <PageChange path={url} />,
+//     document.getElementById('page-transition')
+//   );
+// });
+// Router.events.on('routeChangeComplete', () => {
+//   ReactDOM.unmountComponentAtNode(document.getElementById('page-transition'));
+//   document.body.classList.remove('body-page-transition');
+// });
+// Router.events.on('routeChangeError', () => {
+//   ReactDOM.unmountComponentAtNode(document.getElementById('page-transition'));
+//   document.body.classList.remove('body-page-transition');
+// });
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
@@ -64,7 +64,7 @@ function MyApp({ Component, pageProps }) {
       {/* Mobile Nav */}
       <div className='md:hidden bg-white sticky top-0 z-50 w-full flex justify-between items-center py-2 px-2'>
         <div className=''>
-          <img src='img/logo/MyDesaCare.svg' alt='MyDesaCareLogo' />
+          <img src='/img/logo/MyDesaCare.svg' alt='MyDesaCareLogo' />
         </div>
         <Link href="settings">
           <a className='flex items-center justify-center w-4 h-4 p-4 rounded-full bg-purple-200'>

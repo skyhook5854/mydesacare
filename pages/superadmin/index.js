@@ -548,7 +548,7 @@ export default function Dashboard() {
           ''
         )}
 
-        <div className='absolute bottom-2 w-32 rounded-full'>
+        {/* <div className='absolute bottom-2 w-32 rounded-full'>
           <button
             type='submit'
             onClick={() => setShowModal(true)}
@@ -557,7 +557,7 @@ export default function Dashboard() {
             <i class='fa fa-plus-circle px-2' aria-hidden='true'></i>
             <span className='inline-flex text-xs'>New Counselor</span>
           </button>
-        </div>
+        </div> */}
       </div>
     </>
   );
