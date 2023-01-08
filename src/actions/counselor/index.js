@@ -51,19 +51,85 @@ const useCounselorAdd = () => {
     });
   };
   
-  const counselorAdd = async (data_value) => {
-    try{
-      let res = await request({
-        url: `${host}/counselor_new`,
-        method: "post",
-        data: data_value,
-        headers: headers
-      });
-      return res;
-    } catch(err){
-        console.log('err', err);
-      throw err;
-    }
-  };
+const counselorAdd = async (data_value) => {
+  try{
+    let res = await request({
+      url: `${host}/counselor_new`,
+      method: "post",
+      data: data_value,
+      headers: headers
+    });
+    return res;
+  } catch(err){
+      console.log('err', err);
+    throw err;
+  }
+};
 
-export { useCountCounselor, useCounselorAdd };
+const useCounselorUpdate = () => {
+  const router = useRouter();
+  return useMutation(counselorUpdate , {
+    onSuccess: (data) => {
+      console.log('success', data);
+       if(data?.data.response.response_code == '200'){
+        toast(data?.data.response.response_message);
+        // router.push('/settings');
+        // console.log('success', data?.data.response.response_message);
+      }else{
+        toast(data?.data.response.response_message);
+        // console.log('error', data?.data.response.response_message);
+      }
+      // router.push("/dashboard");
+    }
+  });
+};
+
+const counselorUpdate = async (data_value) => {
+try{
+  let res = await request({
+    url: `${host}/counselor_update`,
+    method: "post",
+    data: data_value,
+    headers: headers
+  });
+  return res;
+} catch(err){
+    console.log('err', err);
+  throw err;
+}
+};
+
+const useCounselorDelete = () => {
+  const router = useRouter();
+  return useMutation(counselorDelete , {
+    onSuccess: (data) => {
+      console.log('success', data);
+       if(data?.data.response.response_code == '200'){
+        toast(data?.data.response.response_message);
+        // router.push('/settings');
+        // console.log('success', data?.data.response.response_message);
+      }else{
+        toast(data?.data.response.response_message);
+        // console.log('error', data?.data.response.response_message);
+      }
+      // router.push("/dashboard");
+    }
+  });
+};
+
+const counselorDelete = async (data_value) => {
+try{
+  let res = await request({
+    url: `${host}/counselor_delete&status=${data}`,
+    method: "get",
+    headers: headers
+  });
+  return res;
+} catch(err){
+    console.log('err', err);
+  throw err;
+}
+};
+
+
+export { useCountCounselor, useCounselorAdd, useCounselorUpdate, useCounselorDelete };
