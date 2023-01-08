@@ -1,3 +1,5 @@
+/* eslint-disable react/jsx-no-undef */
+/* eslint-disable react/react-in-jsx-scope */
 // import React, { useState } from "react";
 
 import { useState, useRef } from 'react';
@@ -26,13 +28,6 @@ import {
 import Link from 'next/link';
 import { useCommonHooks } from 'src/hooks/translation/useCommonHooks';
 
-const drawerWidthOpen = 240;
-const paddingIconButton = 10;
-const marginIconButton = 14;
-const iconFontSize = 20;
-const drawerWidthClose =
-  (paddingIconButton + marginIconButton) * 2 + iconFontSize;
-
 // components
 
 import AdminNavbar from 'src/components/Navbars/AdminNavbar.js';
@@ -41,6 +36,13 @@ import Sidebar2 from 'src/components/Sidebar/Sidebar2';
 import FooterAdmin from 'src/components/Footers/FooterAdmin.js';
 import { flex } from 'tailwindcss/defaultTheme';
 import { useRouter } from 'next/router';
+
+const drawerWidthOpen = 240;
+const paddingIconButton = 10;
+const marginIconButton = 14;
+const iconFontSize = 20;
+const drawerWidthClose =
+  (paddingIconButton + marginIconButton) * 2 + iconFontSize;
 
 export default function Admin({ children }) {
   const router = useRouter();
@@ -80,13 +82,15 @@ export default function Admin({ children }) {
           // padding: "15px 0px",
           // borderBottom: "1px solid lightgray",
           alignItems: 'flex-center',
-        }}>
+        }}
+      >
         <Box
           sx={{
             flexShrink: 0,
             display: open ? 'none' : { xs: 'none', sm: 'initial' },
             marginBottom: '9px',
-          }}>
+          }}
+        >
           {/* <Logo /> */}
         </Box>
         <Typography
@@ -102,7 +106,8 @@ export default function Admin({ children }) {
             // marginLeft: open ? "2px" : "8px",
             // paddingTop: "4px",
             paddingBottom: '0px',
-          }}>
+          }}
+        >
           <img src='/img/logo/MyDesaCare.svg' alt='MyDesa Care' className='' />
         </Typography>
 
@@ -117,14 +122,16 @@ export default function Admin({ children }) {
             // "&:hover": {
             //   backgroundColor: "#26284687",
             // },
-          }}>
+          }}
+        >
           <a className='text-primary'>
             <svg
               className='hidden md:block h-6 '
               fill='none'
               stroke='currentColor'
               viewBox='0 0 24 24'
-              xmlns='http://www.w3.org/2000/svg'>
+              xmlns='http://www.w3.org/2000/svg'
+            >
               <path
                 strokeLinecap='round'
                 strokeLinejoin='round'
@@ -141,9 +148,9 @@ export default function Admin({ children }) {
           <li className='m-2' key={name}>
             <Link href={links}>
               <a
-                className={`flex p-2 bg-fuchsia-200 rounded hover:bg-purple-400 cursor-pointer ${
-                  router.asPath === links && 'bg-purple-600 text-white'
-                }`}>
+                className={`flex p-2 bg-fuchsia-200 rounded hover:bg-purple-400 cursor-pointer ${router.asPath ===
+                  links && 'bg-purple-600 text-white'}`}
+              >
                 <span className='ml-1'>{icons}</span>
                 <span className='ml-8'>{name}</span>
               </a>
@@ -187,11 +194,12 @@ export default function Admin({ children }) {
                   : theme.transitions.duration.enteringScreen,
               }),
             },
-          }}>
+          }}
+        >
           {drawerContent}
         </Drawer>
         <div
-          className='w-full relative  bg-blueGray-100 px-0 '
+          className='w-full relative  bg-blueGray-100 px-0 m-h-screen'
           // style={{ marginLeft: "3rem" }}
         >
           <AdminNavbar />
@@ -199,7 +207,10 @@ export default function Admin({ children }) {
           <div className='relative bg-bluelight-100 md:pt-32 pb-32 pt-12'>
             {children}
           </div>
-          <FooterAdmin />
+          {/* <div className='hidden md:block'>
+            <FooterAdmin />
+          </div> */}
+          
         </div>
       </Box>
     </>

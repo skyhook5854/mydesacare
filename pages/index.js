@@ -18,7 +18,7 @@ export default function Dashboard() {
   // return false;
   // console.log(chartLine);
   // useEffect(() => {
-  //   setDataChart(appoint?.line.line_appointment);
+  //   setDataChart(appoint?.line?.line_appointment);
   // }); //
 
   
@@ -195,7 +195,7 @@ export default function Dashboard() {
                   </span>
                 </div>
                 <div className="flex flex-col items-center justify-center text-sm">
-                  <div className="font-bold">{appoint?.count.accept}</div>
+                  <div className="font-bold">{appoint?.count?.accept}</div>
                   <div> Accepted</div>
                 </div>
               </div>
@@ -209,7 +209,7 @@ export default function Dashboard() {
                   </span>
                 </div>
                 <div className="flex flex-col items-center justify-center text-sm">
-                  <div className="font-bold">{appoint?.count.in_progress}</div>
+                  <div className="font-bold">{appoint?.count?.in_progress}</div>
                   <div> In-progress</div>
                 </div>
               </div>
@@ -223,7 +223,7 @@ export default function Dashboard() {
                   </span>
                 </div>
                 <div className="flex flex-col items-center justify-center text-sm">
-                  <div className="font-bold">{appoint?.count.cancel}</div>
+                  <div className="font-bold">{appoint?.count?.cancel}</div>
                   <div> Cancelled</div>
                 </div>
               </div>
@@ -237,7 +237,7 @@ export default function Dashboard() {
                   </span>
                 </div>
                 <div className="flex flex-col items-center justify-center text-sm">
-                  <div className="font-bold">{appoint?.count.completed}</div>
+                  <div className="font-bold">{appoint?.count?.completed}</div>
                   <div> Completed</div>
                 </div>
               </div>
@@ -247,7 +247,7 @@ export default function Dashboard() {
 
           <div className="flex flex-wrap">
             <div className="w-full xl:w-12/12 mb-12 xl:mb-0 ">
-            {appoint?.line.line_appointment ? <CardLineChart dataLine = {appoint?.line.line_appointment}/> : ''}
+            {appoint?.line?.line_appointment ? <CardLineChart dataLine = {appoint?.line?.line_appointment}/> : ''}
             
             </div>
             {/* <div className="w-full xl:w-4/12 hidden">
