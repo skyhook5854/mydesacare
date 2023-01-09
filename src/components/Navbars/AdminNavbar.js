@@ -101,7 +101,7 @@ export default function Navbar() {
 
               <i class='text-purple-600  fas fa-bell text-xs'></i>
               <UserDropdown />
-              <div className=' w-full rounded-full'>
+              {/* <div className=' w-full rounded-full'>
                 <button
                   type='submit'
                   onClick={() => setShowModal(true)}
@@ -110,7 +110,7 @@ export default function Navbar() {
                   <i class='fa fa-plus-circle px-2' aria-hidden='true'></i>
                   <span className='text-xs'>New Counselor</span>
                 </button>
-              </div>
+              </div> */}
             </ul>
             {showModal != false ? (
           <>
