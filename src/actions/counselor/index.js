@@ -120,7 +120,9 @@ const useCounselorDelete = () => {
 const counselorDelete = async (data_value) => {
 try{
   let res = await request({
+
     url: `${host}/delete_counselor?id=${data_value}`,
+
     method: "get",
     headers: headers
   });
