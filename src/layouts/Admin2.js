@@ -37,7 +37,7 @@ import Sidebar2 from 'src/components/Sidebar/Sidebar2';
 import FooterAdmin from 'src/components/Footers/FooterAdmin.js';
 import { flex } from 'tailwindcss/defaultTheme';
 import { useRouter } from 'next/router';
-import { mobiletabs } from 'src/data/superadminTabs';
+import { mobiletabs } from 'src/data/mobiletabs';
 
 const drawerWidthOpen = 240;
 const paddingIconButton = 10;
@@ -209,11 +209,11 @@ export default function Admin({ children }) {
             <div className=''>
               <img src='/img/logo/MyDesaCare.svg' alt='MyDesaCareLogo' />
             </div>
-            <Link href='settings'>
+            {/* <Link href='settings'>
               <a className='flex items-center justify-center w-4 h-4 p-4 rounded-full bg-purple-200'>
                 <i class='fas fa-user-cog p-2 text-xs ' />
               </a>
-            </Link>
+            </Link> */}
           </div>
           {/* <AdminNavbar /> */}
           {/* Header */}

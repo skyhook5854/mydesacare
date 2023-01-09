@@ -41,11 +41,11 @@ export default function Dashboard() {
         <div className=''>
           <img src='/img/logo/MyDesaCare.svg' alt='MyDesaCareLogo' />
         </div>
-        <Link href='settings'>
+        {/* <Link href='settings'>
           <a className='flex items-center justify-center w-4 h-4 p-4 rounded-full bg-purple-200'>
             <i class='fas fa-user-cog p-2 text-xs ' />
           </a>
-        </Link>
+        </Link> */}
       </div>
       <ToastContainer />
       <div className='relative px-4 md:px-10 mx-auto w-full min-h-screen'>
