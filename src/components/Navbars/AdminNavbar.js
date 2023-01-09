@@ -11,10 +11,11 @@ import { useRecoilValue } from 'recoil';
 import { authAtom } from 'src/recoil/auth';
 import { useCountAppointment } from 'src/actions/appointment';
 import { Formik } from 'formik';
+import { useProfile } from "src/actions/settings";
 
 export default function Navbar() {
   const { bannerFreshLook, whatNew } = useCommonHooks();
-  const data = useRecoilValue(authAtom);
+  const { data } = useProfile();
   const { data: appoint, isFetching } = useCountAppointment();
   const { data: coun } = useCountCounselor();
   const {
@@ -51,10 +52,11 @@ export default function Navbar() {
                       alt='...'
                       className='w-full rounded-full align-middle border-none shadow-lg'
                       src={
-                        data?.data?.profile?.profile_img
-                          ? 'https://staging.mydesa.my/v2/' +
-                            data?.data.profile.profile_img
-                          : '/img/team-1-800x800.jpg'
+                          data?.data?.profile?.profile_img
+                          ? 
+                            'https://www.mydesa.my/v2/' + data?.data.profile.profile_img
+                          : 
+                            'https://static.vecteezy.com/system/resources/thumbnails/003/337/584/small/default-avatar-photo-placeholder-profile-icon-vector.jpg'
                       }
                     />
                   </span>
@@ -63,7 +65,7 @@ export default function Navbar() {
               <div className=''>
                 <div className='m-0 px-2'>
                   <p className='text-sm font-semibold'>
-                    Hi, {data?.data.name}!
+                    Hi, {data?.data.profile.name}!
                   </p>
                   <p className='text-xs font-medium'>
                     Here you can see all your appointment
@@ -99,9 +101,9 @@ export default function Navbar() {
             <ul className=' md:flex  flex-col justify-between md:flex-row list-none items-center gap-2'>
               {/* <LanguageDropdown /> */}
 
-              <i class='text-purple-600  fas fa-bell text-xs'></i>
+              {/* <i class='text-purple-600  fas fa-bell text-xs'></i> */}
               <UserDropdown />
-              <div className=' w-full rounded-full'>
+              {/* <div className=' w-full rounded-full'>
                 <button
                   type='submit'
                   onClick={() => setShowModal(true)}
@@ -110,7 +112,7 @@ export default function Navbar() {
                   <i class='fa fa-plus-circle px-2' aria-hidden='true'></i>
                   <span className='text-xs'>New Counselor</span>
                 </button>
-              </div>
+              </div> */}
             </ul>
             {showModal != false ? (
           <>

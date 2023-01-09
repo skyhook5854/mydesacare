@@ -165,23 +165,23 @@ return (
                                 required
                             />
                             </div> */}
-                            <div className='flex justify-between'>
+                            {/* <div className='flex justify-between'>
                             <label>Disable match</label>
                             <label class='flex relative cursor-pointer  justify-end mr-4'>
                                 <input
                                 
-                                    checked={form.values.disabled_match}
+                                    checked={form.values.disabled_match ? true : false }
                                     name="disabled_match"
                                     type='checkbox'
-                                    onChange={form.handleChange}
+                                    onChange={(e) => console.log(e.target.value)}
+                                    onBlur={form.handleBlur}
                                     class='sr-only'
-                                    value='1'
-                                // onChange={onChange}
+                                    value="1"
                                 />
 
                                 <div class='w-11 h-6 bg-gray-200 rounded-full border border-gray-200 toggle-bg dark:bg-gray-700 dark:border-gray-600'></div>
                             </label>
-                            </div>
+                            </div> */}
                             <div className='flex items-center gap-2 py-4'>
                                 <button type='submit' className='w-1/2 border font-medium rounded-lg text-sm px-4 py-1 text-center'>
                                     Update

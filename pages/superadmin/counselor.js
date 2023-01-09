@@ -38,6 +38,11 @@ export default function AdminCounselor() {
 
   const columns = [
     {
+        name: <div className='font-bold'>NO.</div>,
+        cell: row => row.row_num,
+        width: '4rem'
+    },
+    {
         name: <div className='font-bold'>COUNSELOR</div>,
         selector: row => row.name ? row.name : 'Counsellor',
     },
@@ -101,7 +106,7 @@ export default function AdminCounselor() {
       <div className='w-full flex justify-between mb-4'>
         <div className='flex flex-warp items-center gap-2'>
           <span className='back flex items-center justify-center border w-10 h-10 rounded-full'>
-            <i class='fa fa-angle-left' aria-hidden='true'></i>
+            <i class='fas fa-user-shield' aria-hidden='true'></i>
           </span>
           <div className='flex flex-col'>
             <h4 className='welcomemsg font-semibold'>Counselor</h4>
@@ -581,7 +586,7 @@ export default function AdminCounselor() {
                         <label
                             htmlFor="contact_no"
                             class="block mb-2 text-sm font-medium text-gray-900">
-                            CONTACT NO
+                            Contact No
                         </label>
                         <input
                             type="text"

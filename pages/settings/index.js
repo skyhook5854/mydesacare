@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useTranslation } from "next-i18next";
-// import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 // import { motion, AnimateSharedLayout } from "framer-motion";
 // import page
 import BillingInformation from "./user_informations/billing-information";
@@ -71,12 +71,12 @@ export default function UserInformations() {
     </>
   );
 }
-// export async function getServerSideProps({ locale }) {
-//   return {
-//     props: {
-//       ...(await serverSideTranslations(locale, ["settings"])),
-//     },
-//   };
-// }
+export async function getServerSideProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["settings"])),
+    },
+  };
+}
 
 UserInformations.layout = Admin2;

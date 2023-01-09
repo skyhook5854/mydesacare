@@ -9,7 +9,7 @@ export default function ActionDone(props) {
     console.log('data is : ', data);
     return (
         <>
-        <div
+          <div
               aria-hidden='true'
               className='overflow-y-auto overflow-x-hidden fixed top-40 right-0 left-20 z-40 w-full h-modal md:h-full'>
               <div className='mx-auto relative p-4 w-full max-w-xl h-full md:h-auto'>
@@ -43,7 +43,7 @@ export default function ActionDone(props) {
                               </span>
                               <time class='mb-1 ml-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500'>
                                 <p className="font-bold text-black mb-3">Description</p>
-                                {step.description}
+                                <p className="text-black">{step.description}</p>
                               </time>
                             </li>
                           )

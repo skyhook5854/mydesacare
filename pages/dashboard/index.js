@@ -22,219 +22,217 @@ export default function Dashboard() {
 
   return (
     <div className='px-4 md:px-10 mx-auto w-full'>
-      {/* <div className='block md:hidden py-6 px-4 rounded-md bg-white mx-2'>
-        new
-      </div> */}
       {!isFetching ? (
         <>
-          <div className='hidden flex flex-auto justify-between bg-white rounded-md text-black font-bold p-0 divide-x'>
-            <div className='md:w-1/2'>
-              <h4 className='border-b m-0 p-3'>Welcome Back</h4>
-              <div className='m-0 px-6 py-4'>
+          <div className='hidden md:block'>
+            <div className='flex flex-col bg-white rounded-md text-black font-bold p-0'>
+              {/* <div className='border-r border-b m-0 p-3'>Welcome Back</div> */}
+              <div className='border-b m-0 p-3 col-span-3'>Appointments</div>
+              {/* <div className='border-r m-0 px-6 py-4'>
                 <p className='text-2xl mb-4'>Hi, {data?.data.name}!</p>
                 <p className='text-sm font-medium'>
                   Here you can see all your appointment
                 </p>
-              </div>
-            </div>
-            <div className='md:w-1/2 flex flex-col m-0 p-0'>
-              <h4 className='border-b m-0 p-3'>Appointment</h4>
-              <div className=''>
-                {appoint?.appointment?.value_appointment[0] ? (
-                  <div className='flex flex-col text-xs border-b px-6 py-4 m-0'>
-                    <div className='flex gap-2 divide-x'>
-                      <span>
-                        {appoint?.appointment?.value_appointment[0].date
-                          ? moment(
-                              appoint?.appointment?.value_appointment[0].date
-                            ).format('D MMM')
-                          : ''}
-                      </span>
-                      <span>
-                        {appoint?.appointment?.value_appointment[0].time
-                          ? appoint?.appointment?.value_appointment[0].time
-                          : ''}
-                      </span>
+              </div> */}
+              <div className='m-0 p-0 col-span-3'>
+                <div className='grid grid-cols-2'>
+                  {appoint?.appointment.value_appointment[0] ? (
+                    <div className='text-xs border-r border-b px-6 py-4 m-0'>
+                      <div className='flex justify-between mb-4'>
+                        <span>
+                          {appoint?.appointment.value_appointment[0].date
+                            ? moment(
+                                appoint?.appointment.value_appointment[0].date
+                              ).format('D MMM')
+                            : ''}
+                        </span>
+                      </div>
+                      <div className='flex items-center h-10'>
+                        <div>
+                          <span>
+                            {appoint?.appointment.value_appointment[0].time
+                              ? appoint?.appointment.value_appointment[0].time
+                              : ''}
+                          </span>
+                        </div>
+                        <div className='flex flex-col pl-4 ml-4 border-l border-green-400'>
+                          <span className='font-light'>
+                            {appoint?.appointment.value_appointment[0]
+                              .problem_type
+                              ? appoint?.appointment.value_appointment[0]
+                                  .problem_type
+                              : ''}
+                          </span>
+                          <span className='font-semibold'>
+                            Meeting With{' '}
+                            {appoint?.appointment.value_appointment[0].name
+                              ? appoint?.appointment.value_appointment[0].name
+                              : ''}
+                          </span>
+                        </div>
+                      </div>
                     </div>
-                    <div className=''>
-                      <div className='flex gap-2 divide-x'>
-                        <span className='font-light'>
-                          {appoint?.appointment?.value_appointment[0]
-                            .problem_type
-                            ? appoint?.appointment?.value_appointment[0]
+                  ) : (
+                    <div className='text-xs px-6 py-4 m-0'>
+                      <div className='flex justify-between mb-4'>
+                        <span></span>
+                      </div>
+                      <div className='flex items-center h-10'>
+                        <div>
+                          <span></span>
+                        </div>
+                        <div className='flex flex-col pl-4 ml-4 border-l border-gray-400'>
+                          <span className='font-light'></span>
+                          <span className='font-semibold'></span>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+
+                  {appoint?.appointment.value_appointment[1] ? (
+                    <div className='text-xs border-b px-6 py-4 m-0'>
+                      <div className='flex justify-between mb-4'>
+                        <span>
+                          {moment(
+                            appoint?.appointment.value_appointment[1].date
+                          ).format('D MMM')}
+                        </span>
+                      </div>
+                      <div className='flex items-center h-10'>
+                        <div>
+                          <span>
+                            {appoint?.appointment.value_appointment[1].time
+                              ? appoint?.appointment.value_appointment[1].time
+                              : ''}
+                          </span>
+                        </div>
+                        <div className='flex flex-col pl-4 ml-4 border-l border-yellow-300'>
+                          <span className='font-light'>
+                            {
+                              appoint?.appointment.value_appointment[1]
                                 .problem_type
-                            : ''}
-                        </span>
-                        <span className='font-semibold'>
-                          Meeting With{' '}
-                          {appoint?.appointment?.value_appointment[0].name
-                            ? appoint?.appointment?.value_appointment[0].name
-                            : ''}
-                        </span>
+                            }
+                          </span>
+                          <span className='font-semibold'>
+                            Meeting With{' '}
+                            {appoint?.appointment.value_appointment[1].name}
+                          </span>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                ) : (
-                  <div className='flex flex-col text-xs border-b px-6 py-4 m-0'>
-                    <div className='flex justify-between mb-4'>
-                      <span></span>
-                    </div>
-                    <div className='flex items-center h-10'>
-                      <div>
+                  ) : (
+                    <div className='text-xs px-6 py-4 m-0'>
+                      <div className='flex justify-between mb-4'>
                         <span></span>
                       </div>
-                      <div className='flex flex-col pl-4 ml-4 border-gray-400'>
-                        <span className='font-light'></span>
-                        <span className='font-semibold'></span>
+                      <div className='flex items-center h-10'>
+                        <div>
+                          <span></span>
+                        </div>
+                        <div className='flex flex-col pl-4 ml-4 border-l border-gray-400'>
+                          <span className='font-light'></span>
+                          <span className='font-semibold'></span>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                )}
+                  )}
 
-                {appoint?.appointment?.value_appointment[1] ? (
-                  <div className='flex flex-col text-xs border-b px-6 py-4 m-0'>
-                    <div className='flex gap-2 divide-x'>
-                      <span>
-                        {moment(
-                          appoint?.appointment?.value_appointment[1].date
-                        ).format('D MMM')}
-                      </span>
-                      <span>
-                          {appoint?.appointment?.value_appointment[1].time
-                            ? appoint?.appointment?.value_appointment[1].time
-                            : ''}
-                      </span>
-                    </div>
-                    <div className='flex items-center h-10'>
-                      <div>
-                        
-                      </div>
-                      <div className='flex flex-col pl-4 ml-4 border-l border-yellow-300'>
-                        <span className='font-light'>
-                          {
-                            appoint?.appointment?.value_appointment[1]
-                              .problem_type
-                          }
-                        </span>
-                        <span className='font-semibold'>
-                          Meeting With{' '}
-                          {appoint?.appointment?.value_appointment[1].name}
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                ) : (
-                  <div className='flex flex-col text-xs border-b px-6 py-4 m-0'>
-                    <div className='flex justify-between mb-4'>
-                      <span></span>
-                    </div>
-                    <div className='flex items-center h-10'>
-                      <div>
-                        <span></span>
-                      </div>
-                      <div className='flex flex-col pl-4 ml-4 border-l border-gray-400'>
-                        <span className='font-light'></span>
-                        <span className='font-semibold'></span>
-                      </div>
-                    </div>
-                  </div>
-                )}
-
-                {appoint?.appointment?.value_appointment[2] ? (
-                  <div className='text-xs border-r px-6 py-4 m-0'>
-                    <div className='flex justify-between mb-4'>
-                      <span>
-                        {moment(
-                          appoint?.appointment?.value_appointment[2].date
-                        ).format('D MMM')}
-                      </span>
-                    </div>
-                    <div className='flex items-center h-10'>
-                      <div>
+                  {appoint?.appointment.value_appointment[2] ? (
+                    <div className='text-xs border-r px-6 py-4 m-0'>
+                      <div className='flex justify-between mb-4'>
                         <span>
-                          {appoint?.appointment?.value_appointment[2].time
-                            ? appoint?.appointment?.value_appointment[2].time
-                            : ''}
+                          {moment(
+                            appoint?.appointment.value_appointment[2].date
+                          ).format('D MMM')}
                         </span>
                       </div>
-                      <div className='flex flex-col pl-4 ml-4 border-l border-gray-400'>
-                        <span className='font-light'>
-                          {
-                            appoint?.appointment?.value_appointment[2]
-                              .problem_type
-                          }
-                        </span>
-                        <span className='font-semibold'>
-                          Meeting With{' '}
-                          {appoint?.appointment?.value_appointment[2].name}
-                        </span>
+                      <div className='flex items-center h-10'>
+                        <div>
+                          <span>
+                            {appoint?.appointment.value_appointment[2].time
+                              ? appoint?.appointment.value_appointment[2].time
+                              : ''}
+                          </span>
+                        </div>
+                        <div className='flex flex-col pl-4 ml-4 border-l border-gray-400'>
+                          <span className='font-light'>
+                            {
+                              appoint?.appointment.value_appointment[2]
+                                .problem_type
+                            }
+                          </span>
+                          <span className='font-semibold'>
+                            Meeting With{' '}
+                            {appoint?.appointment.value_appointment[2].name}
+                          </span>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                ) : (
-                  <div className='text-xs px-6 py-4 m-0'>
-                    <div className='flex justify-between mb-4'>
-                      <span></span>
-                    </div>
-                    <div className='flex items-center h-10'>
-                      <div>
+                  ) : (
+                    <div className='text-xs px-6 py-4 m-0'>
+                      <div className='flex justify-between mb-4'>
                         <span></span>
                       </div>
-                      <div className='flex flex-col pl-4 ml-4 border-l border-gray-400'>
-                        <span className='font-light'></span>
-                        <span className='font-semibold'></span>
+                      <div className='flex items-center h-10'>
+                        <div>
+                          <span></span>
+                        </div>
+                        <div className='flex flex-col pl-4 ml-4 border-l border-gray-400'>
+                          <span className='font-light'></span>
+                          <span className='font-semibold'></span>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                )}
+                  )}
 
-                {appoint?.appointment?.value_appointment[2] ? (
-                  <div className='text-xs px-6 py-4 m-0'>
-                    <div className='flex justify-between mb-4'>
-                      <span>
-                        {moment(
-                          appoint?.appointment?.value_appointment[3].date
-                        ).format('D MMM')}
-                      </span>
-                    </div>
-                    <div className='flex items-center h-10'>
-                      <div>
+                  {appoint?.appointment.value_appointment[2] ? (
+                    <div className='text-xs px-6 py-4 m-0'>
+                      <div className='flex justify-between mb-4'>
                         <span>
-                          {appoint?.appointment?.value_appointment[3].time
-                            ? appoint?.appointment?.value_appointment[3].time
-                            : ''}
+                          {moment(
+                            appoint?.appointment.value_appointment[3].date
+                          ).format('D MMM')}
                         </span>
                       </div>
-                      <div className='flex flex-col pl-4 ml-4 border-l border-gray-400'>
-                        <span className='font-light'>
-                          {
-                            appoint?.appointment?.value_appointment[3]
-                              .problem_type
-                          }
-                        </span>
-                        <span className='font-semibold'>
-                          Meeting With{' '}
-                          {appoint?.appointment?.value_appointment[3].name}
-                        </span>
+                      <div className='flex items-center h-10'>
+                        <div>
+                          <span>
+                            {appoint?.appointment.value_appointment[3].time
+                              ? appoint?.appointment.value_appointment[3].time
+                              : ''}
+                          </span>
+                        </div>
+                        <div className='flex flex-col pl-4 ml-4 border-l border-gray-400'>
+                          <span className='font-light'>
+                            {
+                              appoint?.appointment.value_appointment[3]
+                                .problem_type
+                            }
+                          </span>
+                          <span className='font-semibold'>
+                            Meeting With{' '}
+                            {appoint?.appointment.value_appointment[3].name}
+                          </span>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                ) : (
-                  <div className='text-xs px-6 py-4 m-0'>
-                    <div className='flex justify-between mb-4'>
-                      <span></span>
-                    </div>
-                    <div className='flex items-center h-10'>
-                      <div>
+                  ) : (
+                    <div className='text-xs px-6 py-4 m-0'>
+                      <div className='flex justify-between mb-4'>
                         <span></span>
                       </div>
-                      <div className='flex flex-col pl-4 ml-4 border-l border-gray-400'>
-                        <span className='font-light'></span>
-                        <span className='font-semibold'></span>
+                      <div className='flex items-center h-10'>
+                        <div>
+                          <span></span>
+                        </div>
+                        <div className='flex flex-col pl-4 ml-4 border-l border-gray-400'>
+                          <span className='font-light'></span>
+                          <span className='font-semibold'></span>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                )}
+                  )}
+                </div>
               </div>
             </div>
           </div>
