@@ -292,7 +292,7 @@ export default function Admin({ children }) {
         >
           <AdminNavbar />
           {/* Header */}
-          <div className='relative bg-bluelight-100 md:pt-32'>
+          <div className='relative bg-bluelight-100'>
             {children}
           </div>
           <div className='hidden md:block'>
