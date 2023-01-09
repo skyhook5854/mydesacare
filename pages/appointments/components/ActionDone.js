@@ -43,7 +43,7 @@ export default function ActionDone(props) {
                               </span>
                               <time class='mb-1 ml-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500'>
                                 <p className="font-bold text-black mb-3">Description</p>
-                                {step.description}
+                                <p className="text-black">{step.description}</p>
                               </time>
                             </li>
                           )

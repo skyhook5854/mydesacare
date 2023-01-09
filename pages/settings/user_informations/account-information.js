@@ -105,18 +105,18 @@ export default function AccountInformation() {
                       {t1("content.accountInfo.profilePhoto")}
                     </p>
                     <div className="flex flex-row items-center mb-5 mx-4">  
-                      <img className="w-12 h-12 rounded-full shadow-lg" src={data?.data.profile.profile_img ? 'https://staging.mydesa.my/v2/'+data?.data.profile.profile_img : 'https://static.vecteezy.com/system/resources/thumbnails/003/337/584/small/default-avatar-photo-placeholder-profile-icon-vector.jpg'}/>
-                      <button className="border-2 ml-6 j h-9 w-1/3 inline-flex justify-center align-middle content-center  py-2 px-3 text-sm font-medium text-center text-white bg-white rounded-lg hover:bg-blue-800 focus:ring-4 dark:bg-primary dark:hover:bg-primary dark:focus:ring-blue-800">
+                      <img className="w-12 h-12 rounded-full shadow-lg" src={data?.data.profile.profile_img ? 'https://www.mydesa.my/v2/'+data?.data.profile.profile_img : 'https://static.vecteezy.com/system/resources/thumbnails/003/337/584/small/default-avatar-photo-placeholder-profile-icon-vector.jpg'}/>
+                      {/* <button className="border-2 ml-6 j h-9 w-1/3 inline-flex justify-center align-middle content-center  py-2 px-3 text-sm font-medium text-center text-white bg-white rounded-lg hover:bg-blue-800 focus:ring-4 dark:bg-primary dark:hover:bg-primary dark:focus:ring-blue-800">
                         <p className="text-center text-black">
                           {t1("content.accountInfo.upload")}
                         </p>
-                      </button>
+                      </button> */}
                       <div className="col-auto  ml-6 ">
-                        <p className="text-xs">
+                        {/* <p className="text-xs">
                           {t1("content.accountInfo.profilePhoto1")}
                           <br />
                           {t1("content.accountInfo.profilePhoto2")}
-                        </p>
+                        </p> */}
                       </div>
                     </div>
                     <div className="flex flex-row">
