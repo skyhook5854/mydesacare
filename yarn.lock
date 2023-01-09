@@ -1301,7 +1301,7 @@
   dependencies:
     regenerator-runtime "^0.12.0"
 
-"@babel/runtime@^7.12.5", "@babel/runtime@^7.13.10", "@babel/runtime@^7.13.17", "@babel/runtime@^7.14.5", "@babel/runtime@^7.15.4", "@babel/runtime@^7.17.2", "@babel/runtime@^7.3.1", "@babel/runtime@^7.4.4", "@babel/runtime@^7.5.5", "@babel/runtime@^7.6.2", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.3", "@babel/runtime@^7.8.4", "@babel/runtime@^7.8.7":
+"@babel/runtime@^7.12.5", "@babel/runtime@^7.13.10", "@babel/runtime@^7.15.4", "@babel/runtime@^7.17.2", "@babel/runtime@^7.3.1", "@babel/runtime@^7.4.4", "@babel/runtime@^7.5.5", "@babel/runtime@^7.6.2", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.3", "@babel/runtime@^7.8.4", "@babel/runtime@^7.8.7":
   version "7.18.3"
   resolved "https://registry.npmjs.org/@babel/runtime/-/runtime-7.18.3.tgz"
   integrity sha512-38Y8f7YUhce/K7RMwTp7m0uCumpv9hZkitCbBClqQIow1qSbCvGkcegKOXpEWCQLfWmevgRiWokZ1GkpfhbZug==
@@ -6572,7 +6572,7 @@ hoek@4.x.x:
   resolved "https://registry.npmjs.org/hoek/-/hoek-4.2.1.tgz"
   integrity sha512-QLg82fGkfnJ/4iy1xZ81/9SIJiq1NGFUMGs6ParyjBZr6jW2Ufj/snDqTHixNlHdPNwN2RLVD0Pi3igeK9+JfA==
 
-hoist-non-react-statics@^3.0.0, hoist-non-react-statics@^3.2.0, hoist-non-react-statics@^3.3.0, hoist-non-react-statics@^3.3.1, hoist-non-react-statics@^3.3.2:
+hoist-non-react-statics@^3.0.0, hoist-non-react-statics@^3.3.0, hoist-non-react-statics@^3.3.1, hoist-non-react-statics@^3.3.2:
   version "3.3.2"
   resolved "https://registry.npmjs.org/hoist-non-react-statics/-/hoist-non-react-statics-3.3.2.tgz"
   integrity sha512-/gGivxi8JPKWNm/W0jSmzcMPpfpPLc3dY/6GxhX2hQ9iGj3aDfklV4ET7NjKpSinLpJ5vafa9iiGIEZg10SfBw==
@@ -6643,11 +6643,6 @@ html-entities@^1.2.0:
   resolved "https://registry.npmjs.org/html-entities/-/html-entities-1.4.0.tgz"
   integrity sha512-8nxjcBcd8wovbeKx7h3wTji4e6+rhaVuPNpMqwWgnHh+N9ToqsCs6XztWRBPQ+UtzsoMAdKZtUENoVzU/EMtZA==
 
-html-escaper@^2.0.2:
-  version "2.0.2"
-  resolved "https://registry.npmjs.org/html-escaper/-/html-escaper-2.0.2.tgz"
-  integrity sha512-H2iMtd0I4Mt5eYiapRdIDjp+XzelXQ0tFE4JS7YFwFevXXMmOp9myNrUvCg0D6ws8iqkRPBfKHgbwig1SmlLfg==
-
 html-minifier@^3.2.3:
   version "3.5.21"
   resolved "https://registry.npmjs.org/html-minifier/-/html-minifier-3.5.21.tgz"
@@ -6660,13 +6655,6 @@ html-minifier@^3.2.3:
     param-case "2.1.x"
     relateurl "0.2.x"
     uglify-js "3.4.x"
-
-html-parse-stringify@^3.0.1:
-  version "3.0.1"
-  resolved "https://registry.npmjs.org/html-parse-stringify/-/html-parse-stringify-3.0.1.tgz"
-  integrity sha512-KknJ50kTInJ7qIScF3jeaFRpMpE8/lfiTdzf/twXyPBLAGrLRTmkz3AdTnKeh40X8k9L2fdYwEp/42WGXIRGcg==
-  dependencies:
-    void-elements "3.1.0"
 
 html-tags@^3.1.0:
   version "3.2.0"
@@ -6782,10 +6770,10 @@ hyphenate-style-name@^1.0.3:
   resolved "https://registry.npmjs.org/hyphenate-style-name/-/hyphenate-style-name-1.0.4.tgz"
   integrity sha512-ygGZLjmXfPHj+ZWh6LwbC37l43MhfztxetbFCoYTM2VjkIUpeHgSNn7QIyVFj7YQ1Wl9Cbw5sholVJPzWvC2MQ==
 
-i18next-fs-backend@^1.0.7:
-  version "1.1.4"
-  resolved "https://registry.npmjs.org/i18next-fs-backend/-/i18next-fs-backend-1.1.4.tgz"
-  integrity sha512-/MfAGMP0jHonV966uFf9PkWWuDjPYLIcsipnSO3NxpNtAgRUKLTwvm85fEmsF6hGeu0zbZiCQ3W74jwO6K9uXA==
+i18next-fs-backend@^2.1.0:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/i18next-fs-backend/-/i18next-fs-backend-2.1.1.tgz#07c6393be856c5a398e3dfc1257bf8439841cd89"
+  integrity sha512-FTnj+UmNgT3YRml5ruRv0jMZDG7odOL/OP5PF5mOqvXud2vHrPOOs68Zdk6iqzL47cnnM0ZVkK2BAvpFeDJToA==
 
 i18next@^21.6.12:
   version "21.8.10"
@@ -9074,18 +9062,16 @@ neo-async@^2.5.0, neo-async@^2.6.0:
   resolved "https://registry.npmjs.org/neo-async/-/neo-async-2.6.2.tgz"
   integrity sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==
 
-next-i18next@^10.4.0:
-  version "10.5.0"
-  resolved "https://registry.npmjs.org/next-i18next/-/next-i18next-10.5.0.tgz"
-  integrity sha512-+Xj/v5gqpEUBKKAaFCZ76+Ps6OGAaIgGowJTF67wTcmIQbHrcHMPjHwPTbnpXy7uHrH8os7i4eAfRENAv/6xwg==
+next-i18next@^13.0.3:
+  version "13.0.3"
+  resolved "https://registry.yarnpkg.com/next-i18next/-/next-i18next-13.0.3.tgz#f0d5194c9ec3657d114c0c491ba7fbb031788fe1"
+  integrity sha512-7AA8J6WbkxRBtSf1+97LSAE7btxWZHsBIJEJ3FuTSBgYtpRiO5NGjcb8XbNAlz6yGU0TtS+yZE+/Wu83KhIT1Q==
   dependencies:
-    "@babel/runtime" "^7.13.17"
+    "@babel/runtime" "^7.20.6"
     "@types/hoist-non-react-statics" "^3.3.1"
     core-js "^3"
-    hoist-non-react-statics "^3.2.0"
-    i18next "^21.6.12"
-    i18next-fs-backend "^1.0.7"
-    react-i18next "^11.15.5"
+    hoist-non-react-statics "^3.3.2"
+    i18next-fs-backend "^2.1.0"
 
 next@^12.0.10:
   version "12.1.6"
@@ -11030,15 +11016,6 @@ react-gtm-module@^2.0.11:
   version "2.0.11"
   resolved "https://registry.npmjs.org/react-gtm-module/-/react-gtm-module-2.0.11.tgz"
   integrity sha512-8gyj4TTxeP7eEyc2QKawEuQoAZdjKvMY4pgWfycGmqGByhs17fR+zEBs0JUDq4US/l+vbTl+6zvUIx27iDo/Vw==
-
-react-i18next@^11.15.5:
-  version "11.17.2"
-  resolved "https://registry.npmjs.org/react-i18next/-/react-i18next-11.17.2.tgz"
-  integrity sha512-/HG4XSResWDY450cFmoUqLgCYDu8VYMFISGcMnZlxRSV05naj3+F7DoebwnPu6z/akA3Wd0Xe7KGTYdywL9z9g==
-  dependencies:
-    "@babel/runtime" "^7.14.5"
-    html-escaper "^2.0.2"
-    html-parse-stringify "^3.0.1"
 
 react-icons@^4.6.0:
   version "4.6.0"
@@ -13201,11 +13178,6 @@ vm-browserify@^1.0.1:
   version "1.1.2"
   resolved "https://registry.npmjs.org/vm-browserify/-/vm-browserify-1.1.2.tgz"
   integrity sha512-2ham8XPWTONajOR0ohOKOHXkm3+gaBmGut3SRuu75xLd/RRaY6vqgh8NBYYk7+RW3u5AtzPQZG8F10LHkl0lAQ==
-
-void-elements@3.1.0:
-  version "3.1.0"
-  resolved "https://registry.npmjs.org/void-elements/-/void-elements-3.1.0.tgz"
-  integrity sha512-Dhxzh5HZuiHQhbvTW9AMetFfBHDMYpo23Uo9btPXgdYP+3T5S+p+jgNy7spra+veYhBP2dCSgxR/i2Y02h5/6w==
 
 w3c-hr-time@^1.0.1:
   version "1.0.2"

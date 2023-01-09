@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
+
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+
 import Link from "next/link";
 import { ErrorMessage, Field, Formik } from "formik";
 import * as Yup from "yup";
@@ -68,49 +70,6 @@ export default function AccountInformation() {
         {/* {isError && <CustomAlert message={error.message} type="error" />} */}
         <fieldset className="">
           <legend className="sr-only">Countries</legend>
-          {/* <div className="w-full flex items-center text-primary hover:text-white focus:ring-4 focus:ring-blue-300 font-medium text-sm text-center  rounded-t border-t border-b border-l border-r border-blue-300 dark:border-blue-500 dark:text-blue-500 dark:hover:bg-primary dark:focus:ring-blue-800 px-4 py-4">
-            <a
-              id="business-account"
-              onClick={() => setAccountType(1)}
-              className="inline-flex items-center w-full">
-              <input
-                type="radio"
-                aria-labelledby="business-account"
-                aria-describedby="business-account"
-                className="w-4 h-4  focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:focus:bg-primary dark:bg-gray-700 dark:border-gray-600"
-              />
-              <label
-                htmlFor="business-account"
-                aria-labelledby="business-account"
-                aria-describedby="business-account"
-                className="block ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">
-                {t1("content.accountInfo.businessAccount")}
-              </label>
-            </a>
-          </div>
-          <div className="w-full flex items-center  text-primary hover:text-white focus:ring-4 focus:ring-blue-300 font-medium rounded-b text-sm text-center  border-b border-l border-r dark:border-blue-500 dark:text-blue-500 dark:hover:bg-primary dark:focus:ring-blue-800 px-4 py-4">
-            <a
-              id="personal-account"
-              onClick={() => setAccountType(0)}
-              className="inline-flex items-center w-full">
-              <input
-                checked
-                type="radio"
-                aria-labelledby="personal-account"
-                aria-describedby="personal-account"
-                className="w-4 h-4  focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:focus:bg-primary dark:bg-gray-700 dark:border-gray-600"
-              />
-              <label
-                htmlFor="personal-account"
-                aria-labelledby="personal-account"
-                aria-describedby="personal-account"
-                className="block ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">
-                {t1("content.accountInfo.personalAccount")}
-              </label>
-            </a>
-          </div> */}
-
-          {/* <hr className="mt-6 border-b-1 border-blueGray-300" /> */}
 
           {accountType === 0 && (
             <div id="personal-account">
