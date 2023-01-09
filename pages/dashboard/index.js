@@ -245,7 +245,7 @@ export default function Dashboard() {
                     <i className='text-purple-600 fas fa-id-card-alt'></i>
                   </span>
                 </div>
-                <div className='flex flex-col items-center justify-center text-sm'>
+                <div className='flex flex-col text-right text-sm'>
                   <div className='font-bold'>{appoint.count?.new}</div>
                   <div className='text-xs'> New Appointments</div>
                 </div>
@@ -259,7 +259,7 @@ export default function Dashboard() {
                     <i className='text-green-600 far fa-file-alt'></i>
                   </span>
                 </div>
-                <div className='flex flex-col items-center justify-center text-sm'>
+                <div className='flex flex-col text-right text-sm'>
                   <div className='font-bold'>{appoint?.count?.accept}</div>
                   <div className='text-xs'> Accepted</div>
                 </div>
@@ -273,7 +273,7 @@ export default function Dashboard() {
                     <i className='text-yellow-600 fa fa-sync'></i>
                   </span>
                 </div>
-                <div className='flex flex-col items-center justify-center text-sm'>
+                <div className='flex flex-col text-right text-sm'>
                   <div className='font-bold'>{appoint?.count?.in_progress}</div>
                   <div className='text-xs'> In-progress</div>
                 </div>
@@ -287,7 +287,7 @@ export default function Dashboard() {
                     <i className='text-red-600 fas fa-exclamation-triangle'></i>
                   </span>
                 </div>
-                <div className='flex flex-col items-center justify-center text-sm'>
+                <div className='flex flex-col text-right text-sm'>
                   <div className='font-bold'>{appoint?.count?.cancel}</div>
                   <div className='text-xs'> Cancelled</div>
                 </div>
@@ -301,7 +301,7 @@ export default function Dashboard() {
                     <i className='text-green-600 far fa-thumbs-up'></i>
                   </span>
                 </div>
-                <div className='flex flex-col items-center justify-center text-sm'>
+                <div className='flex flex-col text-right text-sm'>
                   <div className='font-bold'>{appoint?.count?.completed}</div>
                   <div className='text-xs'> Completed</div>
                 </div>
