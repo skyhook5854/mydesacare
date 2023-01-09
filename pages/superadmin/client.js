@@ -66,7 +66,7 @@ export default function AdminClient() {
       <div className='w-full flex justify-between mb-4'>
         <div className='flex flex-warp items-center gap-2'>
           <span className='back flex items-center justify-center border w-10 h-10 rounded-full'>
-            <i class='fa fa-angle-left' aria-hidden='true'></i>
+            <i class='fas fa-user-injured' aria-hidden='true'></i>
           </span>
           <div className='flex flex-col'>
             <h4 className='welcomemsg font-semibold'>Clients</h4>
