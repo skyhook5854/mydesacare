@@ -22,21 +22,18 @@ export default function Dashboard() {
 
   return (
     <div className='px-4 md:px-10 mx-auto w-full'>
-      {/* <div className='block md:hidden py-6 px-4 rounded-md bg-white mx-2'>
-        new
-      </div> */}
       {!isFetching ? (
         <>
           <div className='hidden md:block'>
-            <div className='grid grid-cols-4 bg-white rounded-md text-black font-bold p-0'>
-              <div className='border-r border-b m-0 p-3'>Welcome Back</div>
+            <div className='flex flex-col bg-white rounded-md text-black font-bold p-0'>
+              {/* <div className='border-r border-b m-0 p-3'>Welcome Back</div> */}
               <div className='border-b m-0 p-3 col-span-3'>Appointments</div>
-              <div className='border-r m-0 px-6 py-4'>
+              {/* <div className='border-r m-0 px-6 py-4'>
                 <p className='text-2xl mb-4'>Hi, {data?.data.name}!</p>
                 <p className='text-sm font-medium'>
                   Here you can see all your appointment
                 </p>
-              </div>
+              </div> */}
               <div className='m-0 p-0 col-span-3'>
                 <div className='grid grid-cols-2'>
                   {appoint?.appointment.value_appointment[0] ? (
