@@ -99,7 +99,7 @@ export default function Navbar() {
             <ul className=' md:flex  flex-col justify-between md:flex-row list-none items-center gap-2'>
               {/* <LanguageDropdown /> */}
 
-              <i class='text-purple-600  fas fa-bell text-xs'></i>
+              {/* <i class='text-purple-600  fas fa-bell text-xs'></i> */}
               <UserDropdown />
               {/* <div className=' w-full rounded-full'>
                 <button
