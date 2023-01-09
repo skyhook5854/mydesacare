@@ -7,15 +7,9 @@ import { useAppointmentAdmin } from 'src/actions/appointment';
 import moment from 'moment';
 
 // Mui stepper
-import Box from '@mui/material/Box';
-import Stepper from '@mui/material/Stepper';
-import Step from '@mui/material/Step';
-import StepLabel from '@mui/material/StepLabel';
-import StepContent from '@mui/material/StepContent';
-import Button from '@mui/material/Button';
-import Paper from '@mui/material/Paper';
-import Typography from '@mui/material/Typography';
+
 import DataTable from 'react-data-table-component';
+import ActionViewCompleted from './components/ActionViewCompleted';
 
 const steps = [
   {
@@ -40,12 +34,29 @@ const steps = [
 
 export default function AdminAppointments() {
   const [page, setPage] = useState(0);
-  
+  const [ dataAppoint, setDataAppoint ] = useState([]);
+  const [showModal, setShowModal] = useState(false);
+
+
   const { data, isLoading, isSuccess, isFetching, isError, error } = useAppointmentAdmin('',page);
-  console.log('appointment', data);
+
+  function onHandlerModal(toggle, data){
+    if(!toggle){
+      setDataAppoint([]);
+    }else{
+      setDataAppoint(data);
+    }
+    setShowModal(toggle);
+  }
+
   const countPerPage = 10; 
 
   const columns = [
+    {
+        name: <div className='font-bold'>NO.</div>,
+        cell: row => row.row_num,
+        width: '4rem'
+    },
     {
         name: <div className='font-bold'>COUNSELOR</div>,
         selector: row => row.name,
@@ -79,51 +90,24 @@ export default function AdminAppointments() {
                           {row.status== 6 ? <span className='bg-red-300 text-yellow-auto0 text-xs font-medium px-2.5 py-0.5 rounded'>Rejected</span> : '' }
                       </div>,
     },
-    // {
-    //   name : <div className='w-full text-center font-bold'>ACTION</div>,
-    //   cell : row => <div className='w-full text-center font-bold'>
-    //                   <button
-    //                     onClick={() => setShowModal(true)}
-    //                     type='button'
-    //                     className='relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300'>
-    //                     <span className='text-xs px-4 py-1 transition-all ease-in duration-75 bg-white rounded-md group-hover:bg-opacity-0'>
-    //                       View
-    //                     </span>
-    //                   </button>
-    //                 </div>
-    // }
+    {
+      name : <div className='w-full text-center font-bold'>ACTION</div>,
+      cell : row => row.status == 4 ? 
+      <div className='w-full text-center font-bold'>
+                      <button
+                        onClick={() => onHandlerModal(true,row)}
+                        type='button'
+                        className='relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300'>
+                        <span className='text-xs px-4 py-1 transition-all ease-in duration-75 bg-white rounded-md group-hover:bg-opacity-0'>
+                          View
+                        </span>
+                      </button>
+                    </div>
+        : 
+        ''
+    }
   ];
 
-  const [showModal, setShowModal] = useState(false);
-
-  // stepper timeline
-  const [activeStep, setActiveStep] = React.useState(0);
-
-  const handleNext = () => {
-    setActiveStep((prevActiveStep) => prevActiveStep + 1);
-  };
-
-  const handleBack = () => {
-    setActiveStep((prevActiveStep) => prevActiveStep - 1);
-  };
-
-  const handleReset = () => {
-    setActiveStep(0);
-  };
-
-  // dropdown props
-  const [dropdownPopoverShow, setDropdownPopoverShow] = React.useState(false);
-  const btnDropdownRef = React.createRef();
-  const popoverDropdownRef = React.createRef();
-  const openDropdownPopover = () => {
-    createPopper(btnDropdownRef.current, popoverDropdownRef.current, {
-      // placement: "right",
-    });
-    setDropdownPopoverShow(true);
-  };
-  const closeDropdownPopover = () => {
-    setDropdownPopoverShow(false);
-  };
 
   return (
     <div className='px-4 md:px-10 mx-auto w-full min-h-screen'>
@@ -543,158 +527,7 @@ export default function AdminAppointments() {
 
       {showModal != false ? (
         <>
-          <div
-            aria-hidden='true'
-            className='overflow-y-auto overflow-x-hidden fixed top-40 right-0 left-20 z-40 w-full h-modal md:h-full'>
-            <div className='mx-auto relative p-4 w-full max-w-md h-full md:h-auto'>
-              <div className='relative bg-white rounded-lg shadow'>
-                <button
-                  onClick={() => setShowModal(false)}
-                  type='button'
-                  className='absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center'>
-                  <svg
-                    className='w-5 h-5'
-                    fill='currentColor'
-                    viewBox='0 0 20 20'
-                    xmlns='http://www.w3.org/2000/svg'>
-                    <path
-                      fillRule='evenodd'
-                      d='M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z'
-                      clipRule='evenodd'></path>
-                  </svg>
-                </button>
-                <div className='py-6 px-6 lg:px-8'>
-                  <h3 className='mb-4 text-xl font-medium text-gray-900'>
-                    Timeline Session
-                  </h3>
-                  <div className='flex justify-between border-b py-4'>
-                    <div className='flex items-center gap-2'>
-                      <Link href=''>
-                        <span className='bg-gray-200 flex items-center justify-center border w-10 h-10  rounded-full'>
-                          <img
-                            className='rounded-full'
-                            src='/img/team-4-470x470.png'
-                            alt=''
-                          />
-                        </span>
-                      </Link>
-                      <div className='flex flex-col text-xs'>
-                        <h4 className='font-bold'>Counselor 1</h4>
-                        <h5>counseloremail@gmail.com</h5>
-                      </div>
-                    </div>
-                    <div className='flex'>
-                      <button
-                        type='button'
-                        className='relative  inline-flex gap-2 items-center justify-center px-3 overflow-hidden text-xs font-medium text-gray-900 rounded-md border'>
-                        <i class='fa fa-certificate' aria-hidden='true'></i>
-                        <span className='text-xs'>Anxiety</span>
-                      </button>
-                    </div>
-                  </div>
-                  <div className='flex justify-between border-b py-4'>
-                    <div className='flex items-center gap-2 '>
-                      <Link href=''>
-                        <span className='bg-gray-200 flex items-center justify-center border w-10 h-10  rounded-full'>
-                          <img
-                            className='rounded-full'
-                            src='/img/team-1-800x800.jpg'
-                            alt=''
-                          />
-                        </span>
-                      </Link>
-                      <div className='flex flex-col text-xs'>
-                        <h4 className='font-bold'>Mohd Mahyudin Ayub</h4>
-                        <h5>clientemail@gmail.com</h5>
-                      </div>
-                    </div>
-                    <div className='flex'>
-                      <button
-                        type='button'
-                        className='relative  inline-flex gap-2 items-center justify-center px-3 overflow-hidden text-xs font-medium text-gray-900 rounded-md border'>
-                        {/* <i className='text-red-400 fas fa-thumbs-down'></i> */}
-                        <span className='text-xs font-bold'>Score</span>
-                        <span className='text-xs'>14</span>
-                      </button>
-                    </div>
-                  </div>
-                  {/* Stepper timeline content */}
-                  <div>
-                    <Box sx={{ maxWidth: 400 }}>
-                      <Stepper activeStep={activeStep} orientation='vertical'>
-                        {steps.map((step, index) => (
-                          <Step key={step.label}>
-                            <StepLabel
-                              optional={
-                                index === 2 ? (
-                                  <Typography variant='caption'>
-                                    Last step
-                                  </Typography>
-                                ) : null
-                              }>
-                              {step.label}
-                            </StepLabel>
-                            <StepContent>
-                              <Typography>{step.description}</Typography>
-                              <Box sx={{ mb: 2 }}>
-                                <div>
-                                  <Button
-                                    variant='contained'
-                                    onClick={handleNext}
-                                    sx={{
-                                      mt: 1,
-                                      mr: 1,
-                                      color: 'purple',
-                                      '&:hover': {
-                                        color: 'white',
-                                        backgroundColor: '#694BF1',
-                                      },
-                                    }}>
-                                    {index === steps.length - 1
-                                      ? 'Finish'
-                                      : 'Add note'}
-                                  </Button>
-                                  {/* <Button
-                                      // disabled={index === 0}
-                                      onClick={handleBack}
-                                      sx={{ mt: 1, mr: 1 }}
-                                  >
-                                      Complete
-                                  </Button> */}
-                                </div>
-                              </Box>
-                            </StepContent>
-                          </Step>
-                        ))}
-                      </Stepper>
-                      {activeStep === steps.length && (
-                        <Paper square elevation={0} sx={{ p: 3 }}>
-                          <Typography>
-                            All steps completed - you&apos;re finished
-                          </Typography>
-                          <Button onClick={handleReset} sx={{ mt: 1, mr: 1 }}>
-                            Reset
-                          </Button>
-                        </Paper>
-                      )}
-                    </Box>
-                    <hr />
-                    {/* <div className='flex items-center gap-2 py-4'>
-                      <button className='w-1/2 border font-medium rounded-lg text-sm px-4 py-1 text-center'>
-                        Download
-                      </button>
-                      <button
-                        type='submit'
-                        className='w-1/2 text-white bg-green-400 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-800 font-medium rounded-lg text-sm px-4 py-1 text-center'>
-                        Completed
-                      </button>
-                    </div> */}
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className='bg-black bg-opacity-50 fixed inset-0 z-20'></div>
+          <ActionViewCompleted onHandlerModal={onHandlerModal} dataAppoint={dataAppoint} />
         </>
       ) : (
         ''

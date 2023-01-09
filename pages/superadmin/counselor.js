@@ -38,6 +38,11 @@ export default function AdminCounselor() {
 
   const columns = [
     {
+        name: <div className='font-bold'>NO.</div>,
+        cell: row => row.row_num,
+        width: '4rem'
+    },
+    {
         name: <div className='font-bold'>COUNSELOR</div>,
         selector: row => row.name ? row.name : 'Counsellor',
     },
@@ -581,7 +586,7 @@ export default function AdminCounselor() {
                         <label
                             htmlFor="contact_no"
                             class="block mb-2 text-sm font-medium text-gray-900">
-                            CONTACT NO
+                            Contact No
                         </label>
                         <input
                             type="text"

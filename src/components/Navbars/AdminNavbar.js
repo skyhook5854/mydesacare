@@ -65,7 +65,7 @@ export default function Navbar() {
               <div className=''>
                 <div className='m-0 px-2'>
                   <p className='text-sm font-semibold'>
-                    Hi, {data?.data.name}!
+                    Hi, {data?.data.profile.name}!
                   </p>
                   <p className='text-xs font-medium'>
                     Here you can see all your appointment

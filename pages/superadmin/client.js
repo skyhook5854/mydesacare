@@ -13,6 +13,11 @@ export default function AdminClient() {
 
   const columns = [
     {
+        name: <div className='font-bold'>NO.</div>,
+        cell: row => row.row_num,
+        width: '4rem'
+    },
+    {
         name: <div className='font-bold'>CLIENT</div>,
         selector: row => row.name,
     },
