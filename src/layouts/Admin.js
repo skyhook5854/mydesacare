@@ -1,3 +1,5 @@
+/* eslint-disable import/first */
+/* eslint-disable react/react-in-jsx-scope */
 // import React, { useState } from "react";
 
 import { useState, useRef } from 'react';
@@ -290,10 +292,12 @@ export default function Admin({ children }) {
         >
           <AdminNavbar />
           {/* Header */}
-          <div className='relative bg-bluelight-100 md:pt-32 pb-32 pt-12'>
+          <div className='relative bg-bluelight-100 md:pt-32'>
             {children}
           </div>
-          <FooterAdmin />
+          <div className='hidden md:block'>
+            <FooterAdmin />
+          </div>
         </div>
       </Box>
     </>

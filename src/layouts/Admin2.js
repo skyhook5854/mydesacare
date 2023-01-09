@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable react/jsx-no-undef */
 /* eslint-disable react/react-in-jsx-scope */
 // import React, { useState } from "react";
@@ -36,6 +37,7 @@ import Sidebar2 from 'src/components/Sidebar/Sidebar2';
 import FooterAdmin from 'src/components/Footers/FooterAdmin.js';
 import { flex } from 'tailwindcss/defaultTheme';
 import { useRouter } from 'next/router';
+import { mobiletabs } from 'src/data/superadminTabs';
 
 const drawerWidthOpen = 240;
 const paddingIconButton = 10;
@@ -202,15 +204,38 @@ export default function Admin({ children }) {
           className='w-full relative  bg-blueGray-100 px-0 m-h-screen'
           // style={{ marginLeft: "3rem" }}
         >
-          <AdminNavbar />
+          {/* Mobile Nav */}
+          <div className='md:hidden bg-white sticky top-0 z-50 w-full flex justify-between items-center py-2 px-2'>
+            <div className=''>
+              <img src='/img/logo/MyDesaCare.svg' alt='MyDesaCareLogo' />
+            </div>
+            <Link href='settings'>
+              <a className='flex items-center justify-center w-4 h-4 p-4 rounded-full bg-purple-200'>
+                <i class='fas fa-user-cog p-2 text-xs ' />
+              </a>
+            </Link>
+          </div>
+          {/* <AdminNavbar /> */}
           {/* Header */}
-          <div className='relative bg-bluelight-100 md:pt-32 pb-32 pt-12'>
+          <div className='relative bg-bluelight-100 pb-32 md:pt-12'>
             {children}
           </div>
-          {/* <div className='hidden md:block'>
-            <FooterAdmin />
-          </div> */}
-          
+          {/* Mobile Tabs */}
+          <div className='w-full md:hidden sticky bottom-0 '>
+            <div className=' flex justify-center items-center md:hidden w-full sticky bottom-0 border rounded bg-white py-4 px-2 divide-x '>
+              {mobiletabs.map(({ links, name, icons }) => (
+                <Link href={links}>
+                  <a
+                    className='flex flex-col justify-center items-center w-1/2 py-2 px-2'>
+                    <span className='flex items-center justify-center w-4 h-4 p-4 rounded-full bg-purple-200'>
+                      {icons}
+                    </span>
+                    <h5 className='text-xs font-semibold py-2'>{name}</h5>
+                  </a>
+                </Link>
+              ))}
+            </div>
+          </div>
         </div>
       </Box>
     </>
