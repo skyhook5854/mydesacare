@@ -215,9 +215,9 @@ export default function Admin({ children }) {
               </a>
             </Link> */}
           </div>
-          {/* <AdminNavbar /> */}
+          <AdminNavbar />
           {/* Header */}
-          <div className='relative bg-bluelight-100 pb-32 md:pt-12'>
+          <div className='relative bg-bluelight-100 pb-32 '>
             {children}
           </div>
           {/* Mobile Tabs */}

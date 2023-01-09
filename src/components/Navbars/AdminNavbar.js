@@ -37,7 +37,7 @@ export default function Navbar() {
   return (
     <>
       {/* Navbar */}
-      <nav className='absolute top-0 left-0 w-full z-10 bg-transparent md:flex-row md:flex-nowrap md:justify-start flex items-center p-6'>
+      <nav className=' w-full z-10 bg-transparent md:flex-row md:flex-nowrap md:justify-start flex items-center p-6'>
         <div className='w-full mx-auto items-center md:flex-nowrap flex-wrap md:px-4 px-4'>
           <div
             className='hidden w-full md:flex justify-between p-4 bg-white rounded-lg dark:bg-blue-200'
