@@ -11,10 +11,11 @@ import { useRecoilValue } from 'recoil';
 import { authAtom } from 'src/recoil/auth';
 import { useCountAppointment } from 'src/actions/appointment';
 import { Formik } from 'formik';
+import { useProfile } from "src/actions/settings";
 
 export default function Navbar() {
   const { bannerFreshLook, whatNew } = useCommonHooks();
-  const data = useRecoilValue(authAtom);
+  const { data } = useProfile();
   const { data: appoint, isFetching } = useCountAppointment();
   const { data: coun } = useCountCounselor();
   const {
@@ -51,10 +52,11 @@ export default function Navbar() {
                       alt='...'
                       className='w-full rounded-full align-middle border-none shadow-lg'
                       src={
-                        data?.data?.profile?.profile_img
-                          ? 'https://staging.mydesa.my/v2/' +
-                            data?.data.profile.profile_img
-                          : '/img/team-1-800x800.jpg'
+                          data?.data?.profile?.profile_img
+                          ? 
+                            'https://www.mydesa.my/v2/' + data?.data.profile.profile_img
+                          : 
+                            'https://static.vecteezy.com/system/resources/thumbnails/003/337/584/small/default-avatar-photo-placeholder-profile-icon-vector.jpg'
                       }
                     />
                   </span>
