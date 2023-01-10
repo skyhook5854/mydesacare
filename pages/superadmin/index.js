@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
 import Admin from 'src/layouts/Admin';
 import { useTranslation } from 'next-i18next';
 import CardLineChart from 'src/components/Cards/CardLineChart';
@@ -9,8 +11,10 @@ import { useCountAppointment } from 'src/actions/appointment';
 import { useCounselorAdd, useCountCounselor } from 'src/actions/counselor';
 import { Formik } from 'formik';
 import { ToastContainer } from 'react-toastify';
+import { mobiletabs } from 'src/data/mobileTabs';
 
 export default function Dashboard() {
+  const router = useRouter();
   const data = useRecoilValue(authAtom);
   const { data: appoint, isFetching } = useCountAppointment();
   const { data: coun } = useCountCounselor();
@@ -33,26 +37,18 @@ export default function Dashboard() {
 
   return (
     <>
+      <div className='md:hidden bg-white sticky top-0 z-50 w-full flex justify-between items-center py-2 px-2'>
+        <div className=''>
+          <img src='/img/logo/MyDesaCare.svg' alt='MyDesaCareLogo' />
+        </div>
+        {/* <Link href='settings'>
+          <a className='flex items-center justify-center w-4 h-4 p-4 rounded-full bg-purple-200'>
+            <i class='fas fa-user-cog p-2 text-xs ' />
+          </a>
+        </Link> */}
+      </div>
       <ToastContainer />
       <div className='relative px-4 md:px-10 mx-auto w-full min-h-screen'>
-        {/* <div className='w-full flex justify-between'>
-        <div className='flex flex-warp items-center gap-2'>
-          <span className='avatar border w-10 h-10 rounded-full'>
-            <img
-              className='avatar border w-10 h-10 rounded-full'
-              src='./img/team-1-800x800.jpg'
-              alt=''
-            />
-          </span>
-          <div className='flex flex-col'>
-            <h4 className='welcomemsg'>Hi, {data?.data.name}!</h4>
-            <p className='text-xs'>Welcome to your MyDesa Care Dashboard</p>
-          </div>
-        </div>
-
-        
-      </div> */}
-
         <div className='w-full flex-auto md:flex gap-4 py-4'>
           <div className='md:block md:w-1/2 my-2 mx-2 justify-center bg-white rounded-md text-center'>
             <div className='p-4 flex justify-between gap-2'>
@@ -547,17 +543,21 @@ export default function Dashboard() {
         ) : (
           ''
         )}
-
-        {/* <div className='absolute bottom-2 w-32 rounded-full'>
-          <button
-            type='submit'
-            onClick={() => setShowModal(true)}
-            className='w-full text-white bg-purple-600 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-800 font-medium rounded-lg text-xl px-5 py-2.5 text-center'
-          >
-            <i class='fa fa-plus-circle px-2' aria-hidden='true'></i>
-            <span className='inline-flex text-xs'>New Counselor</span>
-          </button>
-        </div> */}
+      </div>
+      {/* Mobile Tabs */}
+      <div className='w-full md:hidden sticky bottom-0 '>
+        <div className=' flex justify-center items-center md:hidden w-full sticky bottom-0 border rounded bg-white py-4 px-2 divide-x '>
+          {mobiletabs.map(({ links, name, icons }) => (
+            <Link href={links}>
+              <a className='flex flex-col justify-center items-center w-1/2 py-2 px-2'>
+                <span className='flex items-center justify-center w-4 h-4 p-4 rounded-full bg-purple-200'>
+                  {icons}
+                </span>
+                <h5 className='text-xs font-semibold py-2'>{name}</h5>
+              </a>
+            </Link>
+          ))}
+        </div>
       </div>
     </>
   );

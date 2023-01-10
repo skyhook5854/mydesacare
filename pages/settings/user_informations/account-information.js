@@ -110,7 +110,7 @@ export default function AccountInformation() {
                     </p>
                     <div className="flex flex-row items-center mb-5 mx-4">  
                       <img className="w-12 h-12 rounded-full shadow-lg" src={data?.data.profile.profile_img ? 'https://www.mydesa.my/v2/'+data?.data.profile.profile_img : 'https://static.vecteezy.com/system/resources/thumbnails/003/337/584/small/default-avatar-photo-placeholder-profile-icon-vector.jpg'}/>
-                      {/* <button className="border-2 ml-6 j h-9 w-1/3 inline-flex justify-center align-middle content-center  py-2 px-3 text-sm font-medium text-center text-white bg-white rounded-lg hover:bg-blue-800 focus:ring-4 dark:bg-primary dark:hover:bg-primary dark:focus:ring-blue-800">
+                      {/* <button className="border-2 ml-6 j h-9 w-1/3 inline-flex justify-center align-middle content-center  py-2 px-3 text-xs font-semibold text-center text-white bg-white rounded-lg hover:bg-blue-800 focus:ring-4 dark:bg-primary dark:hover:bg-primary dark:focus:ring-blue-800">
                         <p className="text-center text-black">
                           {t1("content.accountInfo.upload")}
                         </p>
@@ -127,7 +127,7 @@ export default function AccountInformation() {
                       <div className="mb-6 m-3 w-6/12">
                         <label
                           htmlFor="name"
-                          className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                          className="block mb-2 text-xs font-semibold text-gray-900 dark:text-gray-300">
                           {t1("content.accountInfo.name")}
                         </label>
                         <input
@@ -138,7 +138,7 @@ export default function AccountInformation() {
                           onBlur={form.handleBlur}
                           type="name"
                           value={form.values.name}
-                          className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                          className="bg-gray-50 border border-gray-300 text-gray-900 text-xs rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                           placeholder={t1("content.accountInfo.name")}
                           required
                         />
@@ -146,7 +146,7 @@ export default function AccountInformation() {
                       <div className="mb-6  m-3 w-6/12">
                         <label
                           htmlFor="email"
-                          className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                          className="block mb-2 text-xs font-semibold text-gray-900 dark:text-gray-300">
                           {t1("content.accountInfo.email")}
                         </label>
                         <input
@@ -155,7 +155,7 @@ export default function AccountInformation() {
                           name="email"
                           value={form.values.email}
                           placeholder={t1("content.accountInfo.email")}
-                          className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                          className="bg-gray-50 border border-gray-300 text-gray-900 text-xs rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                           required
                         />
                       </div>
@@ -163,7 +163,7 @@ export default function AccountInformation() {
 
                     <div className="flex flex-row">
                       <div className="mb-6 m-3 w-6/12">
-                          <label htmlFor="tabs" class="py-2">
+                          <label htmlFor="tabs" className="py-2 text-xs font-semibold">
                             Gender
                           </label>
                           <select
@@ -171,7 +171,7 @@ export default function AccountInformation() {
                             name="gender"
                             onChange={form.handleChange}
                             value={form.values.gender}
-                            class="w-full p-2.5 my-1 bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                            className="w-full p-2.5 my-1 bg-gray-50 border border-gray-300 text-gray-900 sm:text-xs rounded-lg focus:ring-blue-500 focus:border-blue-500 block dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                             <option value="M">Male</option>
                             <option value="F">Female</option>
                           </select>
@@ -179,7 +179,7 @@ export default function AccountInformation() {
                       <div className="mb-6  m-3 w-6/12">
                         <label
                           htmlFor="maritalstatus"
-                          className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                          className="block mb-2 text-xs font-semibold text-gray-900 dark:text-gray-300">
                           Marital status
                         </label>
                         <select
@@ -187,7 +187,7 @@ export default function AccountInformation() {
                             name="marital_status"
                             onChange={form.handleChange}
                             value={form.values.marital_status}
-                            class="w-full p-2.5 my-1 bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                            className="w-full p-2.5 my-1 bg-gray-50 border border-gray-300 text-gray-900 sm:text-xs rounded-lg focus:ring-blue-500 focus:border-blue-500 block dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                             <option value="Single">Single</option>
                             <option value="Married">Married</option>
                             <option value="Divorced">Divorced</option>
@@ -200,7 +200,7 @@ export default function AccountInformation() {
                       <div className="mb-6 m-3 w-6/12">
                         <label
                           htmlFor="age"
-                          className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                          className="block mb-2 text-xs font-semibold text-gray-900 dark:text-gray-300">
                           Age
                         </label>
                         <input
@@ -210,7 +210,7 @@ export default function AccountInformation() {
                           name="age"
                           onChange={form.handleChange}
                           value={form.values.age}
-                          className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                          className="bg-gray-50 border border-gray-300 text-gray-900 text-xs rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                           placeholder=""
                           required
                         />
@@ -218,12 +218,12 @@ export default function AccountInformation() {
                       <div className="mb-6  m-3 w-1/2">
                         <label
                           htmlFor="phone"
-                          className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                          className="block mb-2 text-xs font-semibold text-gray-900 dark:text-gray-300">
                           {" "}
                           {t1("content.accountInfo.mobile")}
                         </label>
                         <div className="flex">
-                          <span className="inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 rounded-l-md border border-r-0 border-gray-300 dark:bg-gray-600 dark:text-gray-400 dark:border-gray-600">
+                          <span className="inline-flex items-center px-3 text-xs text-gray-900 bg-gray-200 rounded-l-md border border-r-0 border-gray-300 dark:bg-gray-600 dark:text-gray-400 dark:border-gray-600">
                             +60
                           </span>
                           <input
@@ -232,7 +232,7 @@ export default function AccountInformation() {
                             name="phone_no"
                             onChange={form.handleChange}
                             value={form.values.phone_no}
-                            className="rounded-none rounded-r-lg bg-gray-50 border text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm border-gray-300 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            className="rounded-none rounded-r-lg bg-gray-50 border text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-xs border-gray-300 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                             placeholder=""
                           />
                         </div>
@@ -242,8 +242,8 @@ export default function AccountInformation() {
 
                     <div className="py-4">
                       <div className="mb-6 py-4 px-2">
-                        <div class=" w-full">
-                          <label htmlFor="tabs" class="text-sm font-medium">
+                        <div className=" w-full">
+                          <label htmlFor="tabs" className="text-xs font-semibold">
                             Year of Experience
                           </label>
                           <select
@@ -251,7 +251,7 @@ export default function AccountInformation() {
                             name="experience"
                             onChange={form.handleChange}
                             value={form.values.experience}
-                            class="w-full my-2 bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                            className="w-full my-2 bg-gray-50 border border-gray-300 text-gray-900 sm:text-xs rounded-lg focus:ring-blue-500 focus:border-blue-500 block dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                             <option value="Beginer">1-3 Years</option>
                             <option value="Ameatur">1-6 Years</option>
                             <option value="Good">1-10 Years</option>
@@ -259,8 +259,8 @@ export default function AccountInformation() {
                         </div>
                       </div>
                       <div className="mb-6 py-4 px-2">
-                        <div class=" w-full">
-                          <label htmlFor="tabs" class="text-sm font-medium">
+                        <div className=" w-full">
+                          <label htmlFor="tabs" className="text-xs font-semibold">
                             Expertise Category
                           </label>
                           <select
@@ -268,7 +268,7 @@ export default function AccountInformation() {
                             name="expertise"
                             onChange={form.handleChange}
                             value={form.values.expertise}
-                            class="w-full my-2 bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                            className="w-full my-2 bg-gray-50 border border-gray-300 text-gray-900 sm:text-xs rounded-lg focus:ring-blue-500 focus:border-blue-500 block dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                             <option value="Alcohol">Alcohol</option>
                             <option value="Anger management">Anger management</option>
                             <option value="Anxiety/stress">Anxiety/stress</option>
@@ -279,7 +279,7 @@ export default function AccountInformation() {
                     <hr className="my-2 h-5"></hr>
 
                     <div className="flex">
-                      <button className="w-full h-10 mt-4  m-2 justify-center  py-2 px-3 text-sm font-medium text-center text-white bg-primary rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:bg-primary dark:hover:bg-primary dark:focus:ring-blue-800">
+                      <button className="w-full h-10 mt-4  m-2 justify-center  py-2 px-3 text-xs font-semibold text-center text-white bg-primary rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:bg-primary dark:hover:bg-primary dark:focus:ring-blue-800">
                         <p className="text-center">{t1("content.save")}</p>
                       </button>
                     </div>

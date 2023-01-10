@@ -25,19 +25,6 @@ export default function UserInformations() {
   return (
     <>
       <div className="mx-auto px-4 md:px-10 py-10 ">
-        {/* <div class="md:hidden flex items-center justify-center w-full">
-          <label htmlFor="tabs" class="sr-only">
-            Select your country
-          </label>
-          <select
-            id="tabs"
-            class="w-full mx-4 bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-            <option>Account information</option>
-            <option>Billing information</option>
-            <option>Security</option>
-          </select>
-        </div> */}
-
         <ul class="hidden w-full lg:w-6/12 mx-auto md:flex justify-center items-center  rounded-lg divide-x divide-gray-200  sm:flex dark:divide-gray-700">
           <li class="w-full">
             <a
