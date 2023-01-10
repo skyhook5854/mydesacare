@@ -11,6 +11,7 @@ import { useUser, getUInfo } from "src/actions/user";
 import { useCompany } from "src/actions/company";
 import { useRecoilValue } from "recoil";
 import { useQueryClient } from "react-query";
+import { CircularProgress } from '@mui/material';
 
 import {
   TEXT_PROFILE_PHOTO,
@@ -47,7 +48,7 @@ export default function AccountInformation() {
   const customer = queryClient.getQueryData(["customerInfo"])
 
   const router = useRouter();
-  const { data } = useProfile();
+  const { data, isFetching } = useProfile();
   const { mutate, error, isError, isLoading: isButtonLoading } = useProfileUpdate();
 
   // const { userInfo } = useUser();
@@ -62,7 +63,10 @@ export default function AccountInformation() {
 
   return (
     <>
-      <ToastContainer />
+    <ToastContainer />
+
+    {!isFetching 
+    ? 
       <div className=" md:px-12 mx-auto">
         {/* <h3 className="flex items-center justify-center py-10 text-black font-bold text-4xl">
           
@@ -287,6 +291,10 @@ export default function AccountInformation() {
 
         </fieldset>
       </div>
+    : 
+      <CircularProgress />
+    }
+     
     </>
   );
 }

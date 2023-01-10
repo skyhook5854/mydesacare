@@ -17,8 +17,9 @@ export default function All() {
   const countPerPage = 10; 
   const columns = [
       {
-          name: <div className='font-bold'>No</div>,
-          selector: row => row.name,
+          name: <div className='font-bold'>NO.</div>,
+          cell: row => row.row_num,
+          width: '4rem'
       },
       {
           name: <div className='font-bold'>CLIENT</div>,
