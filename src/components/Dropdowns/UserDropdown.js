@@ -31,17 +31,27 @@ const UserDropdown = () => {
   };
 
   const onLogout = async () => {
-    const {
-      data: { companyId = "", refreshToken = "" },
-    } = auth;
-    const data = {
-      companyId: companyId,
-      refreshToken: refreshToken,
-    };
-    await mutate(data);
+    // const router = useRouter();
+    // return useMutation(logoutRequest, {
+    //   onSuccess: () => {
+        localStorage.clear();
+        router.reload();
+        router.push("/auth/login");
+    //   },
+    // });
+    // const {
+    //   data: { companyId = "", refreshToken = "" },
+    // } = auth;
+    // const data = {
+    //   companyId: companyId,
+    //   refreshToken: refreshToken,
+    // };
+    // await mutate(data);
   };
   if (isLoading) return <Spinner />;
   if (isError) return <CustomAlert message={error.message} />;
+  console.log('auth',auth?.data?.level_access);
+
   return (
     <>
       <a
@@ -79,14 +89,17 @@ const UserDropdown = () => {
             {rightMenus.yourProfile}
           </a>
         </Link> */}
+        {auth?.data?.level_access == null ?
         <Link href="/settings">
           <a
             className={
               "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
             }>
-            {rightMenus.settings}
+              Profile
+            {/* {rightMenus.settings} */}
           </a>
         </Link>
+        : ''}
 
         <div className="h-0 my-2 border border-solid border-blueGray-100" />
         <a
